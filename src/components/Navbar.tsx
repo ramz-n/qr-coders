@@ -6,6 +6,7 @@ const links = [
     { href: "#about", label: "About Us" },
     { href: "#services", label: "Services" },
     { href: "#pricing", label: "Pricing" },
+    { href: "#career", label: "Careers" },
     { href: "#contact", label: "Contact" },
 ];
 
@@ -36,12 +37,9 @@ const Navbar = () => {
                     ))}
                 </ul>
 
-                <a
-                    href="#"
-                    className="hidden rounded-full bg-secondary px-5 py-2.5 text-sm font-medium text-navy transition hover:brightness-95 md:inline-block"
+                <a href="#" className="hidden rounded-full bg-secondary px-5 py-2.5 text-sm font-medium text-navy transition hover:brightness-95 md:inline-block"
                 >
-                    <Phone className="inline-block mr-1" size={16} />
-                    Call Us Now
+                    Request a Quote
                 </a>
 
                 <button
@@ -78,8 +76,7 @@ const Navbar = () => {
                             href="#"
                             className="mt-6 rounded-full bg-gold px-6 py-3 text-lg font-medium text-navy"
                         >
-                            <Phone className="inline-block mr-1" size={16} />
-                            Call Us Now
+                            Request a Quote
                         </a>
                     </ul>
                 </div>
