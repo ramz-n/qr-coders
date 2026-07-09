@@ -1,4 +1,4 @@
-import { Menu, X, Phone } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
 const links = [
@@ -15,8 +15,8 @@ const Navbar = () => {
     const [open, setOpen] = useState(false);
 
     return (
-        <header>
-            <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-10">
+        <header className="my-3">
+            <nav className="bg-white rounded-full mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-10">
                 <a href="/" className="flex items-center gap-1">
                     <span
                         className={`font-serif text-2xl font-bold tracking-tight}`}
@@ -29,7 +29,7 @@ const Navbar = () => {
                     {links.map((l) => (
                         <li key={l.href}>
                             <a href={l.href}
-                                className="nav-link text-sm font-medium hover:text-secondary/90"
+                                className="nav-link text-sm font-bold text-secondary hover:text-secondary/50"
                             >
                                 {l.label}
                             </a>
@@ -37,7 +37,7 @@ const Navbar = () => {
                     ))}
                 </ul>
 
-                <a href="#" className="hidden rounded-full bg-secondary px-5 py-2.5 text-sm font-medium text-navy transition hover:brightness-95 md:inline-block"
+                <a href="#" className="hidden rounded-full hover:bg-primary/50 bg-primary px-5 py-2.5 text-sm text-secondary font-bold transition hover:brightness-95 md:inline-block"
                 >
                     Request a Quote
                 </a>
@@ -52,9 +52,9 @@ const Navbar = () => {
             </nav>
 
             {open && (
-                <div className="mobile-menu fixed inset-0 z-60 flex flex-col bg-navy text-white">
+                <div className="mobile-menu fixed inset-0 z-60 flex flex-col bg-black text-white">
                     <div className="flex items-center justify-between px-6 py-4">
-                        <img src="/logo.png" alt="HMC Logo" className="h-10 w-auto" />
+                        <img src="/qrc-logo.png" alt="QRC Logo" className="h-10 w-auto" />
                         <button aria-label="Close menu" onClick={() => setOpen(false)}>
                             <X />
                         </button>
