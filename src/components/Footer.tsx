@@ -3,7 +3,7 @@ const Footer = () => {
         <footer id="footer" className='border-gray-800 border-t-2'>
             <div className="mx-auto max-w-7xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8">
                 <div className="sm:flex sm:items-center sm:justify-between">
-                    <img src="./qrc-logo.png" alt="qrc logo" className="h-20" />
+                    <img src="./qrc-logo-white2.png" alt="qrc logo" className="h-20" />
                     <ul className="mt-8 flex justify-start gap-6 sm:mt-0 sm:justify-end">
                         <li>
                             <a
