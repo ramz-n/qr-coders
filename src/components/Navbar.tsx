@@ -15,8 +15,8 @@ const Navbar = () => {
     const [open, setOpen] = useState(false);
 
     return (
-        <header className="my-3">
-            <nav className="bg-white rounded-full mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-10">
+        <header className="my-3 sticky">
+            <nav className="bg-white rounded-full mx-auto flex max-w-7xl items-center justify-between px-6 py-2 lg:px-10">
                 <a href="/" className="flex items-center gap-1">
                     <span
                         className={`font-serif text-2xl font-bold tracking-tight}`}
@@ -29,7 +29,7 @@ const Navbar = () => {
                     {links.map((l) => (
                         <li key={l.href}>
                             <a href={l.href}
-                                className="text-sm font-bold text-primary hover:text-primary/90"
+                                className="text-sm font-bold text-primary/80 hover:text-primary/90"
                             >
                                 {l.label}
                             </a>

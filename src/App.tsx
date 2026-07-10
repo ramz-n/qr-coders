@@ -1,4 +1,6 @@
 import About from "./components/About"
+import Footer from "./components/Footer"
+import Contact from "./components/Contact"
 import Hero from "./components/Hero"
 import Navbar from "./components/Navbar"
 import Services from "./components/Services"
@@ -15,6 +17,8 @@ function App() {
       <WhyChooseUs />
       <Services />
       <Testimonials />
+      <Contact />
+      <Footer />
     </div>
   )
 }

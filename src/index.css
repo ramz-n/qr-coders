@@ -6,7 +6,7 @@
 @custom-variant dark (&:is(.dark *));
 
 body {
-  @apply bg-black text-white min-h-screen;
+  @apply bg-black text-white min-h-screen overflow-x-hidden;
 }
 
 @theme inline {

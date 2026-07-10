@@ -47,7 +47,7 @@ const WhyChooseUs = () => {
                                 <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/20 ">
                                     <feature.icons className="h-6 w-6 text-primary" />
                                 </div>
-                                <div className="mb-3 font-serif text-xl font-medium">{feature.title}</div>
+                                <div className="mb-3 font-serif text-xl font-medium text-center">{feature.title}</div>
                             </div>
                         ))}
 

@@ -1,6 +1,6 @@
 import { AppWindow, CloudCogIcon, Headset, MonitorCogIcon, MonitorSmartphoneIcon, NotebookPenIcon, PanelsTopLeft, Smartphone } from "lucide-react"
 
-const services = [
+export const services = [
     {
         icon: AppWindow,
         title: "Custom Software Development",
