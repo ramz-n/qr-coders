@@ -35,7 +35,7 @@ const About = () => {
                             </div>
 
                         </div>
-                        <button className="px-3.5 py-2 bg-primary hover:bg-primary/80 transition-all duration-700 ease-in-out rounded-lg shadow-[0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] justify-center items-center flex cursor-pointer">
+                        <button className="px-3.5 py-2 bg-primary/70 hover:bg-primary/80 transition-all duration-700 ease-in-out rounded-lg shadow-[0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] justify-center items-center flex cursor-pointer">
                             <span className="px-1.5 text-white text-sm font-medium leading-6">
                                 Keep in touch
                             </span>

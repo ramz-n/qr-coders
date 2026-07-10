@@ -9,8 +9,9 @@ const Hero = () => {
             <div className="mx-auto w-screen h-screen max-w-7xl px-4 py-16 md:py-28 gap-3 ">
                 <div className="flex items-center justify-center flex-col gap-6">
                     <MorphingText texts={["Enterprises", "Startups", "Companies"]} />
-                    <h1 className="text-2xl font-bold md:text-5xl inline">
-                        <span className="text-primary">QR Coders</span> are there to help you.
+                    <h1 className="text-xl md:2xl text-center font-bold md:text-5xl inline">
+                        We
+                        <span className="text-primary "> QR Coders</span> are there to help you.
                     </h1>
                     <p className="mt-4 text-gray-400 text-center">
                         Together, we build technology that inspires growth, fuels innovation, and shapes the future.
