@@ -29,7 +29,7 @@ const Navbar = () => {
                     {links.map((l) => (
                         <li key={l.href}>
                             <a href={l.href}
-                                className="nav-link text-sm font-bold text-secondary hover:text-secondary/50"
+                                className="text-sm font-bold text-primary hover:text-primary/90"
                             >
                                 {l.label}
                             </a>
@@ -37,7 +37,7 @@ const Navbar = () => {
                     ))}
                 </ul>
 
-                <a href="#" className="hidden rounded-full hover:bg-primary/50 bg-primary px-5 py-2.5 text-sm text-secondary font-bold transition hover:brightness-95 md:inline-block"
+                <a href="#" className="hidden rounded-full hover:bg-primary/50 bg-primary px-5 py-2.5 text-sm font-bold transition hover:brightness-95 md:inline-block"
                 >
                     Request a Quote
                 </a>
@@ -45,7 +45,7 @@ const Navbar = () => {
                 <button
                     aria-label="Open menu"
                     onClick={() => setOpen(true)}
-                    className="md:hidden"
+                    className="md:hidden text-primary"
                 >
                     <Menu />
                 </button>
@@ -71,10 +71,9 @@ const Navbar = () => {
                                 </a>
                             </li>
                         ))}
-                        <a
-                            onClick={() => setOpen(false)}
+                        <a onClick={() => setOpen(false)}
                             href="#"
-                            className="mt-6 rounded-full bg-gold px-6 py-3 text-lg font-medium text-navy"
+                            className="rounded-full hover:bg-primary/50 bg-primary px-5 py-2.5 text-sm font-bold transition hover:brightness-95 md:inline-block"
                         >
                             Request a Quote
                         </a>

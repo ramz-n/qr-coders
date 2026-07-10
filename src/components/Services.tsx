@@ -45,11 +45,14 @@ const services = [
 
 const Services = () => {
     return (
-        <section id="services" className="">
+        <section id="services" className="my-30">
             <div className="fluid-container">
-                <div className="flex flex-col items-center justify-center">
-                    <h3 className='text-2xl text-primary uppercase'>Services we offer</h3>
-                </div>
+                <h2 className="text-primary text-4xl font-bold leading-normal text-center">
+                    Services we Offer
+                </h2>
+                <p className='text-gray-300 text-center'>
+                    Empowering Businesses with Innovative Technology Solutions
+                </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-5 pt-10">
                     {services.map((service) => (
