@@ -1,5 +1,3 @@
-import { services } from "./Services"
-
 const Footer = () => {
     return (
         <footer id="footer" className='border-gray-800 border-t-2'>

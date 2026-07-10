@@ -52,7 +52,7 @@ const Testimonials = () => {
                         <div key={idx} className="embla__slide border-primary/50 border-solid border-2 flex justify-between flex-col rounded-xl p-6 transition-all duration-500">
                             <div className="flex flex-col gap-2">
                                 <div className="flex">
-                                    {[1, 2, 3, 4, 5].map((s, idx) => <Star color="#FF5FCF" />)}
+                                    {[1, 2, 3, 4, 5].map((idx) => <Star key={idx} color="#FF5FCF" />)}
                                 </div>
                                 <h5>{item.title}</h5>
                                 <p className="text-base text-gray-400 leading-6  transition-all duration-500 pb-8">
