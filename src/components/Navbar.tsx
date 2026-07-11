@@ -2,7 +2,7 @@ import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
 const links = [
-    { href: "#home", label: "Home" },
+    { href: "/", label: "Home" },
     { href: "#about", label: "About Us" },
     { href: "#services", label: "Services" },
     { href: "#pricing", label: "Pricing" },

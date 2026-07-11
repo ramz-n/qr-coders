@@ -11,7 +11,7 @@ import Pricing from "./components/Pricing"
 function App() {
 
   return (
-    <div className='min-h-screen container mx-auto px-2'>
+    <div className='min-h-screen container mx-auto px-5 scroll-smooth'>
       <Navbar />
       <Hero />
       <About />

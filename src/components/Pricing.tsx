@@ -53,7 +53,7 @@ const Pricing = () => {
                     {pricing.map((item, idx) => (
                         <div key={idx} className="bg-[url()] rounded-2xl border border-primary/60 p-6 shadow-xs ring-1 ring-primary/60 sm:order-last sm:px-8 lg:p-12">
                             <div className="w-full h-50">
-                                <img src={item.image} alt="" loading="lazy" />
+                                <img className="h-full w-full" src={item.image} alt="" loading="lazy" />
                             </div>
                             <div className="text-center">
                                 <h2 className="text-lg font-medium text-gray-300">
