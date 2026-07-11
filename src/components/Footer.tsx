@@ -1,5 +1,4 @@
-import { Link } from 'react-router-dom';
-import PrivacyPolicy from "./PrivacyPolicy";
+import {Link} from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -13,13 +12,7 @@ const Footer = () => {
                         </h2>
                         <ul className="mt-4 space-y-3 text-sm">
                             <li><a className="text-gray-400 transition hover:text-primary/80" href="#about">About Us</a></li>
-                            <li>
-                                <Link
-                                    to="/privacy"
-                                    className="text-gray-400 transition hover:text-primary/80">
-                                    Privacy Policy
-                                </Link>
-                            </li>
+                            <li><a className="text-gray-400 transition hover:text-primary/80" href="#services">Services</a></li>
                             <li><a className="text-gray-400 transition hover:text-primary/80" href="#contact">Contact</a></li>
                         </ul>
                     </div>
@@ -30,8 +23,17 @@ const Footer = () => {
                         </h2>
                         <ul className="mt-4 space-y-3 text-sm">
                             <li><a className="text-gray-400 transition hover:text-primary/80" href="/help">Help Center</a></li>
-                            <li><a className="text-gray-400 transition hover:text-primary/80" href="/privacy">Privacy Policy</a></li>
-                            <li><a className="text-gray-400 transition hover:text-primary/80" href="/terms">Terms & Conditions</a></li>
+                            <li><Link
+                                    to="/privacy"
+                                    className="text-gray-400 transition hover:text-primary/80">
+                                    Privacy Policy
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/terms" className="text-gray-400 transition hover:text-primary/80">
+                                Terms & Conditions
+                                </Link>
+                            </li>
                         </ul>
                     </div>
 
