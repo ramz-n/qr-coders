@@ -56,7 +56,7 @@ const Pricing = () => {
                                 <img className="h-full w-full" src={item.image} alt="" loading="lazy" />
                             </div>
                             <div className="text-center">
-                                <h2 className="text-lg font-medium text-gray-300">
+                                <h2 className="text-lg font-medium pt-4 text-gray-300">
                                     {item.title}
                                     <span className="sr-only">{item.title}</span>
                                 </h2>
