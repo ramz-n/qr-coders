@@ -1,3 +1,6 @@
+import { Link } from 'react-router-dom';
+import PrivacyPolicy from "./PrivacyPolicy";
+
 const Footer = () => {
     return (
         <footer id="footer" className='border-gray-800 border-t-2'>
@@ -10,7 +13,13 @@ const Footer = () => {
                         </h2>
                         <ul className="mt-4 space-y-3 text-sm">
                             <li><a className="text-gray-400 transition hover:text-primary/80" href="#about">About Us</a></li>
-                            <li><a className="text-gray-400 transition hover:text-primary/80" href="#services">Services</a></li>
+                            <li>
+                                <Link
+                                    to="/privacy"
+                                    className="text-gray-400 transition hover:text-primary/80">
+                                    Privacy Policy
+                                </Link>
+                            </li>
                             <li><a className="text-gray-400 transition hover:text-primary/80" href="#contact">Contact</a></li>
                         </ul>
                     </div>
