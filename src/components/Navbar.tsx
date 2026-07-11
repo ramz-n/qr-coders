@@ -3,7 +3,8 @@ import { useState } from "react";
 
 const links = [
     { href: "/", label: "Home" },
-    { href: "#about", label: "About Us" },
+    { href: "#about", label: "About" },
+    { href: "#whyus", label: "Why Us" },
     { href: "#services", label: "Services" },
     { href: "#pricing", label: "Pricing" },
     { href: "#contact", label: "Contact" },
@@ -20,7 +21,7 @@ const Navbar = () => {
                     <span
                         className={`font-serif text-2xl font-bold tracking-tight}`}
                     >
-                        <img src="/qrc-logo.png" alt="QRC Logo" className="h-12 w-auto" />
+                        <img src="/qrc-logo.png" alt="QRC Logo" className="h-8 md:h-12 w-auto" />
                     </span>
                 </a>
 

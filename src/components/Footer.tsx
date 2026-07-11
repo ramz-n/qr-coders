@@ -2,7 +2,7 @@ const Footer = () => {
     return (
         <footer id="footer" className='border-gray-800 border-t-2'>
             <div className="mx-auto max-w-7xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8">
-                <div className="sm:flex sm:items-center sm:justify-between">
+                <div className="flex md:items-center flex-col md:flex-row justify-between gap-10">
                     <img src="./qrc-logo-white.png" alt="qrc logo" className="h-20" />
                     <div>
                         <h2 className="text-sm font-semibold uppercase tracking-wider text-white">

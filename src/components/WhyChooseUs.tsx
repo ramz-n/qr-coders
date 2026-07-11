@@ -36,15 +36,16 @@ const features = [
 
 const WhyChooseUs = () => {
     return (
-        <section id='#whyus' className="my-24 relative">
+        <section id='whyus' className="my-24 py-20 relative">
             <div className=''>
                 <div className="w-full max-w-7xl px-4 md:px-5 lg:px-5 mx-auto">
-                    <h2 className="text-primary text-4xl font-bold leading-normal text-center">
+                    <p className="text-sm font-semibold uppercase tracking-widest text-primary text-center">
                         Why Choose Us
-                    </h2>
-                    <p className='text-gray-300 text-center'>
-                        Our dedication to our customers make us stand out.
                     </p>
+
+                    <h2 className="mt-3 text-3xl font-bold text-white md:text-4xl text-center">
+                        Our dedication to our customers make us stand out.
+                    </h2>
 
                     <div className='grid grid-cols-1 md:grid-cols-2 gap-5 pt-10'>
                         {features.map(feature => (
@@ -56,7 +57,7 @@ const WhyChooseUs = () => {
                                 <div className="mb-3 font-serif text-xl font-medium text-center">{feature.title}
                                     <p className="text-sm font-sans pt-4 text-center text-muted-foreground">{feature.description}</p>
                                 </div>
-                    
+
                             </div>
                         ))}
 

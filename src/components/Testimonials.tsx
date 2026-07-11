@@ -40,15 +40,15 @@ const Testimonials = () => {
   );
 
   return (
-    <section id="testimony" className="mx-auto my-16 max-w-7xl px-6">
-      <h2 className="text-center text-4xl font-bold text-primary">
+    <section id="testimony" className="mx-auto my-16 max-w-7xl text-center">
+      <p className="text-sm font-semibold uppercase tracking-widest text-primary">
         Testimonials
+      </p>
+
+      <h2 className="mt-3 text-2xl font-bold text-white md:text-4xl">
+        We value the trust our clients place in us and are committed to delivering exceptional digital solutions.
       </h2>
 
-      <p className="mx-auto mt-4 max-w-3xl text-center leading-7 text-gray-400">
-        We value the trust our clients place in us and are committed to
-        delivering exceptional digital solutions.
-      </p>
 
       <div className="mt-10 overflow-hidden" ref={emblaRef}>
         <div className="flex -ml-4">

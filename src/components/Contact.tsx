@@ -1,24 +1,28 @@
 const Footer = () => {
     return (
-        <div id="contact" className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 my-20">
-            <h2 className="text-primary text-4xl font-bold leading-normal text-center">
-                Contact Us
-            </h2>
-            <p className='text-gray-300 text-center'>
-                Let's Start a Conversation
-            </p>
+        <div id="contact" className="mx-auto max-w-7xl py-20 md:px-8 my-20">
+            <div className="text-center">
+                <p className="text-sm font-semibold uppercase tracking-widest text-primary">
+                    Contact Us
+                </p>
+
+                <h2 className="mt-3 text-2xl font-bold text-white md:text-4xl">
+                    Let's Start a Conversation
+                </h2>
+            </div>
+
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2 mt-10">
                 <div className="md:py-4">
-                    <h3 className="text-2xl font-bold text-gray-400 sm:text-3xl">
+                    <h3 className="text-2xl font-bold text-gray-300 sm:text-3xl">
                         Get in touch
                     </h3>
-                    <p className="mt-4 text-pretty text-gray-500">
+                    <p className="mt-4 text-pretty text-gray-400">
                         Have a question or an idea you'd like to discuss? Reach out to us through any of the following channels.
                     </p>
                     <dl className="mt-6 space-y-3">
                         <div>
                             <dt className="sr-only">Phone number</dt>
-                            <dd className="grid grid-cols-[24px_1fr] items-center gap-2 text-gray-500">
+                            <dd className="grid grid-cols-[24px_1fr] items-center gap-2 text-gray-400">
                                 <svg
                                     aria-hidden="true"
                                     xmlns="http://www.w3.org/2000/svg"
@@ -39,7 +43,7 @@ const Footer = () => {
                         </div>
                         <div>
                             <dt className="sr-only">Email</dt>
-                            <dd className="grid grid-cols-[24px_1fr] items-center gap-2 text-gray-500">
+                            <dd className="grid grid-cols-[24px_1fr] items-center gap-2 text-gray-400">
                                 <svg
                                     aria-hidden="true"
                                     xmlns="http://www.w3.org/2000/svg"
@@ -60,7 +64,7 @@ const Footer = () => {
                         </div>
                         <div>
                             <dt className="sr-only">Location</dt>
-                            <dd className="grid grid-cols-[24px_1fr] items-center gap-2 text-gray-500">
+                            <dd className="grid grid-cols-[24px_1fr] items-center gap-2 text-gray-400">
                                 <svg
                                     aria-hidden="true"
                                     xmlns="http://www.w3.org/2000/svg"

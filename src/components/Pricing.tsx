@@ -41,13 +41,14 @@ const pricing = [
 const Pricing = () => {
     return (
         <section id="pricing" className="my-30 py-20">
-            <div className="fluid-container">
-                <h2 className="text-primary text-4xl font-bold leading-normal text-center">
+            <div className="fluid-container text-center">
+                <p className="text-sm font-semibold uppercase tracking-widest text-primary">
                     Our Pricing
-                </h2>
-                <p className='text-gray-300 text-center'>
-                    We offer an afordable pricing plan for you.
                 </p>
+
+                <h2 className="mt-3 text-2xl font-bold text-white md:text-4xl">
+                    We offer an afordable pricing plan for you.
+                </h2>
 
                 <div className="grid grid-cols-1 gap-4 md:grid-cols-3 items-center md:gap-8 py-10">
                     {pricing.map((item, idx) => (

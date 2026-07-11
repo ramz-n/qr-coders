@@ -46,13 +46,14 @@ export const services = [
 const Services = () => {
     return (
         <section id="services" className="my-20 py-20">
-            <div className="fluid-container">
-                <h2 className="text-primary text-4xl font-bold leading-normal text-center">
+            <div className="fluid-container text-center">
+                <p className="text-sm font-semibold uppercase tracking-widest text-primary">
                     Services we Offer
-                </h2>
-                <p className='text-gray-300 text-center'>
-                    Empowering Businesses with Innovative Technology Solutions
                 </p>
+
+                <h2 className="mt-3 text-2xl font-bold text-white md:text-4xl">
+                    Empowering Businesses with Innovative Technology Solutions
+                </h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-5 pt-10">
                     {services.map((service) => (
