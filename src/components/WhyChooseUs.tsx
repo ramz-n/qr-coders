@@ -30,7 +30,7 @@ const features = [
 
 const WhyChooseUs = () => {
     return (
-        <section id='#whyus' className="py-24 relative">
+        <section id='#whyus' className="my-24 relative">
             <div className=''>
                 <div className="w-full max-w-7xl px-4 md:px-5 lg:px-5 mx-auto">
                     <h2 className="text-primary text-4xl font-bold leading-normal text-center">

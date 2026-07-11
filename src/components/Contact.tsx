@@ -1,6 +1,6 @@
 const Footer = () => {
     return (
-        <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8 my-20">
+        <div id="contact" className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 my-20">
             <h2 className="text-primary text-4xl font-bold leading-normal text-center">
                 Contact Us
             </h2>
