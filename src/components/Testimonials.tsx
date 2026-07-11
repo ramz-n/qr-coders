@@ -1,76 +1,97 @@
-import { Star } from "lucide-react"
-import useEmblaCarousel from 'embla-carousel-react'
-import Autoplay from 'embla-carousel-autoplay'
+import { Star } from "lucide-react";
+import useEmblaCarousel from "embla-carousel-react";
+import Autoplay from "embla-carousel-autoplay";
 
 const testimonialData = [
-    {
-        name: "Raj Sharma",
-        occupation: "Business Owner",
-        title: "Outstanding Service and Professionalism",
-        description: "The team delivered our website exactly as we envisioned. They were responsive, professional, and completed the project on time. We highly recommend their services."
-    },
-    {
-        name: "Anita Koirala",
-        occupation: "Reliable Technology Partner",
-        title: "Outstanding Service and Professionalism",
-        description: "We partnered with them for a custom management system, and the results exceeded our expectations. Their technical expertise and attention to detail made the entire process smooth and efficient."
-    },
-    {
-        name: "Suman Thapa",
-        occupation: "Startup Founder",
-        title: "High-Quality Web Development",
-        description: "They transformed our ideas into a beautiful, fast, and user-friendly website. Their creativity and commitment to quality truly set them apart."
-    },
-    {
-        name: "Bikash Gurung",
-        occupation: "CEO",
-        title: "Highly Recommended",
-        description: "From planning to deployment, every step was handled professionally. Their team understands business needs and delivers technology solutions that create real value."
-    }
-]
+  {
+    name: "Raj Sharma",
+    occupation: "Business Owner",
+    title: "Outstanding Service and Professionalism",
+    description:
+      "The team delivered our website exactly as we envisioned. They were responsive, professional, and completed the project on time.",
+  },
+  {
+    name: "Anita Koirala",
+    occupation: "Reliable Technology Partner",
+    title: "Outstanding Service and Professionalism",
+    description:
+      "We partnered with them for a custom management system, and the results exceeded our expectations.",
+  },
+  {
+    name: "Suman Thapa",
+    occupation: "Startup Founder",
+    title: "High-Quality Web Development",
+    description:
+      "They transformed our ideas into a beautiful, fast, and user-friendly website.",
+  },
+  {
+    name: "Bikash Gurung",
+    occupation: "CEO",
+    title: "Highly Recommended",
+    description:
+      "From planning to deployment, every step was handled professionally.",
+  },
+];
 
 const Testimonials = () => {
-    const autoplayOptions = { delay: 3000, stopOnInteraction: false };
+  const [emblaRef] = useEmblaCarousel(
+    { loop: true, align: "start" },
+    [Autoplay({ delay: 3000, stopOnInteraction: false })]
+  );
 
-    const [emblaRef] = useEmblaCarousel(
-        { loop: true, align: 'center' },
-        [Autoplay(autoplayOptions)]
-    );
+  return (
+    <section id="testimony" className="mx-auto my-16 max-w-7xl px-6">
+      <h2 className="text-center text-4xl font-bold text-primary">
+        Testimonials
+      </h2>
 
-    return (
-        <section id="#testimony" className="my-10">
-            <h2 className="text-primary text-4xl font-bold leading-normal text-center">
-                Testimonial
-            </h2>
-            <p className='text-gray-300 text-center'>
-                We value the trust our clients place in us and are committed to delivering exceptional digital solutions. Their success is our greatest achievement, and their feedback motivates us to continue providing high-quality IT services.
-            </p>
+      <p className="mx-auto mt-4 max-w-3xl text-center leading-7 text-gray-400">
+        We value the trust our clients place in us and are committed to
+        delivering exceptional digital solutions.
+      </p>
 
-            <div className="embla" ref={emblaRef}>
-                <div className="embla__container">
-                    {testimonialData.map((item, idx) => (
-                        <div key={idx} className="embla__slide border-primary/50 border-solid border-2 flex justify-between flex-col rounded-xl p-6 transition-all duration-500">
-                            <div className="flex flex-col gap-2">
-                                <div className="flex">
-                                    {[1, 2, 3, 4, 5].map((idx) => <Star key={idx} color="#FF5FCF" />)}
-                                </div>
-                                <h5>{item.title}</h5>
-                                <p className="text-base text-gray-400 leading-6  transition-all duration-500 pb-8">
-                                    {item.description}
-                                </p>
-                            </div>
-                            <div className="flex items-center gap-5 pt-5 border-t border-solid border-gray-200">
-                                <h5 className="font-medium transition-all duration-500  mb-1">
-                                    {item.name}
-                                </h5>
-                                <span className="text-sm leading-4 text-gray-500">{item.occupation}</span>
-                            </div>
-                        </div>
+      <div className="mt-10 overflow-hidden" ref={emblaRef}>
+        <div className="flex -ml-4">
+          {testimonialData.map((item) => (
+            <article
+              key={item.name}
+              className="min-w-0 flex-[0_0_100%] pl-4 md:flex-[0_0_50%] lg:flex-[0_0_33.333%]"
+            >
+              <div className="flex h-full flex-col justify-between rounded-2xl border-primary/50 border-solid border-2   p-6 shadow-lg transition duration-300">
+                <div>
+                  <div className="flex gap-1">
+                    {[1, 2, 3, 4, 5].map((star) => (
+                      <Star
+                        key={star}
+                        size={18}
+                        fill="#FF5FCF"
+                        color="#FF5FCF"
+                      />
                     ))}
-                </div>
-            </div>
-        </section >
-    )
-}
+                  </div>
 
-export default Testimonials
+                  <h3 className="mt-5 text-lg font-semibold text-white">
+                    {item.title}
+                  </h3>
+
+                  <p className="mt-3 leading-7 text-gray-400">
+                    {item.description}
+                  </p>
+                </div>
+
+                <div className="mt-8 border-t border-gray-700 pt-4">
+                  <h4 className="font-semibold text-white">{item.name}</h4>
+                  <span className="text-sm text-primary">
+                    {item.occupation}
+                  </span>
+                </div>
+              </div>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Testimonials;
