@@ -6,24 +6,23 @@ const Footer = () => {
                     <img src="./qrc-logo-white.png" alt="qrc logo" className="h-20" />
                     <div>
                         <h2 className="text-sm font-semibold uppercase tracking-wider text-white">
-                        Company
+                            Company
                         </h2>
                         <ul className="mt-4 space-y-3 text-sm">
-                        <li><a className="text-gray-400 transition hover:text-cyan-400" href="/about">About Us</a></li>
-                        <li><a className="text-gray-400 transition hover:text-cyan-400" href="/careers">Careers</a></li>
-                        <li><a className="text-gray-400 transition hover:text-cyan-400" href="/contact">Contact</a></li>
+                            <li><a className="text-gray-400 transition hover:text-primary/80" href="#about">About Us</a></li>
+                            <li><a className="text-gray-400 transition hover:text-primary/80" href="#services">Services</a></li>
+                            <li><a className="text-gray-400 transition hover:text-primary/80" href="#contact">Contact</a></li>
                         </ul>
                     </div>
 
-                    {/* Support */}
                     <div>
                         <h2 className="text-sm font-semibold uppercase tracking-wider text-white">
-                        Support
+                            Support
                         </h2>
                         <ul className="mt-4 space-y-3 text-sm">
-                        <li><a className="text-gray-400 transition hover:text-cyan-400" href="/help">Help Center</a></li>
-                        <li><a className="text-gray-400 transition hover:text-cyan-400" href="/privacy">Privacy Policy</a></li>
-                        <li><a className="text-gray-400 transition hover:text-cyan-400" href="/terms">Terms & Conditions</a></li>
+                            <li><a className="text-gray-400 transition hover:text-primary/80" href="/help">Help Center</a></li>
+                            <li><a className="text-gray-400 transition hover:text-primary/80" href="/privacy">Privacy Policy</a></li>
+                            <li><a className="text-gray-400 transition hover:text-primary/80" href="/terms">Terms & Conditions</a></li>
                         </ul>
                     </div>
 
