@@ -13,6 +13,7 @@ import SmoothScrolling from "./components/SmoothScrolling";
 import Testimonials from "./components/Testimonials";
 import WhyChooseUs from "./components/WhyChooseUs";
 import TermsAndConditions from "./components/TermsAndConditions";
+import HelpCenter from "./components/HelpCenter";
 
 const Home = () => {
   return (
@@ -40,6 +41,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/privacy" element={<PrivacyPolicy />} />
             <Route path="/terms" element={<TermsAndConditions />} />
+            <Route path="/help" element={<HelpCenter />} />
           </Routes>
 
           <Footer />

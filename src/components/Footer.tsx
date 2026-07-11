@@ -22,7 +22,9 @@ const Footer = () => {
                             Support
                         </h2>
                         <ul className="mt-4 space-y-3 text-sm">
-                            <li><a className="text-gray-400 transition hover:text-primary/80" href="/help">Help Center</a></li>
+                            <li><Link to="/help" className="text-gray-400 transition hover:text-primary/80">
+                                Help Center
+                                </Link></li>
                             <li><Link
                                     to="/privacy"
                                     className="text-gray-400 transition hover:text-primary/80">

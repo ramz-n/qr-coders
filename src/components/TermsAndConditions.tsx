@@ -1,6 +1,7 @@
 const TermsAndConditions = () => {
   return (
     <main className="mx-auto max-w-4xl px-6 py-20 text-gray-300">
+        
       <p className="text-sm font-semibold uppercase tracking-widest text-primary">
         QR Coders
       </p>
