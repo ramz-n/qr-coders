@@ -45,7 +45,7 @@ export const services = [
 
 const Services = () => {
     return (
-        <section id="services" className="my-30 py-20">
+        <section id="services" className="my-20 py-20">
             <div className="fluid-container">
                 <h2 className="text-primary text-4xl font-bold leading-normal text-center">
                     Services we Offer
