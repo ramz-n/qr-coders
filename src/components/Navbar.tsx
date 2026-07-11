@@ -21,7 +21,7 @@ const Navbar = () => {
                     <span
                         className={`font-serif text-2xl font-bold tracking-tight}`}
                     >
-                        <img src="/qrc-logo.png" alt="QRC Logo" className="h-8 w-auto" />
+                        <img src="/qrc-logo.png" alt="QRC Logo" className="h-12 w-auto" />
                     </span>
                 </a>
 
