@@ -1,4 +1,6 @@
 import { AppWindow, CloudCogIcon, Headset, MonitorCogIcon, MonitorSmartphoneIcon, NotebookPenIcon, PanelsTopLeft, Smartphone } from "lucide-react"
+import { motion } from "framer-motion";
+import { fadeUpVariant, defaultViewport } from "../utils/animations";
 
 export const services = [
     {
@@ -46,7 +48,12 @@ export const services = [
 const Services = () => {
     return (
         <section id="services" className="my-20 py-20">
-            <div className="fluid-container text-center">
+            <motion.div
+                variants={fadeUpVariant}
+                initial="hidden"
+                whileInView="visible"
+                viewport={defaultViewport}
+                className="fluid-container text-center">
                 <p className="text-sm font-semibold uppercase tracking-widest text-primary">
                     Services we Offer
                 </p>
@@ -70,7 +77,7 @@ const Services = () => {
                         </div>
                     ))}
                 </div>
-            </div>
+            </motion.div>
         </section >
     )
 }

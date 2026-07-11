@@ -8,22 +8,25 @@ import Testimonials from "./components/Testimonials"
 import WhyChooseUs from "./components/WhyChooseUs"
 import Pricing from "./components/Pricing"
 import RequestQuote from "./components/RequestQuote"
+import SmoothScrolling from "./components/SmoothScrolling"
 
 function App() {
 
   return (
-    <div className='min-h-screen container mx-auto px-5 scroll-smooth'>
-      <Navbar />
-      <Hero />
-      <About />
-      <WhyChooseUs />
-      <RequestQuote />
-      <Services />
-      <Pricing />
-      <Testimonials />
-      <Contact />
-      <Footer />
-    </div>
+    <SmoothScrolling>
+      <div className='min-h-screen container mx-auto px-5'>
+        <Navbar />
+        <Hero />
+        <About />
+        <WhyChooseUs />
+        <RequestQuote />
+        <Services />
+        <Pricing />
+        <Testimonials />
+        <Contact />
+        <Footer />
+      </div>
+    </SmoothScrolling>
   )
 }
 

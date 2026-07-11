@@ -1,7 +1,15 @@
+import { motion } from "framer-motion";
+import { fadeUpVariant, defaultViewport } from "../utils/animations";
+
 const RequestQuote = () => {
   return (
     <section className="mx-20 my-30 max-w-7xl px-6">
-      <div className="rounded-2xl border border-primary/30 px-6 py-12 text-center shadow-lg md:px-12">
+      <motion.div
+        variants={fadeUpVariant}
+        initial="hidden"
+        whileInView="visible"
+        viewport={defaultViewport}
+        className="rounded-2xl border border-primary/30 px-6 py-12 text-center shadow-lg md:px-12">
         <p className="text-sm font-semibold uppercase tracking-widest text-primary">
           Let’s work together
         </p>
@@ -21,7 +29,7 @@ const RequestQuote = () => {
         >
           Request a Quote
         </a>
-      </div>
+      </motion.div>
     </section>
   );
 };

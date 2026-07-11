@@ -1,4 +1,6 @@
 import { Check } from "lucide-react"
+import { motion } from "framer-motion";
+import { fadeUpVariant, defaultViewport } from "../utils/animations";
 
 const pricing = [
     {
@@ -41,7 +43,12 @@ const pricing = [
 const Pricing = () => {
     return (
         <section id="pricing" className="my-30 py-20">
-            <div className="fluid-container text-center">
+            <motion.div
+                variants={fadeUpVariant}
+                initial="hidden"
+                whileInView="visible"
+                viewport={defaultViewport}
+                className="fluid-container text-center">
                 <p className="text-sm font-semibold uppercase tracking-widest text-primary">
                     Our Pricing
                 </p>
@@ -84,7 +91,7 @@ const Pricing = () => {
                         </div>
                     ))}
                 </div>
-            </div>
+            </motion.div>
         </section >
     )
 }

@@ -1,5 +1,7 @@
 import { AwardIcon, ClipboardClockIcon, ComputerIcon, HandCoinsIcon, PhoneCallIcon, ShieldCheckIcon } from 'lucide-react'
 import { ShineBorder } from "../components/ui/shine-border"
+import { motion } from "framer-motion";
+import { fadeUpVariant, defaultViewport } from "../utils/animations";
 
 const features = [
     {
@@ -37,7 +39,12 @@ const features = [
 const WhyChooseUs = () => {
     return (
         <section id='whyus' className="my-24 py-20 relative">
-            <div className=''>
+            <motion.div
+                variants={fadeUpVariant}
+                initial="hidden"
+                whileInView="visible"
+                viewport={defaultViewport}
+                className=''>
                 <div className="w-full max-w-7xl px-4 md:px-5 lg:px-5 mx-auto">
                     <p className="text-sm font-semibold uppercase tracking-widest text-primary text-center">
                         Why Choose Us
@@ -64,7 +71,7 @@ const WhyChooseUs = () => {
                     </div>
                 </div>
 
-            </div>
+            </motion.div>
         </section>
     )
 }
