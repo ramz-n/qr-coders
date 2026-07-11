@@ -4,6 +4,30 @@ const Footer = () => {
             <div className="mx-auto max-w-7xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8">
                 <div className="sm:flex sm:items-center sm:justify-between">
                     <img src="./qrc-logo-white.png" alt="qrc logo" className="h-20" />
+                    <div>
+                        <h2 className="text-sm font-semibold uppercase tracking-wider text-white">
+                        Company
+                        </h2>
+                        <ul className="mt-4 space-y-3 text-sm">
+                        <li><a className="text-gray-400 transition hover:text-cyan-400" href="/about">About Us</a></li>
+                        <li><a className="text-gray-400 transition hover:text-cyan-400" href="/careers">Careers</a></li>
+                        <li><a className="text-gray-400 transition hover:text-cyan-400" href="/contact">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    {/* Support */}
+                    <div>
+                        <h2 className="text-sm font-semibold uppercase tracking-wider text-white">
+                        Support
+                        </h2>
+                        <ul className="mt-4 space-y-3 text-sm">
+                        <li><a className="text-gray-400 transition hover:text-cyan-400" href="/help">Help Center</a></li>
+                        <li><a className="text-gray-400 transition hover:text-cyan-400" href="/privacy">Privacy Policy</a></li>
+                        <li><a className="text-gray-400 transition hover:text-cyan-400" href="/terms">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+
+
                     <ul className="mt-8 flex justify-start gap-6 sm:mt-0 sm:justify-end">
                         <li>
                             <a
