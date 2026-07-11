@@ -4,7 +4,7 @@ import { fadeUpVariant, defaultViewport } from "../utils/animations"
 const About = () => {
 
     return (
-        <section id='about' className="relative py-0 md:py-20">
+        <section id='about' className="relative mt-40 md:py-20">
             <motion.div
                 variants={fadeUpVariant}
                 initial="hidden"
