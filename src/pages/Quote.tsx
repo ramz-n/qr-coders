@@ -40,17 +40,17 @@ ${formData.get("message")}`);
     "w-full rounded-xl border border-white/10 bg-white/[0.04] px-4 py-3 text-sm text-white outline-none transition placeholder:text-gray-500 hover:border-primary/40 focus:border-primary focus:bg-white/[0.07] focus:ring-4 focus:ring-primary/15";
 
   return (
-    
-    <main className="mx-auto min-h-screen max-w-3xl px-5 py-32">
-        <div className="mb-10 text-center">
-          <p className="text-sm font-semibold uppercase tracking-widest text-primary">
-            Request a Quote
-          </p>
 
-          <h1 className="mt-3 text-2xl font-bold text-white md:text-4xl">
-            Let&apos;s Build Something Great
-          </h1>
-        </div>
+    <main className="mx-auto min-h-screen max-w-3xl px-5 py-32">
+      <div className="mb-10 text-center">
+        <p className="text-sm font-semibold uppercase tracking-widest text-primary">
+          Request a Quote
+        </p>
+
+        <h1 className="mt-3 text-2xl font-bold text-white md:text-4xl">
+          Let&apos;s Build Something Great
+        </h1>
+      </div>
       <motion.form
         onSubmit={handleSubmit}
         variants={fadeUpVariant}
@@ -215,7 +215,7 @@ ${formData.get("message")}`);
 
         <button
           type="submit"
-          className="mt-6 w-full rounded-xl bg-primary px-6 py-3.5 text-sm font-bold text-white shadow-lg shadow-primary/20 transition duration-300 hover:-translate-y-0.5 hover:bg-primary/85 hover:shadow-primary/40 focus:outline-none focus:ring-4 focus:ring-primary/30"
+          className="cursor-pointer mt-6 w-full rounded-xl bg-primary px-6 py-3.5 text-sm font-bold text-white shadow-lg shadow-primary/20 transition duration-300 hover:-translate-y-0.5 hover:bg-primary/85 hover:shadow-primary/40 focus:outline-none focus:ring-4 focus:ring-primary/30"
         >
           Send Quotation Request
         </button>
