@@ -1,5 +1,6 @@
 import { motion } from "framer-motion"
 import { fadeUpVariant, defaultViewport } from "../utils/animations"
+import { Link } from "react-router-dom"
 
 const About = () => {
 
@@ -48,12 +49,11 @@ const About = () => {
                             </div>
 
                         </div>
-                        <a
-                            href="#contact"
+                        <Link to="/quote"
                             className="mt-7 inline-flex rounded-lg bg-primary px-6 py-3 font-semibold text-white transition hover:scale-105 hover:opacity-90"
                         >
                             Request a Quote
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </motion.div>

@@ -57,7 +57,7 @@ ${formData.get("message")}`);
         initial="hidden"
         animate="visible"
         viewport={defaultViewport}
-        className="rounded-3xl border border-primary/30 bg-white/[0.03] p-6 shadow-2xl shadow-black/30 backdrop-blur-sm md:p-10"
+        className="rounded-3xl border border-primary/30 bg-white/3 p-6 shadow-2xl shadow-black/30 backdrop-blur-sm md:p-10"
       >
         <div className="grid gap-5 md:grid-cols-2">
           <div>
