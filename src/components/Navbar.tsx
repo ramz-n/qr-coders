@@ -1,13 +1,14 @@
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const links = [
     { href: "/", label: "Home" },
-    { href: "#about", label: "About" },
-    { href: "#whyus", label: "Why Us" },
-    { href: "#services", label: "Services" },
-    { href: "#pricing", label: "Pricing" },
-    { href: "#contact", label: "Contact" },
+    { href: "/#about", label: "About" },
+    { href: "/#whyus", label: "Why Us" },
+    { href: "/#services", label: "Services" },
+    { href: "/#pricing", label: "Pricing" },
+    { href: "/#contact", label: "Contact" },
 ];
 
 const Navbar = () => {
@@ -15,7 +16,7 @@ const Navbar = () => {
     const [open, setOpen] = useState(false);
 
     return (
-        <header className="my-3 sticky top-0 z-50 shadow-2xl">
+        <header className="fixed inset-x-0 top-0 z-50 shadow-2xl px-5 pt-3">
             <nav className="bg-white rounded-full mx-auto flex max-w-7xl items-center justify-between px-6 py-2 lg:px-10">
                 <a href="/" className="flex items-center gap-1">
                     <span
@@ -27,13 +28,11 @@ const Navbar = () => {
 
                 <ul className="hidden items-center gap-9 md:flex">
                     {links.map((l) => (
-                        <li key={l.href}>
-                            <a href={l.href}
+                        <Link to={l.href}
                                 className="text-sm font-bold text-black hover:text-primary/90"
                             >
                                 {l.label}
-                            </a>
-                        </li>
+                        </Link>
                     ))}
                 </ul>
 
@@ -62,13 +61,13 @@ const Navbar = () => {
                     <ul className="flex flex-1 flex-col items-center justify-center gap-8">
                         {links.map((l) => (
                             <li key={l.href}>
-                                <a
+                                <Link
                                     onClick={() => setOpen(false)}
-                                    href={l.href}
+                                    to={l.href}
                                     className="font-serif text-3xl"
                                 >
                                     {l.label}
-                                </a>
+                                </Link>
                             </li>
                         ))}
                         <a onClick={() => setOpen(false)}

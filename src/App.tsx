@@ -22,12 +22,37 @@ import TermsAndConditions from "./pages/TermsAndConditions";
 import HelpCenter from "./pages/HelpCenter";
 import Map from "./components/Map";
 
-const ScrollToTop = () => {
-  const { pathname } = useLocation();
+const ScrollManager = () => {
+  const { pathname, hash } = useLocation();
 
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
+    const timer = window.setTimeout(() => {
+      if (hash) {
+        const sectionId = hash.substring(1);
+        const section = document.getElementById(sectionId);
+
+        if (section) {
+          const navbarOffset = 100;
+          const position =
+            section.getBoundingClientRect().top +
+            window.scrollY -
+            navbarOffset;
+
+          window.scrollTo({
+            top: position,
+            behavior: "smooth",
+          });
+
+          return;
+        }
+      }
+
+      // Normal page navigation: go to top.
+      window.scrollTo({ top: 0, behavior: "auto" });
+    }, 100);
+
+    return () => window.clearTimeout(timer);
+  }, [pathname, hash]);
 
   return null;
 };
@@ -51,11 +76,12 @@ const Home = () => {
 function App() {
   return (
     <BrowserRouter>
-      <ScrollToTop />
+      <ScrollManager />
+      <Navbar />
 
       <SmoothScrolling>
         <div className="container mx-auto min-h-screen px-5">
-          <Navbar />
+          
 
           <Routes>
             <Route path="/" element={<Home />} />
