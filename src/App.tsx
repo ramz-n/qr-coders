@@ -21,6 +21,7 @@ import WhyChooseUs from "./components/WhyChooseUs";
 import TermsAndConditions from "./pages/TermsAndConditions";
 import HelpCenter from "./pages/HelpCenter";
 import Map from "./components/Map";
+import Quote from "./pages/Quote";
 
 const ScrollManager = () => {
   const { pathname, hash } = useLocation();
@@ -88,6 +89,7 @@ function App() {
             <Route path="/privacy" element={<PrivacyPolicy />} />
             <Route path="/terms" element={<TermsAndConditions />} />
             <Route path="/help" element={<HelpCenter />} />
+            <Route path="/quote" element={<Quote />} />
           </Routes>
 
           <Footer />
