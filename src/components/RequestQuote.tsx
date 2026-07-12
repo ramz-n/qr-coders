@@ -3,7 +3,7 @@ import { fadeUpVariant, defaultViewport } from "../utils/animations";
 
 const RequestQuote = () => {
   return (
-    <section className="mx-20 my-30 max-w-7xl px-6">
+    <section className="md:mx-20 my-30 max-w-7xl px-6">
       <motion.div
         variants={fadeUpVariant}
         initial="hidden"

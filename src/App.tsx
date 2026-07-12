@@ -12,14 +12,15 @@ import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Pricing from "./components/Pricing";
-import PrivacyPolicy from "./components/PrivacyPolicy";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 import RequestQuote from "./components/RequestQuote";
 import Services from "./components/Services";
 import SmoothScrolling from "./components/SmoothScrolling";
 import Testimonials from "./components/Testimonials";
 import WhyChooseUs from "./components/WhyChooseUs";
-import TermsAndConditions from "./components/TermsAndConditions";
-import HelpCenter from "./components/HelpCenter";
+import TermsAndConditions from "./pages/TermsAndConditions";
+import HelpCenter from "./pages/HelpCenter";
+import Map from "./components/Map";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -41,6 +42,7 @@ const Home = () => {
       <Services />
       <Pricing />
       <Testimonials />
+      <Map />
       <Contact />
     </>
   );
