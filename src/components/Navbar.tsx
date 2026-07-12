@@ -27,11 +27,11 @@ const Navbar = () => {
                 </a>
 
                 <ul className="hidden items-center gap-9 md:flex">
-                    {links.map((l) => (
-                        <Link to={l.href}
-                                className="text-sm font-bold text-black hover:text-primary/90"
-                            >
-                                {l.label}
+                    {links.map((l, idx) => (
+                        <Link key={idx} to={l.href}
+                            className="text-sm font-bold text-black hover:text-primary/90"
+                        >
+                            {l.label}
                         </Link>
                     ))}
                 </ul>
