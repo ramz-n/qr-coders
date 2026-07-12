@@ -19,7 +19,7 @@ const Hero = () => {
                     </svg>
                 </div>
 
-                <div className="mx-auto px-4 py-16 md:py-28 gap-3 h-full">
+                <div className="mx-auto mt-5 px-4 py-16 md:py-28 gap-3 h-full">
                     <div className="flex items-center justify-center flex-col gap-6 md:mt-0 h-full">
                         <MorphingText texts={["Enterprises", "Startups", "Companies"]} />
                         <h1 className="text-xl md:2xl text-center font-bold md:text-5xl inline">
