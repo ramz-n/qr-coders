@@ -55,8 +55,8 @@ const WhyChooseUs = () => {
                     </h2>
 
                     <div className='grid grid-cols-1 md:grid-cols-2 gap-5 pt-10'>
-                        {features.map(feature => (
-                            <div className='relative w-full overflow-hidden flex flex-col items-center justify-center gap-5 p-10'>
+                        {features.map((feature, idx) => (
+                            <div key={idx} className='relative w-full overflow-hidden flex flex-col items-center justify-center gap-5 p-10'>
                                 <ShineBorder shineColor={["#9929EA", "#FF5FCF"]} borderWidth={2} className='rounded-2xl' />
                                 <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/20 ">
                                     <feature.icons className="h-6 w-6 text-primary" />
