@@ -1,4 +1,10 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useEffect } from "react";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
 
 import About from "./components/About";
 import Contact from "./components/Contact";
@@ -15,6 +21,16 @@ import WhyChooseUs from "./components/WhyChooseUs";
 import TermsAndConditions from "./pages/TermsAndConditions";
 import HelpCenter from "./pages/HelpCenter";
 import Map from "./components/Map";
+
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+};
 
 const Home = () => {
   return (
@@ -35,8 +51,10 @@ const Home = () => {
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
+
       <SmoothScrolling>
-        <div className="min-h-screen container mx-auto px-5">
+        <div className="container mx-auto min-h-screen px-5">
           <Navbar />
 
           <Routes>
