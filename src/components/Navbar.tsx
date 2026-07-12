@@ -20,7 +20,6 @@ const Navbar = () => {
             <nav className="bg-white rounded-full mx-auto flex max-w-7xl items-center justify-between px-6 py-2 lg:px-10">
                 <a href="/" className="flex items-center gap-1">
                     <span
-                        className={`font-serif text-2xl font-bold tracking-tight}`}
                     >
                         <img src="/qrc-logo.png" alt="QRC Logo" className="h-8 md:h-12 w-auto" />
                     </span>
@@ -64,7 +63,7 @@ const Navbar = () => {
                                 <Link
                                     onClick={() => setOpen(false)}
                                     to={l.href}
-                                    className="font-serif text-3xl"
+                                    className="text-2xl"
                                 >
                                     {l.label}
                                 </Link>
