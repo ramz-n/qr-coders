@@ -1,6 +1,7 @@
 import { MorphingText } from "../components/ui/morphing-text"
 import { motion } from "framer-motion";
 import { fadeUpVariant, defaultViewport } from "../utils/animations";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
 
@@ -28,18 +29,17 @@ const Hero = () => {
                             Together, we build technology that inspires growth, fuels innovation, and shapes the future.
                         </p>
                         <div className="mt-4 flex gap-4 sm:mt-6">
-                            <a
-                                className="inline-block rounded border px-5 py-3 font-medium hover:text-primary hover:border-primary/90"
-                                href="#"
+                            <Link to="/quote"
+                                className="inline-block rounded border px-5 py-3 font-medium hover:text-primary hover:border-primary/90" 
                             >
                                 Request a Quote
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
-            </motion.div>
+            </motion.div>  
         </section>
     )
 }
-
+       
 export default Hero
