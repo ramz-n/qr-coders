@@ -70,6 +70,7 @@ const Navbar = () => {
                             </li>
                         ))}
                         <Link to="/quote"
+                            onClick={() => setOpen(false)}
                             className="rounded-full hover:bg-primary/50 bg-primary px-5 py-2.5 text-sm font-bold transition hover:brightness-95 md:inline-block"
                         >
                             Request a Quote
