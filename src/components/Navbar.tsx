@@ -36,10 +36,10 @@ const Navbar = () => {
                     ))}
                 </ul>
 
-                <a href="#" className="hidden rounded-full hover:bg-primary/90 bg-black px-5 py-2.5 text-sm font-bold transition hover:brightness-95 md:inline-block"
+                <Link to="/quote" className="hidden rounded-full hover:bg-primary/90 bg-black px-5 py-2.5 text-sm font-bold transition hover:brightness-95 md:inline-block"
                 >
                     Request a Quote
-                </a>
+                </Link>
 
                 <button
                     aria-label="Open menu"
@@ -70,12 +70,11 @@ const Navbar = () => {
                                 </Link>
                             </li>
                         ))}
-                        <a onClick={() => setOpen(false)}
-                            href="#"
+                        <Link to="/quote"
                             className="rounded-full hover:bg-primary/50 bg-primary px-5 py-2.5 text-sm font-bold transition hover:brightness-95 md:inline-block"
                         >
                             Request a Quote
-                        </a>
+                        </Link>
                     </ul>
                 </div>
             )}
