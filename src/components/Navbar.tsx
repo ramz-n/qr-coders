@@ -18,12 +18,12 @@ const Navbar = () => {
     return (
         <header className="fixed inset-x-0 top-0 z-50 shadow-2xl px-5 pt-3">
             <nav className="bg-white rounded-full mx-auto flex max-w-7xl items-center justify-between px-6 py-2 lg:px-10">
-                <a href="/" className="flex items-center gap-1">
+                <Link to="/" className="flex items-center gap-1">
                     <span
                     >
                         <img src="/qrc-logo.png" alt="QRC Logo" className="h-10 md:h-14 w-auto" />
                     </span>
-                </a>
+                </Link>
 
                 <ul className="hidden items-center gap-9 md:flex">
                     {links.map((l, idx) => (
