@@ -222,7 +222,7 @@ ${formData.get("message")}`);
 
         {submitted && (
           <p className="mt-4 text-center text-sm font-medium text-primary">
-            Your email application has been opened with your request.
+            Your email application has been sent with your request.
           </p>
         )}
       </motion.form>
