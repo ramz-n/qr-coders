@@ -28,7 +28,7 @@ const Navbar = () => {
                 <ul className="hidden items-center gap-9 md:flex">
                     {links.map((l, idx) => (
                         <Link key={idx} to={l.href}
-                            className="text-sm font-bold text-black hover:text-primary/90"
+                            className="text-md font-semibold text-black hover:text-primary/90"
                         >
                             {l.label}
                         </Link>
