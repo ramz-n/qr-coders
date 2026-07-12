@@ -33,6 +33,24 @@ const ScrollToTop = () => {
 };
 
 const Home = () => {
+  useEffect(() => {
+    const scrollToSection = () => {
+      const id = window.location.hash.slice(1);
+      if (!id) return;
+
+      // Wait until the home-page sections are in the DOM.
+      requestAnimationFrame(() => {
+        document.getElementById(id)?.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      });
+    };
+    scrollToSection();
+    window.addEventListener("hashchange", scrollToSection);
+
+    return () => window.removeEventListener("hashchange", scrollToSection);
+  }, []);
   return (
     <>
       <Hero />
