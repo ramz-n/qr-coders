@@ -14,6 +14,7 @@ import Testimonials from "./components/Testimonials";
 import WhyChooseUs from "./components/WhyChooseUs";
 import TermsAndConditions from "./pages/TermsAndConditions";
 import HelpCenter from "./pages/HelpCenter";
+import Map from "./components/Map";
 
 const Home = () => {
   return (
@@ -25,6 +26,7 @@ const Home = () => {
       <Services />
       <Pricing />
       <Testimonials />
+      <Map />
       <Contact />
     </>
   );

@@ -31,7 +31,7 @@ const Footer = () => {
                         <dl className="mt-6 space-y-3">
                             <div>
                                 <dt className="sr-only">Phone number</dt>
-                                <dd className="grid grid-cols-[24px_1fr] items-center gap-2 text-gray-400">
+                                <dd className="grid grid-cols-[24px_1fr] items-center gap-2 text-gray-300">
                                     <svg
                                         aria-hidden="true"
                                         xmlns="http://www.w3.org/2000/svg"
@@ -47,12 +47,12 @@ const Footer = () => {
                                             d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"
                                         />
                                     </svg>
-                                    <span className="font-medium">+977-XXXXXXXXXX</span>
+                                    <span className="font-medium">+977-9744700704</span>
                                 </dd>
                             </div>
                             <div>
                                 <dt className="sr-only">Email</dt>
-                                <dd className="grid grid-cols-[24px_1fr] items-center gap-2 text-gray-400">
+                                <dd className="grid grid-cols-[24px_1fr] items-center gap-2 text-gray-300">
                                     <svg
                                         aria-hidden="true"
                                         xmlns="http://www.w3.org/2000/svg"
@@ -73,7 +73,7 @@ const Footer = () => {
                             </div>
                             <div>
                                 <dt className="sr-only">Location</dt>
-                                <dd className="grid grid-cols-[24px_1fr] items-center gap-2 text-gray-400">
+                                <dd className="grid grid-cols-[24px_1fr] items-center gap-2 text-gray-300">
                                     <svg
                                         aria-hidden="true"
                                         xmlns="http://www.w3.org/2000/svg"
@@ -89,7 +89,7 @@ const Footer = () => {
                                             d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
                                         />
                                     </svg>
-                                    <span className="font-medium">Kathmandu, Nepal</span>
+                                    <span className="font-medium">Narayangarh, Nepal</span>
                                 </dd>
                             </div>
                         </dl>
