@@ -7,7 +7,7 @@ const pricing = [
         "title": "Mobile App Development",
         "description": "We provide various app development solutions from MVP apps to complex enterprise apps.",
         "price": 'NPR 70,000 - NPR 200,000',
-        "image": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c",
+        "image": "./mobile-app.png",
         "services": [
             "MVP App",
             "Cross-Platform App",
@@ -18,7 +18,7 @@ const pricing = [
         "title": "Web Development",
         "description": "We offer various web solutions from basic websites to complex web applications",
         "price": 'NPR 25,000 - NPR 90,000',
-        "image": "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d",
+        "image": "./web-app.png",
         "services": [
             "Basic Website",
             "Business Website",
@@ -31,7 +31,7 @@ const pricing = [
         "title": "SEO Services",
         "description": "We offer SEO services to help your website rank higher in search engine results and drive more traffic to your site.",
         "price": 'NPR 20,000 - NPR 40,000',
-        "image": "https://images.unsplash.com/photo-1726066012699-1c843dad5fd8",
+        "image": "./seo.png",
         "services": [
             "Foundation SEO",
             "Advanced SEO",
@@ -61,7 +61,7 @@ const Pricing = () => {
                     {pricing.map((item, idx) => (
                         <div key={idx} className="bg-[url()] rounded-2xl border border-primary/60 p-6 shadow-xs ring-1 ring-primary/60 sm:order-last sm:px-8 lg:p-12">
                             <div className="w-full h-50">
-                                <img className="h-full w-full" src={item.image} alt="" loading="lazy" />
+                                <img className="h-full w-full" src={item.image} alt={item.title} loading="lazy" />
                             </div>
                             <div className="text-center">
                                 <h2 className="text-lg font-medium pt-4 text-gray-300">
