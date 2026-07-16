@@ -21,7 +21,7 @@ const Navbar = () => {
                 <Link to="/" className="flex items-center gap-1">
                     <span
                     >
-                        <img src="/qrc-logo.png" alt="QRC Logo" className="h-10 md:h-14 w-auto" />
+                        <img src="/qrc-logo.png" alt="QRC Logo" className="h-10 md:h-14 w-auto" loading="lazy" />
                     </span>
                 </Link>
 

@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { fadeUpVariant, defaultViewport } from "../utils/animations";
 import { Link } from "react-router-dom";
+import { MorphingText } from "../components/ui/morphing-text"
 
 const Hero = () => {
 
@@ -20,7 +21,7 @@ const Hero = () => {
 
                 <div className="mx-auto mt-5 px-4 py-16 md:py-28 gap-3 h-full">
                     <div className="flex items-center justify-center flex-col gap-6 md:mt-0 h-full">
-                        <span className="text-xl md:text-2xl font-bold bg-linear-to-r from-secondary/70 via-white uppercase to-secondary bg-clip-text text-transparent">Startups · Small Business · Enterprises</span>
+                        <MorphingText texts={["Enterprises", "Startups", "Companies"]} className="min-h-[60px]" />
                         <h1 className="text-xl md:2xl text-center font-bold md:text-5xl inline">
                             We
                             <span className="text-primary "> QR Coders</span> are there to help you.
