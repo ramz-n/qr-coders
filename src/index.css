@@ -5,6 +5,17 @@
 
 @custom-variant dark (&:is(.dark *));
 
+html {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+@media (pointer: coarse), (hover: none) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
 body {
   @apply bg-black text-white min-h-screen overflow-x-hidden;
   scroll-behavior: smooth;
