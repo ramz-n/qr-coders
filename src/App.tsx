@@ -22,6 +22,7 @@ import TermsAndConditions from "./pages/TermsAndConditions";
 import HelpCenter from "./pages/HelpCenter";
 import Map from "./components/Map";
 import Quote from "./pages/Quote";
+import ScrollReveal from "./components/ScrollReveal";
 
 const ScrollManager = () => {
   const { pathname, hash } = useLocation();
@@ -62,14 +63,14 @@ const Home = () => {
   return (
     <>
       <Hero />
-      <About />
-      <WhyChooseUs />
-      <RequestQuote />
-      <Services />
-      <Pricing />
-      <Testimonials />
-      <Map />
-      <Contact />
+      <ScrollReveal><About /></ScrollReveal>
+      <ScrollReveal delay={0.04}><WhyChooseUs /></ScrollReveal>
+      <ScrollReveal delay={0.04}><RequestQuote /></ScrollReveal>
+      <ScrollReveal><Services /></ScrollReveal>
+      <ScrollReveal delay={0.04}><Pricing /></ScrollReveal>
+      <ScrollReveal><Testimonials /></ScrollReveal>
+      <ScrollReveal><Map /></ScrollReveal>
+      <ScrollReveal><Contact /></ScrollReveal>
     </>
   );
 };
