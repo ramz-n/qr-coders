@@ -1,54 +1,60 @@
-import React, { useRef, useState, useEffect } from "react";
+import { type ReactNode, useEffect, useRef, useState } from "react";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 
-interface SmoothScrollProps {
-    children: React.ReactNode;
-}
+type SmoothScrollProps = {
+  children: ReactNode;
+};
 
 export default function SmoothScrolling({ children }: SmoothScrollProps) {
-    const scrollRef = useRef<HTMLDivElement>(null);
-    const [pageHeight, setPageHeight] = useState(0);
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const [pageHeight, setPageHeight] = useState(0);
+  const [useNativeScroll, setUseNativeScroll] = useState(true);
 
-    useEffect(() => {
-        if (!scrollRef.current) return;
-        const resizeObserver = new ResizeObserver((entries) => {
-            for (let entry of entries) {
-                setPageHeight(entry.contentRect.height);
-            }
-        });
-        resizeObserver.observe(scrollRef.current);
-        return () => resizeObserver.disconnect();
-    }, []);
+  const { scrollY } = useScroll();
+  const smoothY = useSpring(scrollY, {
+    damping: 22,
+    mass: 0.25,
+    stiffness: 120,
+  });
+  const y = useTransform(smoothY, (value) => -value);
 
-    const { scrollY } = useScroll();
+  useEffect(() => {
+    const mediaQuery = window.matchMedia(
+      "(pointer: coarse), (hover: none), (prefers-reduced-motion: reduce)",
+    );
 
-    const smoothY = useSpring(scrollY, {
-        damping: 15,
-        mass: 0.2,
-        stiffness: 50
+    const updateScrollMode = () => setUseNativeScroll(mediaQuery.matches);
+
+    updateScrollMode();
+    mediaQuery.addEventListener("change", updateScrollMode);
+
+    return () => mediaQuery.removeEventListener("change", updateScrollMode);
+  }, []);
+
+  useEffect(() => {
+    if (useNativeScroll || !scrollRef.current) return;
+
+    const resizeObserver = new ResizeObserver(([entry]) => {
+      setPageHeight(entry.contentRect.height);
     });
 
-    const y = useTransform(smoothY, (value) => -value);
+    resizeObserver.observe(scrollRef.current);
+    return () => resizeObserver.disconnect();
+  }, [useNativeScroll]);
 
-    return (
-        <>
-            {/* Fixed viewport container */}
-            <div
-                style={{
-                    position: "fixed",
-                    top: 0,
-                    left: 0,
-                    width: "100%",
-                    height: "100vh",
-                    overflow: "hidden"
-                }}
-            >
-                <motion.div ref={scrollRef} style={{ y }}>
-                    {children}
-                </motion.div>
-            </div>
+  if (useNativeScroll) {
+    return <>{children}</>;
+  }
 
-            <div style={{ height: pageHeight }} />
-        </>
-    );
+  return (
+    <>
+      <div className="fixed inset-0 overflow-hidden">
+        <motion.div ref={scrollRef} style={{ y, willChange: "transform" }}>
+          {children}
+        </motion.div>
+      </div>
+
+      <div style={{ height: pageHeight }} aria-hidden="true" />
+    </>
+  );
 }
