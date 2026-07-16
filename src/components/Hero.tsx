@@ -1,4 +1,3 @@
-import { MorphingText } from "../components/ui/morphing-text"
 import { motion } from "framer-motion";
 import { fadeUpVariant, defaultViewport } from "../utils/animations";
 import { Link } from "react-router-dom";
@@ -21,7 +20,7 @@ const Hero = () => {
 
                 <div className="mx-auto mt-5 px-4 py-16 md:py-28 gap-3 h-full">
                     <div className="flex items-center justify-center flex-col gap-6 md:mt-0 h-full">
-                        <MorphingText texts={["Enterprises", "Startups", "Companies"]} />
+                        <span className="text-xl md:text-2xl font-bold bg-linear-to-r from-secondary/70 via-white uppercase to-secondary bg-clip-text text-transparent">Startups · Small Business · Enterprises</span>
                         <h1 className="text-xl md:2xl text-center font-bold md:text-5xl inline">
                             We
                             <span className="text-primary "> QR Coders</span> are there to help you.
@@ -31,16 +30,16 @@ const Hero = () => {
                         </p>
                         <div className="mt-4 flex gap-4 sm:mt-6">
                             <Link to="/quote"
-                                className="inline-block rounded border px-5 py-3 font-medium hover:text-primary hover:border-primary/90" 
+                                className="inline-block rounded border px-5 py-3 font-medium hover:text-primary hover:border-primary/90"
                             >
                                 Request a Quote
                             </Link>
                         </div>
                     </div>
                 </div>
-            </motion.div>  
+            </motion.div>
         </section>
     )
 }
-       
+
 export default Hero
