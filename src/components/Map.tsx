@@ -10,7 +10,7 @@ const Map = () => {
                     Our diverse team operates from different parts of world
                 </h2>
             </div>
-            <div className="relative h-[300px] w-full overflow-hidden rounded-lg border border-primary/40">
+            <div className="relative w-full overflow-hidden rounded-lg border border-primary/40">
                 <img src="./branchmap.PNG" alt="branch map" loading="lazy" />
             </div>
         </div>

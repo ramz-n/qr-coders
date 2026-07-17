@@ -1,4 +1,3 @@
-import { Contact } from "lucide-react";
 import About from "../components/About";
 import Hero from "../components/Hero";
 import Pricing from "../components/Pricing";
@@ -8,6 +7,7 @@ import Testimonials from "../components/Testimonials";
 import WhyChooseUs from "../components/WhyChooseUs";
 import Map from "../components/Map"
 import { Helmet } from "react-helmet-async";
+import Contact from "../components/Contact";
 
 const Home = () => {
     return (
