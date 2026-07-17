@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://sitemaps.org">
+  <url>
+    <loc>https://qrcoders.site</loc>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://qrcoders.site/quote</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://qrcoders.site/help</loc>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://qrcoders.site/privacy</loc>
+    <priority>0.30</priority>
+  </url>
+  <url>
+    <loc>https://qrcoders.site/terms</loc>
+    <priority>0.30</priority>
+  </url>
+</urlset>

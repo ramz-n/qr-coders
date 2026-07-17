@@ -6,23 +6,15 @@ import {
   useLocation,
 } from "react-router-dom";
 
-import About from "./components/About";
-import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
-import Pricing from "./components/Pricing";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
-import RequestQuote from "./components/RequestQuote";
-import Services from "./components/Services";
 import SmoothScrolling from "./components/SmoothScrolling";
-import Testimonials from "./components/Testimonials";
-import WhyChooseUs from "./components/WhyChooseUs";
 import TermsAndConditions from "./pages/TermsAndConditions";
 import HelpCenter from "./pages/HelpCenter";
-import Map from "./components/Map";
 import Quote from "./pages/Quote";
-import ScrollReveal from "./components/ScrollReveal";
+import Home from "./pages/Home";
+import { HelmetProvider } from 'react-helmet-async';
 
 const ScrollManager = () => {
   const { pathname, hash } = useLocation();
@@ -59,44 +51,30 @@ const ScrollManager = () => {
   return null;
 };
 
-const Home = () => {
-  return (
-    <>
-      <Hero />
-      <ScrollReveal><About /></ScrollReveal>
-      <ScrollReveal delay={0.04}><WhyChooseUs /></ScrollReveal>
-      <ScrollReveal delay={0.04}><RequestQuote /></ScrollReveal>
-      <ScrollReveal><Services /></ScrollReveal>
-      <ScrollReveal delay={0.04}><Pricing /></ScrollReveal>
-      <ScrollReveal><Testimonials /></ScrollReveal>
-      <ScrollReveal><Map /></ScrollReveal>
-      <ScrollReveal><Contact /></ScrollReveal>
-    </>
-  );
-};
-
 function App() {
   return (
-    <BrowserRouter>
-      <ScrollManager />
-      <Navbar />
+    <HelmetProvider>
+      <BrowserRouter>
+        <ScrollManager />
+        <Navbar />
 
-      <SmoothScrolling>
-        <div className="container mx-auto min-h-screen px-5">
-          
+        <SmoothScrolling>
+          <div className="container mx-auto min-h-screen px-5">
 
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/privacy" element={<PrivacyPolicy />} />
-            <Route path="/terms" element={<TermsAndConditions />} />
-            <Route path="/help" element={<HelpCenter />} />
-            <Route path="/quote" element={<Quote />} />
-          </Routes>
 
-          <Footer />
-        </div>
-      </SmoothScrolling>
-    </BrowserRouter>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/privacy" element={<PrivacyPolicy />} />
+              <Route path="/terms" element={<TermsAndConditions />} />
+              <Route path="/help" element={<HelpCenter />} />
+              <Route path="/quote" element={<Quote />} />
+            </Routes>
+
+            <Footer />
+          </div>
+        </SmoothScrolling>
+      </BrowserRouter>
+    </HelmetProvider>
   );
 }
 
