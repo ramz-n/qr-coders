@@ -1,8 +1,8 @@
 import { AppWindow, CloudCogIcon, Headset, MonitorCogIcon, MonitorSmartphoneIcon, NotebookPenIcon, PanelsTopLeft, Smartphone } from "lucide-react"
-import { motion } from "framer-motion";
+import { m, LazyMotion, domAnimation } from "motion/react";
 import { fadeUpVariant, defaultViewport } from "../utils/animations";
 
-export const services = [
+const services = [
     {
         icon: AppWindow,
         title: "Custom Software Development",
@@ -48,36 +48,38 @@ export const services = [
 const Services = () => {
     return (
         <section id="services" className="my-20 py-20">
-            <motion.div
-                variants={fadeUpVariant}
-                initial="hidden"
-                whileInView="visible"
-                viewport={defaultViewport}
-                className="fluid-container text-center">
-                <p className="text-sm font-semibold uppercase tracking-widest text-primary">
-                    Services we Offer
-                </p>
+            <LazyMotion features={domAnimation}>
+                <m.div
+                    variants={fadeUpVariant}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={defaultViewport}
+                    className="fluid-container text-center">
+                    <p className="text-sm font-semibold uppercase tracking-widest text-primary">
+                        Services we Offer
+                    </p>
 
-                <h2 className="mt-3 text-2xl font-bold text-white md:text-4xl">
-                    Empowering Businesses with Innovative Technology Solutions
-                </h2>
+                    <h2 className="mt-3 text-2xl font-bold text-white md:text-4xl">
+                        Empowering Businesses with Innovative Technology Solutions
+                    </h2>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-5 pt-10">
-                    {services.map((service) => (
-                        <div className="h-full p-5 flex items-center flex-col border-primary/20 rounded-3xl border-2 hover:border-primary/40 transition-colors">
-                            <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/20 ">
-                                <service.icon className="h-6 w-6 text-primary" />
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-5 pt-10">
+                        {services.map((service, idx) => (
+                            <div key={idx} className="h-full p-5 flex items-center flex-col border-primary/20 rounded-3xl border-2 hover:border-primary/40 transition-colors">
+                                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/20 ">
+                                    <service.icon className="h-6 w-6 text-primary" />
+                                </div>
+                                <h3 className="mb-3 text-xl font-medium">
+                                    {service.title}
+                                </h3>
+                                <p className="text-sm text-center text-muted-foreground">
+                                    {service.description}
+                                </p>
                             </div>
-                            <h3 className="mb-3 text-xl font-medium">
-                                {service.title}
-                            </h3>
-                            <p className="text-sm text-center text-muted-foreground">
-                                {service.description}
-                            </p>
-                        </div>
-                    ))}
-                </div>
-            </motion.div>
+                        ))}
+                    </div>
+                </m.div>
+            </LazyMotion>
         </section >
     )
 }

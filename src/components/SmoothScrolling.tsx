@@ -1,5 +1,5 @@
 import { type ReactNode, useEffect, useRef, useState } from "react";
-import { motion, useScroll, useSpring, useTransform } from "framer-motion";
+import { m, LazyMotion, domAnimation, useSpring, useScroll, useTransform } from "motion/react";
 
 type SmoothScrollProps = {
   children: ReactNode;
@@ -49,9 +49,11 @@ export default function SmoothScrolling({ children }: SmoothScrollProps) {
   return (
     <>
       <div className="fixed inset-0 overflow-hidden">
-        <motion.div ref={scrollRef} style={{ y, willChange: "transform" }}>
-          {children}
-        </motion.div>
+        <LazyMotion features={domAnimation}>
+          <m.div ref={scrollRef} style={{ y, willChange: "transform" }}>
+            {children}
+          </m.div>
+        </LazyMotion>
       </div>
 
       <div style={{ height: pageHeight }} aria-hidden="true" />
