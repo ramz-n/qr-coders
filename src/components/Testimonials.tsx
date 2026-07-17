@@ -64,8 +64,8 @@ const Testimonials = () => {
                       <Star
                         key={star}
                         size={18}
-                        fill="#FF5FCF"
-                        color="#FF5FCF"
+                        fill="#B026FF"
+                        color="#B026FF"
                       />
                     ))}
                   </div>

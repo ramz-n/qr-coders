@@ -25,7 +25,7 @@ const Hero = () => {
                             <MorphingText texts={["Enterprises", "Startups", "Companies"]} className="min-h-[60px]" />
                             <h1 className="text-xl md:2xl text-center font-bold md:text-5xl inline">
                                 We
-                                <span className="text-primary "> QR Coders</span> are there to help you.
+                                <span className="text-primary"> QR Coders</span> are there to help you.
                             </h1>
                             <p className="mt-4 text-gray-400 text-center">
                                 Together, we build technology that inspires growth, fuels innovation, and shapes the future.
