@@ -1,6 +1,6 @@
 const Map = () => {
     return (
-        <div className="mx-auto text-center mt-30">
+        <div className="mx-auto text-center my-30 lg:my-40">
             <div className="py-10">
                 <p className="text-sm font-semibold uppercase tracking-widest text-primary">
                     Our branches
@@ -11,7 +11,7 @@ const Map = () => {
                 </h2>
             </div>
             <div className="relative w-full overflow-hidden rounded-lg border border-primary/40">
-                <img src="./branchmap.PNG" alt="branch map" loading="lazy" />
+                <img className="block w-full h-auto object-cover" src="./branchmap.PNG" alt="branch map" loading="lazy" />
             </div>
         </div>
     )

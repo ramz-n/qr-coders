@@ -5,7 +5,13 @@ const Footer = () => {
         <footer id="footer" className='border-gray-800 border-t-2'>
             <div className="mx-auto max-w-7xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8">
                 <div className="flex md:items-center flex-col md:flex-row justify-between gap-10">
-                    <img src="./logo-white.png" alt="qrc logo" className="h-20 w-fit" />
+                    <div className="flex w-full justify-start">
+                        <img
+                            src="./logo-white-cropped.png"
+                            alt="QRC Logo"
+                            className="h-20 w-auto"
+                        />
+                    </div>
                     <div>
                         <h2 className="text-sm font-semibold uppercase tracking-wider text-white">
                             Company

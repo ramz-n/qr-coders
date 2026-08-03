@@ -42,7 +42,7 @@ const pricing = [
 
 const Pricing = () => {
     return (
-        <section id="pricing" className="my-30 py-20">
+        <section id="pricing" className="my-20 py-20">
             <LazyMotion features={domAnimation}>
                 <m.div
                     variants={fadeUpVariant}
@@ -60,32 +60,34 @@ const Pricing = () => {
 
                     <div className="grid grid-cols-1 gap-4 md:grid-cols-3 items-center md:gap-8 py-10">
                         {pricing.map((item, idx) => (
-                            <div key={idx} className="bg-[url()] rounded-2xl border border-primary/60 p-6 shadow-xs ring-1 ring-primary/60 sm:order-last sm:px-8 lg:p-12">
-                                <div className="w-full h-50">
-                                    <img className="h-full w-full" src={item.image} alt="" loading="lazy" />
+                            <div key={idx} className="bg-[url()] rounded-2xl border border-primary/60 p-4 shadow-xs ring-1 ring-primary/60 sm:order-last sm:px-8 lg:p-12">
+                                <div className="w-full h-52">
+                                    <img className="h-full w-full rounded-t-2xl" src={item.image} alt="" loading="lazy" />
                                 </div>
                                 <div className="text-center">
-                                    <h2 className="text-lg font-medium pt-4 text-gray-300">
+                                    <h2 className="text-xl font-medium pt-5 text-white">
                                         {item.title}
                                         <span className="sr-only">{item.title}</span>
                                     </h2>
-                                    <p className="mt-2 sm:mt-4">
-                                        <strong className="font-bold text-gray-500">
-                                            {item.price}
-                                        </strong>
+                                    <p className="mt-5 border-y border-primary/20 py-4 text-lg font-bold text-primary">
+
+                                        {item.price}<br /> <span className="text-xs italic font-thin text-gray-500">(depending upon your project)</span>
+
                                     </p>
                                 </div>
                                 <ul className="mt-6 space-y-2">
                                     {item.services.map((itm, idx) => (
-                                        <li key={idx} className="flex gap-2 text-gray-500">
-                                            <Check />
-                                            <span className="text-gray-500"> {itm}</span>
+                                        <li key={idx} className="flex items-center gap-3 text-gray-300">
+                                            <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-primary/15 text-primary">
+                                                <Check size={14} strokeWidth={3} />
+                                            </span>
+                                            {itm}
                                         </li>
                                     ))}
                                 </ul>
                                 <a
                                     href="#"
-                                    className="mt-8 block rounded-full border border-primary bg-primary/60 px-12 py-3 text-center text-sm font-medium text-white hover:bg-primary/70 hover:ring-1 hover:ring-primary/70"
+                                    className="mt-8 inline-flex w-full items-center justify-center rounded-full bg-primary px-6 py-3 text-sm font-semibold text-white transition duration-200 hover:scale-[1.02] hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background"
                                 >
                                     Get a Quote
                                 </a>
