@@ -16,12 +16,12 @@ const Navbar = () => {
     const [open, setOpen] = useState(false);
 
     return (
-        <header className="fixed inset-x-0 top-0 z-50 shadow-2xl px-5 pt-3">
+        <header className="fixed inset-x-0 top-0 z-50 shadow-2xl px-4 pt-3">
             <nav className="bg-white rounded-full mx-auto flex max-w-7xl items-center justify-between px-5 py-2 lg:px-10">
                 <Link to="/" className="flex items-center gap-1">
                     <span
                     >
-                        <img src="/qrc-logo.png" alt="QRC Logo" className="h-10 md:h-14 w-auto" loading="lazy" />
+                        <img src="/qrcoder-logo.png" alt="QRC Logo" className="h-10 md:h-14 w-auto" loading="lazy" />
                     </span>
                 </Link>
 
@@ -51,8 +51,8 @@ const Navbar = () => {
 
             {open && (
                 <div className="mobile-menu fixed inset-0 z-60 flex flex-col bg-black text-white">
-                    <div className="flex items-center justify-between px-6 py-4">
-                        <img src="/qrc-logo-white.png" alt="QRC Logo" className="h-12 w-auto" />
+                    <div className="flex items-center justify-between px-9 py-4">
+                        <img src="/logo-white.png" alt="QRC Logo" className="h-12 w-auto" />
                         <button aria-label="Close menu" onClick={() => setOpen(false)}>
                             <X />
                         </button>

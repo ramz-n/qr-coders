@@ -5,7 +5,7 @@ import { Link } from "react-router-dom"
 const About = () => {
 
     return (
-        <section id='about' className="relative mt-40 md:py-20">
+        <section id='about' className="relative md:py-20">
             <LazyMotion features={domAnimation}>
                 <m.div
                     variants={fadeUpVariant}
@@ -15,21 +15,23 @@ const About = () => {
 
                     className="w-full max-w-7xl px-4 md:px-5 lg:px-5 mx-auto">
                     <div className="w-full justify-start items-center gap-12 grid lg:grid-cols-2 grid-cols-1">
-                        <div className="w-full justify-center items-start gap-6 grid sm:grid-cols-2 grid-cols-1 lg:order-first order-last">
-                            <div className="pt-24 lg:justify-center sm:justify-end justify-start items-start gap-2.5 flex">
+                        <div className="w-full justify-center items-start grid gap-6 sm:grid-cols-2 grid-cols-1 lg:order-first order-last">
+                            <div className="pt-24 lg:justify-center sm:justify-end items-start gap-2.5 flex">
                                 <img
-                                    className=" rounded-xl object-cover"
+                                    className="w-full rounded-xl object-cover"
                                     src="https://images.unsplash.com/photo-1579403124614-197f69d8187b?w=400"
                                     alt="about Us image"
                                     loading="lazy"
                                 />
                             </div>
-                            <img
-                                className="sm:ml-0 ml-auto rounded-xl object-cover"
-                                src="https://images.unsplash.com/photo-1595327656903-2f54e37ce09b?w=400"
-                                alt="about Us image"
-                                loading="lazy"
-                            />
+                            <div className="flex justify-center sm:justify-start">
+                                <img
+                                    className="w-full rounded-xl object-cover"
+                                    src="https://images.unsplash.com/photo-1595327656903-2f54e37ce09b?w=400"
+                                    alt="about Us image"
+                                    loading="lazy"
+                                />
+                            </div>
                         </div>
                         <div className="w-full flex-col justify-center lg:items-start items-center md:gap-10 inline-flex">
                             <div className="w-full flex-col justify-center items-start gap-8 flex">
