@@ -15,6 +15,7 @@ import HelpCenter from "./pages/HelpCenter";
 import Quote from "./pages/Quote";
 import Home from "./pages/Home";
 import { HelmetProvider } from 'react-helmet-async';
+import PriceCalculator from "./components/PriceCalculator";
 
 const ScrollManager = () => {
   const { pathname, hash } = useLocation();
@@ -64,6 +65,7 @@ function App() {
 
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="/price-calculator" element={<PriceCalculator />} />
               <Route path="/privacy" element={<PrivacyPolicy />} />
               <Route path="/terms" element={<TermsAndConditions />} />
               <Route path="/help" element={<HelpCenter />} />
