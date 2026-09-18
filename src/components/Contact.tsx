@@ -10,7 +10,7 @@ const Footer = () => {
                     initial="hidden"
                     whileInView="visible"
                     viewport={defaultViewport}
-                    className="bg-[url('./bg-quote.svg')] bg-cover bg-center w-full"
+                    className="bg-[url('/bg-quote.svg')] bg-cover bg-center w-full"
                 >
                     <div className="text-center">
                         <p className="text-sm font-semibold uppercase tracking-widest text-primary">

@@ -11,7 +11,7 @@ const RequestQuote = () => {
           initial="hidden"
           whileInView="visible"
           viewport={defaultViewport}
-          className="rounded-2xl border border-primary/60 px-6 py-12 text-center shadow-lg md:px-12 bg-[url('./bg-contact.svg')] bg-cover bg-center w-full">
+          className="rounded-2xl border border-primary/60 px-6 py-12 text-center shadow-lg md:px-12 bg-[url('/bg-contact.svg')] bg-cover bg-center w-full">
           <p className="text-sm font-semibold uppercase tracking-widest text-primary">
             Let’s work together
           </p>
