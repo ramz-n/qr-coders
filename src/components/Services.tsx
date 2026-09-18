@@ -47,7 +47,7 @@ const services = [
 
 const Services = () => {
     return (
-        <section id="services" className="my-20 py-20">
+        <section id="services" className="py-20">
             <LazyMotion features={domAnimation}>
                 <m.div
                     variants={fadeUpVariant}

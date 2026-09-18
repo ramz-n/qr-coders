@@ -4,14 +4,14 @@ import { Link } from "react-router-dom";
 
 const RequestQuote = () => {
   return (
-    <section className="md:mx-20 my-30 max-w-7xl px-6">
+    <section className="md:mx-20 max-w-7xl px-6 py-20">
       <LazyMotion features={domAnimation}>
         <m.div
           variants={fadeUpVariant}
           initial="hidden"
           whileInView="visible"
           viewport={defaultViewport}
-          className="rounded-2xl border border-primary/30 px-6 py-12 text-center shadow-lg md:px-12">
+          className="rounded-2xl border border-primary/60 px-6 py-12 text-center shadow-lg md:px-12 bg-[url('./bg-contact.svg')] bg-cover bg-center w-full">
           <p className="text-sm font-semibold uppercase tracking-widest text-primary">
             Let’s work together
           </p>

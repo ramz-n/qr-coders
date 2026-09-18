@@ -1,11 +1,10 @@
 import { m, LazyMotion, domAnimation } from "motion/react";
-import { fadeUpVariant, defaultViewport } from "../utils/animations"
-import { Link } from "react-router-dom"
+import { fadeUpVariant, defaultViewport } from "../utils/animations";
+import { Link } from "react-router-dom";
 
 const About = () => {
-
     return (
-        <section id='about' className="relative mt-40 md:py-20">
+        <section id="about" className="relative md:py-20">
             <LazyMotion features={domAnimation}>
                 <m.div
                     variants={fadeUpVariant}
@@ -13,20 +12,13 @@ const About = () => {
                     whileInView="visible"
                     viewport={defaultViewport}
 
-                    className="w-full max-w-7xl px-4 md:px-5 lg:px-5 mx-auto">
+                    className="w-full max-w-7xl px-4 md:px-5 lg:px-5 mx-auto"
+                >
                     <div className="w-full justify-start items-center gap-12 grid lg:grid-cols-2 grid-cols-1">
-                        <div className="w-full justify-center items-start gap-6 grid sm:grid-cols-2 grid-cols-1 lg:order-first order-last">
-                            <div className="pt-24 lg:justify-center sm:justify-end justify-start items-start gap-2.5 flex">
-                                <img
-                                    className=" rounded-xl object-cover"
-                                    src="https://images.unsplash.com/photo-1579403124614-197f69d8187b?w=400"
-                                    alt="about Us image"
-                                    loading="lazy"
-                                />
-                            </div>
+                        <div className="w-full justify-center items-start">
                             <img
                                 className="sm:ml-0 ml-auto rounded-xl object-cover"
-                                src="https://images.unsplash.com/photo-1595327656903-2f54e37ce09b?w=400"
+                                src="./about1.svg"
                                 alt="about Us image"
                                 loading="lazy"
                             />
@@ -42,17 +34,35 @@ const About = () => {
                                         Know little bit about QRCoders
                                     </h2>
                                     <p className="text-gray-400 text-base font-normal leading-relaxed lg:text-start text-center">
-                                        We are a Nepal-based IT company dedicated to delivering innovative, reliable, and scalable digital solutions for businesses of all sizes. Our team of skilled developers, designers, and technology professionals is passionate about transforming ideas into high-quality software, websites, mobile applications, and digital platforms that drive growth and success.
+                                        We are a Nepal-based IT company
+                                        dedicated to delivering innovative,
+                                        reliable, and scalable digital solutions
+                                        for businesses of all sizes. Our team of
+                                        skilled developers, designers, and
+                                        technology professionals is passionate
+                                        about transforming ideas into
+                                        high-quality software, websites, mobile
+                                        applications, and digital platforms that
+                                        drive growth and success.
                                     </p>
                                     <p className="text-gray-400 text-base font-normal leading-relaxed lg:text-start text-center">
-                                        Our mission is to help organizations embrace digital transformation through innovative technology solutions, while our vision is to become one of Nepal's most trusted and respected IT companies, recognized for excellence, integrity, and innovation.
+                                        Our mission is to help organizations
+                                        embrace digital transformation through
+                                        innovative technology solutions, while
+                                        our vision is to become one of Nepal's
+                                        most trusted and respected IT companies,
+                                        recognized for excellence, integrity,
+                                        and innovation.
                                     </p>
                                     <p className="text-gray-400 text-base font-normal leading-relaxed lg:text-start text-center">
-                                        Together, we build technology that inspires growth, fuels innovation, and shapes the future.                                </p>
+                                        Together, we build technology that
+                                        inspires growth, fuels innovation, and
+                                        shapes the future.{" "}
+                                    </p>
                                 </div>
-
                             </div>
-                            <Link to="/quote"
+                            <Link
+                                to="/quote"
                                 className="mt-7 inline-flex rounded-lg bg-primary px-6 py-3 font-semibold text-white transition hover:scale-105 hover:opacity-90"
                             >
                                 Request a Quote
@@ -62,8 +72,7 @@ const About = () => {
                 </m.div>
             </LazyMotion>
         </section>
+    );
+};
 
-    )
-}
-
-export default About
+export default About;

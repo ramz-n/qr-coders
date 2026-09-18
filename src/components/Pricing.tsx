@@ -7,14 +7,14 @@ const pricing = [
         title: "Mobile App Development",
         description:
             "We provide various app development solutions from MVP apps to complex enterprise apps.",
-        image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c",
+        image: "./mobile-apps.svg",
         services: ["MVP App", "Cross-Platform App", "Enterprise App"],
     },
     {
         title: "Web Development",
         description:
             "We offer various web solutions from basic websites to complex web applications",
-        image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d",
+        image: "./web_apps.svg",
         services: [
             "Basic Website",
             "Business Website",
@@ -27,14 +27,14 @@ const pricing = [
         title: "SEO Services",
         description:
             "We offer SEO services to help your website rank higher in search engine results and drive more traffic to your site.",
-        image: "https://images.unsplash.com/photo-1726066012699-1c843dad5fd8",
+        image: "./seo.svg",
         services: ["Foundation SEO", "Advanced SEO", "Premium SEO"],
     },
 ];
 
 const Pricing = () => {
     return (
-        <section id="pricing" className="my-30 py-20">
+        <section id="pricing" className="py-20">
             <LazyMotion features={domAnimation}>
                 <m.div
                     variants={fadeUpVariant}

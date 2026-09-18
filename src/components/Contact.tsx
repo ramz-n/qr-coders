@@ -3,13 +3,14 @@ import { fadeUpVariant, defaultViewport } from "../utils/animations";
 
 const Footer = () => {
     return (
-        <div id="contact" className="mx-auto max-w-7xl py-20 md:px-8 my-20">
+        <div id="contact" className="mx-auto max-w-7xl py-20 md:px-8">
             <LazyMotion features={domAnimation}>
                 <m.div
                     variants={fadeUpVariant}
                     initial="hidden"
                     whileInView="visible"
                     viewport={defaultViewport}
+                    className="bg-[url('./bg-quote.svg')] bg-cover bg-center w-full"
                 >
                     <div className="text-center">
                         <p className="text-sm font-semibold uppercase tracking-widest text-primary">

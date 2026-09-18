@@ -11,5 +11,5 @@ export const fadeUpVariant: Variants = {
 
 export const defaultViewport = {
     once: true,
-    amount: 0.25 // Triggers when 25% of the element is visible
+    amount: 0.15 // Triggers when 25% of the element is visible
 };
