@@ -114,7 +114,7 @@ const PriceCalculator = () => {
     }, [selectedServices, packages, isUrgent]);
 
     return (
-        <main className="mx-auto max-w-3xl px-5 py-36">
+        <main className="mx-auto max-w-3xl px-5 py-36 bg-[url('/bg-pricing.svg')] bg-cover bg-center w-full">
             <div className="mb-10 text-center">
                 <p className="text-sm font-semibold uppercase tracking-widest text-primary">
                     Estimate your cost
@@ -178,13 +178,15 @@ const PriceCalculator = () => {
                         className="w-4 h-4 ml-2 border border-secondary rounded-xs bg-secondary focus:ring-secondary"
                     />
                 </div>
-                <p className="font-bold">
-                    Estimated Cost:{" "}
-                    <span className="italic text-secondary">
-                        {formatNPR(costEstimation.min)} -{" "}
-                        {formatNPR(costEstimation.max)}
-                    </span>
-                </p>
+                {selectedServices?.length > 0 && (
+                    <p className="font-bold">
+                        Estimated Cost:{" "}
+                        <span className="italic text-secondary">
+                            {formatNPR(costEstimation.min)} -{" "}
+                            {formatNPR(costEstimation.max)}
+                        </span>
+                    </p>
+                )}
             </div>
             <a
                 href="/quote"

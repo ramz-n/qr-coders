@@ -15,7 +15,7 @@ import HelpCenter from "./pages/HelpCenter";
 import Quote from "./pages/Quote";
 import Home from "./pages/Home";
 import { HelmetProvider } from 'react-helmet-async';
-import PriceCalculator from "./components/PriceCalculator";
+import PriceCalculator from "./pages/PriceCalculator";
 
 const ScrollManager = () => {
   const { pathname, hash } = useLocation();
