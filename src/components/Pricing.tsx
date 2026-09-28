@@ -1,6 +1,7 @@
 import { Check } from "lucide-react";
 import { m, LazyMotion, domAnimation } from "motion/react";
 import { fadeUpVariant, defaultViewport } from "../utils/animations";
+import { Link } from "react-router-dom";
 
 const pricing = [
     {
@@ -87,12 +88,12 @@ const Pricing = () => {
                                         </li>
                                     ))}
                                 </ul>
-                                <a
-                                    href="/price-calculator"
+                                <Link
+                                    to="/price-calculator"
                                     className="mt-8 block rounded-full border border-primary bg-primary/60 px-12 py-3 text-center text-sm font-medium text-white hover:bg-primary/70 hover:ring-1 hover:ring-primary/70"
                                 >
                                     Estimate the cost
-                                </a>
+                                </Link>
                             </div>
                         ))}
                     </div>
