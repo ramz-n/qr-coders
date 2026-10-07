@@ -98,7 +98,7 @@ const FAQs = () => {
 
         <div className="grid gap-2 w-full">
           <span className="flex gap-2 text-primary text-2xl items-center">
-            <Handshake /> Project Engagement & Process
+            <Handshake /> Project & Process
           </span>
           <Accordion defaultValue={[]} className="w-full rounded-lg border border-primary/50 p-3">
             {processitems.map((item) => (
@@ -112,7 +112,7 @@ const FAQs = () => {
 
         <div className="grid gap-2 w-full">
           <span className="flex gap-2 text-primary text-2xl items-center">
-            <LockKeyhole /> Security, Maintenance & Hosting
+            <LockKeyhole /> Security & Maintenance
           </span>
           <Accordion defaultValue={[]} className="w-full rounded-lg border border-primary/50 p-3">
             {securityitems.map((item) => (

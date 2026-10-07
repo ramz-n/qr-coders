@@ -12,6 +12,7 @@ import Home from "./pages/Home";
 import { HelmetProvider } from "react-helmet-async";
 import PriceCalculator from "./pages/PriceCalculator";
 import FAQs from "./pages/FAQs";
+import Careers from "./pages/Careers";
 
 const ScrollManager = () => {
   const { pathname, hash } = useLocation();
@@ -59,6 +60,7 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/price-calculator" element={<PriceCalculator />} />
               <Route path="/faqs" element={<FAQs />} />
+              <Route path="/careers" element={<Careers />} />
               <Route path="/privacy" element={<PrivacyPolicy />} />
               <Route path="/terms" element={<TermsAndConditions />} />
               <Route path="/help" element={<HelpCenter />} />
