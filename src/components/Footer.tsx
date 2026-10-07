@@ -18,7 +18,7 @@ const Footer = () => {
                             <li>
                                 <a
                                     className="text-gray-400 transition hover:text-primary/80"
-                                    href="#about"
+                                    href="/#about"
                                 >
                                     About Us
                                 </a>
@@ -26,7 +26,7 @@ const Footer = () => {
                             <li>
                                 <a
                                     className="text-gray-400 transition hover:text-primary/80"
-                                    href="#services"
+                                    href="/#services"
                                 >
                                     Services
                                 </a>
@@ -34,7 +34,31 @@ const Footer = () => {
                             <li>
                                 <a
                                     className="text-gray-400 transition hover:text-primary/80"
-                                    href="#contact"
+                                    href="/#pricing"
+                                >
+                                    Pricing
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    className="text-gray-400 transition hover:text-primary/80"
+                                    href="/careers"
+                                >
+                                    Careers
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    className="text-gray-400 transition hover:text-primary/80"
+                                    href="/faqs"
+                                >
+                                    FAQ
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    className="text-gray-400 transition hover:text-primary/80"
+                                    href="/#contact"
                                 >
                                     Contact
                                 </a>
