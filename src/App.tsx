@@ -1,10 +1,5 @@
 import { useEffect } from "react";
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-  useLocation,
-} from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
@@ -14,8 +9,9 @@ import TermsAndConditions from "./pages/TermsAndConditions";
 import HelpCenter from "./pages/HelpCenter";
 import Quote from "./pages/Quote";
 import Home from "./pages/Home";
-import { HelmetProvider } from 'react-helmet-async';
+import { HelmetProvider } from "react-helmet-async";
 import PriceCalculator from "./pages/PriceCalculator";
+import FAQs from "./pages/FAQs";
 
 const ScrollManager = () => {
   const { pathname, hash } = useLocation();
@@ -29,9 +25,7 @@ const ScrollManager = () => {
         if (section) {
           const navbarOffset = 100;
           const position =
-            section.getBoundingClientRect().top +
-            window.scrollY -
-            navbarOffset;
+            section.getBoundingClientRect().top + window.scrollY - navbarOffset;
 
           window.scrollTo({
             top: position,
@@ -61,11 +55,10 @@ function App() {
 
         <SmoothScrolling>
           <div className="container mx-auto min-h-screen px-5">
-
-
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/price-calculator" element={<PriceCalculator />} />
+              <Route path="/faqs" element={<FAQs />} />
               <Route path="/privacy" element={<PrivacyPolicy />} />
               <Route path="/terms" element={<TermsAndConditions />} />
               <Route path="/help" element={<HelpCenter />} />
