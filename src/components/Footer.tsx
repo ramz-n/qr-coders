@@ -40,20 +40,20 @@ const Footer = () => {
                                 </a>
                             </li>
                             <li>
-                                <a
+                                <Link
                                     className="text-gray-400 transition hover:text-primary/80"
-                                    href="/careers"
+                                    to="/careers"
                                 >
                                     Careers
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a
+                                <Link
                                     className="text-gray-400 transition hover:text-primary/80"
-                                    href="/faqs"
+                                    to="/faqs"
                                 >
                                     FAQ
-                                </a>
+                                </Link>
                             </li>
                             <li>
                                 <a
