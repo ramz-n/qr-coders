@@ -5,11 +5,8 @@ import { Link } from "react-router-dom";
 const links = [
     { href: "/", label: "Home" },
     { href: "/#about", label: "About" },
-    { href: "/#whyus", label: "Why Us" },
     { href: "/#services", label: "Services" },
     { href: "/#pricing", label: "Pricing" },
-    { href: "/careers", label: "Careers" },
-    { href: "/faqs", label: "FAQ" },
     { href: "/#contact", label: "Contact" },
 ];
 
@@ -17,14 +14,14 @@ const Navbar = () => {
     const [open, setOpen] = useState(false);
 
     return (
-        <header className="fixed inset-x-0 top-0 z-50 shadow-2xl px-5 pt-3">
-            <nav className="bg-white rounded-full mx-auto flex max-w-7xl items-center justify-between px-5 py-2 lg:px-10">
+        <header className="sticky top-0 z-40 border-b border-zinc-200 bg-white/95 shadow-2xl">
+            <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-2 lg:px-10">
                 <Link to="/" className="flex items-center gap-1">
                     <span>
                         <img
                             src="/qrc-logo.webp"
                             alt="QRC Logo"
-                            className="h-10 md:h-14 w-auto"
+                            className="h-8 md:h-8 w-auto"
                             loading="lazy"
                         />
                     </span>
@@ -35,7 +32,7 @@ const Navbar = () => {
                         <Link
                             key={idx}
                             to={l.href}
-                            className="text-sm font-bold text-black hover:text-primary/90"
+                            className="text-sm hover:text-primary"
                         >
                             {l.label}
                         </Link>
@@ -44,7 +41,7 @@ const Navbar = () => {
 
                 <Link
                     to="/quote"
-                    className="hidden rounded-full hover:bg-primary/90 bg-black px-5 py-2.5 text-sm font-bold transition hover:brightness-95 md:inline-block"
+                    className="hidden rounded-full btn-primary px-5 py-2.5 text-sm font-bold transition hover:brightness-95 md:inline-block"
                 >
                     Request a Quote
                 </Link>

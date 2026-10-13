@@ -64,7 +64,7 @@ const services = [
 
 const Services = () => {
     return (
-        <section id="services" className="py-20">
+        <section id="services" className="py-20 md:mt-30">
             <LazyMotion features={domAnimation}>
                 <m.div
                     variants={fadeUpVariant}
@@ -73,28 +73,28 @@ const Services = () => {
                     viewport={defaultViewport}
                     className="fluid-container text-center"
                 >
-                    <p className="text-sm font-semibold uppercase tracking-widest text-primary">
-                        Services we Offer
+                    <p className="eyebrow text-sm font-semibold tracking-widest text-primary">
+                        Services we offer
                     </p>
 
-                    <h2 className="mt-3 text-2xl font-bold text-white md:text-4xl">
-                        Empowering Businesses with Innovative Technology
-                        Solutions
+                    <h2 className="h-section mt-3">
+                        From a company website to a custom business system, one
+                        team handles design, development, hosting and support.
                     </h2>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-5 pt-10">
                         {services.map((service, idx) => (
-                            <div
+                             <div
                                 key={idx}
-                                className="h-full p-5 flex items-center flex-col border-primary/20 rounded-3xl border-2 hover:border-primary/40 transition-colors"
+                                className="h-full p-8 flex items-center flex-col rounded-2xl shadow-xs bg-white hover:-translate-y-1 hover:scale-[1.01] hover:shadow-xl cursor-pointer"
                             >
-                                <div className="mb-4 flex h-18 w-18 items-center justify-center rounded-lg bg-primary/20 ">
-                                    <service.icon className="h-12 w-12 text-primary" />
+                                <div className="mb-4 flex h-18 w-18 items-center justify-center text-accent-tint mt-0.5 bg-accent rounded-full">
+                                    <service.icon className="h-12 w-12 " />
                                 </div>
                                 <h3 className="mb-3 text-xl font-medium">
                                     {service.title}
                                 </h3>
-                                <p className="text-sm text-center text-muted-foreground">
+                                <p className="text-sm text-center text-zinc-600">
                                     {service.description}
                                 </p>
                             </div>

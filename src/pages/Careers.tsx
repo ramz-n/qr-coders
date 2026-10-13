@@ -12,10 +12,10 @@ const Careers = () => {
     return (
         <main className="mx-auto px-5 py-36">
             <div className="mb-10 text-center">
-                <p className="text-sm font-semibold uppercase tracking-widest text-primary">
+                <p className="eyebrow text-sm font-semibold tracking-widest text-accent">
                     Become a QRCoders
                 </p>
-                <h2 className="mt-3 text-2xl font-bold text-white md:text-4xl">
+                <h2 className="h-section mt-3">
                     Explore our opportunities and find your perfect role.
                 </h2>
             </div>
@@ -24,10 +24,10 @@ const Careers = () => {
                     <CardContent>
                         <Accordion defaultValue={[]}>
                             <AccordionItem key="item-1" value="item-1">
-                                <AccordionTrigger className="text-base text-primary">
+                                <AccordionTrigger className="text-base text-accent">
                                     Open Application
                                 </AccordionTrigger>
-                                <AccordionContent className="text-gray-700 text-base">
+                                <AccordionContent className="text-zinc-600 text-base">
                                     Don’t see a specific job opening that
                                     perfectly matches your expertise? We still
                                     want to hear from you! At QRCoders, we are
@@ -40,7 +40,7 @@ const Careers = () => {
                                     experiences.
                                     <Link
                                         to="mailto:qrcoders.info@gmail.com"
-                                        className="block mt-3 text-primary"
+                                        className="block mt-3 text-accent hover:text-accent"
                                     >
                                         Submit your resume and portfolio to us
                                         today!
@@ -55,10 +55,10 @@ const Careers = () => {
                     <CardContent>
                         <Accordion defaultValue={[]}>
                             <AccordionItem key="item-1" value="item-1">
-                                <AccordionTrigger className="text-base text-primary">
+                                <AccordionTrigger className="text-base text-accent">
                                     Senior Full-Stack Engineer (.NET focused)
                                 </AccordionTrigger>
-                                <AccordionContent className="text-gray-700 text-base">
+                                <AccordionContent className="text-zinc-600 text-base">
                                     <strong>Role Overview:</strong> Lead the
                                     architecture and end-to-end development of
                                     proprietary, client-facing web applications.
@@ -96,7 +96,7 @@ const Careers = () => {
                                             disabled
                                             className="block mt-3"
                                         >
-                                            Closed
+                                            Application Closed
                                         </Button>
                                     </div>
                                 </AccordionContent>
@@ -109,11 +109,11 @@ const Careers = () => {
                     <CardContent>
                         <Accordion defaultValue={[]}>
                             <AccordionItem key="item-1" value="item-1">
-                                <AccordionTrigger className="text-base text-primary">
+                                <AccordionTrigger className="text-base text-accent">
                                     B2B Account Executive / IT Solutions
                                     Consultant
                                 </AccordionTrigger>
-                                <AccordionContent className="text-gray-700 text-base">
+                                <AccordionContent className="text-zinc-600 text-base">
                                     <strong>Role Overview:</strong> Identify and
                                     consult with businesses facing operational
                                     friction, positioning QRCoders' custom
@@ -145,7 +145,7 @@ const Careers = () => {
                                             disabled
                                             className="block mt-3"
                                         >
-                                            Closed
+                                            Application Closed
                                         </Button>
                                     </div>
                                 </AccordionContent>
@@ -158,10 +158,10 @@ const Careers = () => {
                     <CardContent>
                         <Accordion defaultValue={[]}>
                             <AccordionItem key="item-1" value="item-1">
-                                <AccordionTrigger className="text-base text-primary">
+                                <AccordionTrigger className="text-base text-accent">
                                     DevOps & Cloud Infrastructure Specialist
                                 </AccordionTrigger>
-                                <AccordionContent className="text-gray-700 text-base">
+                                <AccordionContent className="text-zinc-600 text-base">
                                     <strong>Role Overview:</strong> Own the
                                     deployment, optimization, and absolute
                                     security of our clients' custom software
@@ -196,7 +196,7 @@ const Careers = () => {
                                             disabled
                                             className="block mt-3"
                                         >
-                                            Closed
+                                            Application Closed
                                         </Button>
                                     </div>
                                 </AccordionContent>

@@ -1,4 +1,3 @@
-import { Star } from "lucide-react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 
@@ -34,21 +33,20 @@ const testimonialData = [
 ];
 
 const Testimonials = () => {
-  const [emblaRef] = useEmblaCarousel(
-    { loop: true, align: "start" },
-    [Autoplay({ delay: 3000, stopOnInteraction: false })]
-  );
+  const [emblaRef] = useEmblaCarousel({ loop: true, align: "start" }, [
+    Autoplay({ delay: 3000, stopOnInteraction: false }),
+  ]);
 
   return (
-    <section id="testimony" className="mx-auto my-16 max-w-7xl text-center">
-      <p className="text-sm font-semibold uppercase tracking-widest text-primary">
+    <section id="testimony" className="mx-auto my-20 text-center">
+      <p className="eyebrow text-sm font-semibold tracking-widest text-primary">
         Testimonials
       </p>
 
-      <h2 className="mt-3 text-2xl font-bold text-white md:text-4xl">
-        We value the trust our clients place in us and are committed to delivering exceptional digital solutions.
+      <h2 className="h-section mt-3">
+        We value the trust our clients place in us and are committed to
+        delivering exceptional digital solutions.
       </h2>
-
 
       <div className="mt-10 overflow-hidden" ref={emblaRef}>
         <div className="flex -ml-4">
@@ -57,32 +55,19 @@ const Testimonials = () => {
               key={item.name}
               className="min-w-0 flex-[0_0_100%] pl-4 md:flex-[0_0_50%] lg:flex-[0_0_33.333%]"
             >
-              <div className="flex h-full flex-col justify-between rounded-2xl border-primary/50 border-solid border-2   p-6 shadow-lg transition duration-300">
+              <div className="pl-5 flex h-full flex-col justify-between p-6 shadow-lg bg-white transition duration-300">
                 <div>
-                  <div className="flex gap-1">
-                    {[1, 2, 3, 4, 5].map((star) => (
-                      <Star
-                        key={star}
-                        size={18}
-                        fill="#B026FF"
-                        color="#B026FF"
-                      />
-                    ))}
-                  </div>
+                  <h3 className="mt-5 text-lg font-semibold">{item.title}</h3>
 
-                  <h3 className="mt-5 text-lg font-semibold text-white">
-                    {item.title}
-                  </h3>
-
-                  <p className="mt-3 leading-7 text-gray-400">
-                    {item.description}
-                  </p>
+                  <blockquote className="text-base leading-relaxed text-zinc-800">
+                    &ldquo;{item.description}&rdquo;
+                  </blockquote>
                 </div>
 
-                <div className="mt-8 border-t border-gray-700 pt-4">
-                  <h4 className="font-semibold text-white">{item.name}</h4>
-                  <span className="text-sm text-primary">
-                    {item.occupation}
+                <div className="mt-8 border-t border-zinc-300 pt-4">
+                  <h4 className="font-medium text-zinc-900">{item.name}</h4>
+                  <span className="text-zinc-500">
+                    &middot; {item.occupation}
                   </span>
                 </div>
               </div>

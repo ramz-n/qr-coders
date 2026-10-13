@@ -26,13 +26,13 @@ const HelpCenter = () => {
 
   return (
     <main className="mx-auto max-w-4xl px-6 py-20 text-gray-300">
-      <p className="text-sm font-semibold uppercase tracking-widest text-primary">
+      <p className="eyebrow text-sm font-semibold tracking-widest text-primary">
         QR Coders Support
       </p>
 
-      <h1 className="mt-3 text-4xl font-bold text-white">Help Center</h1>
+      <h1 className="h-section mt-3">Help Center</h1>
 
-      <p className="mt-4 max-w-2xl leading-7 text-gray-400">
+      <p className="mt-4 max-w-2xl leading-7 text-gray-600">
         Find answers to common questions. If you need more help, our team is
         ready to assist you.
       </p>
@@ -63,7 +63,7 @@ const HelpCenter = () => {
 
         <Link
           to="/#contact"
-          className="mt-6 inline-flex rounded-lg bg-primary px-6 py-3 font-semibold text-white transition hover:scale-105 hover:opacity-90"
+          className="btn-primary mt-6 inline-flex rounded-lg bg-primary px-6 py-3 font-semibold text-white transition hover:scale-105 hover:opacity-90"
         >
           Contact Us
         </Link>

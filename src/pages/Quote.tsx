@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import type { SyntheticEvent } from "react";
 import { fadeUpVariant, defaultViewport } from "../utils/animations";
+import { Link } from "react-router-dom";
 
 const Quote = () => {
   const [submitted, setSubmitted] = useState(false);
@@ -17,7 +18,7 @@ const Quote = () => {
     const formData = new FormData(form);
 
     const subject = encodeURIComponent(
-      `Quotation Request - ${formData.get("name")}`
+      `Quotation Request - ${formData.get("name")}`,
     );
 
     const body = encodeURIComponent(`Name: ${formData.get("name")}
@@ -29,27 +30,23 @@ Budget: ${formData.get("budget")}
 Project details:
 ${formData.get("message")}`);
 
-    window.location.href =
-      `mailto:qrcoders.info@gmail.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:qrcoders.info@gmail.com?subject=${subject}&body=${body}`;
 
     setSubmitted(true);
     form.reset();
   };
 
   const inputClassName =
-    "w-full rounded-xl border border-white/10 bg-white/[0.04] px-4 py-3 text-sm text-white outline-none transition placeholder:text-gray-500 hover:border-primary/40 focus:border-primary focus:bg-white/[0.07] focus:ring-4 focus:ring-primary/15";
+    "w-full rounded-xl border border-zinc-700 bg-zinc-100 px-4 py-3 text-sm text-accent outline-none transition placeholder:text-accent hover:border-primary/40 focus:border-primary focus:bg-accent-tint focus:ring-1 focus:ring-primary/15";
 
   return (
-
     <main className="mx-auto min-h-screen max-w-3xl px-5 py-32">
       <div className="mb-10 text-center">
-        <p className="text-sm font-semibold uppercase tracking-widest text-primary">
+        <p className="eyebrow text-sm font-semibold tracking-widest text-primary">
           Request a Quote
         </p>
 
-        <h1 className="mt-3 text-2xl font-bold text-white md:text-4xl">
-          Let&apos;s Build Something Great
-        </h1>
+        <h1 className="h-section mt-3">Let&apos;s Build Something Great</h1>
       </div>
       <motion.form
         onSubmit={handleSubmit}
@@ -57,7 +54,7 @@ ${formData.get("message")}`);
         initial="hidden"
         animate="visible"
         viewport={defaultViewport}
-        className="rounded-3xl border border-primary/30 bg-white/3 p-6 shadow-2xl shadow-black/30 backdrop-blur-sm md:p-10"
+        className="rounded-3xl border border-primary/30 bg-white p-6 shadow-2xl shadow-black/30 backdrop-blur-sm md:p-10"
       >
         <div className="grid gap-5 md:grid-cols-2">
           <div>
@@ -65,7 +62,7 @@ ${formData.get("message")}`);
               htmlFor="quote-name"
               className="mb-2 block text-sm font-semibold text-primary"
             >
-              Full Name <span className="text-white">*</span>
+              Full Name <span className="text-accent">*</span>
             </label>
             <input
               required
@@ -215,7 +212,7 @@ ${formData.get("message")}`);
 
         <button
           type="submit"
-          className="cursor-pointer mt-6 w-full rounded-xl bg-primary px-6 py-3.5 text-sm font-bold text-white shadow-lg shadow-primary/20 transition duration-300 hover:-translate-y-0.5 hover:bg-primary/85 hover:shadow-primary/40 focus:outline-none focus:ring-4 focus:ring-primary/30"
+          className="btn-primary cursor-pointer mt-6 w-full rounded-xl bg-primary px-6 py-3.5 text-sm font-bold text-white shadow-lg shadow-primary/20 transition duration-300 hover:-translate-y-0.5 hover:bg-primary/85 hover:shadow-primary/40 focus:outline-none focus:ring-4 focus:ring-primary/30"
         >
           Send Quotation Request
         </button>
@@ -226,6 +223,19 @@ ${formData.get("message")}`);
           </p>
         )}
       </motion.form>
+
+      <div className="py-10">
+        <p className="text-zinc-700">Still have a question?</p>
+        <div className="mt-4 flex flex-wrap gap-3">
+          <Link
+            to="/#contact"
+
+            className="btn-secondary rounded-full hover:bg-primary/50 bg-primary px-5 py-2.5 text-sm font-bold transition hover:brightness-95 md:inline-block"
+          >
+            Contact Us
+          </Link>
+        </div>
+      </div>
     </main>
   );
 };

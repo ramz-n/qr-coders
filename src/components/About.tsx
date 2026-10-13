@@ -1,77 +1,45 @@
-import { m, LazyMotion, domAnimation } from "motion/react";
-import { fadeUpVariant, defaultViewport } from "../utils/animations";
-import { Link } from "react-router-dom";
+import { TargetIcon, VisorIcon } from "@phosphor-icons/react";
+import { Section, Split } from "./ui";
 
 const About = () => {
     return (
-        <section id="about" className="relative md:py-20">
-            <LazyMotion features={domAnimation}>
-                <m.div
-                    variants={fadeUpVariant}
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={defaultViewport}
-
-                    className="w-full max-w-7xl px-4 md:px-5 lg:px-5 mx-auto"
-                >
-                    <div className="w-full justify-start items-center gap-12 grid lg:grid-cols-2 grid-cols-1">
-                        <div className="w-full justify-center items-start">
-                            <img
-                                className="sm:ml-0 ml-auto rounded-xl object-cover"
-                                src="./about1.svg"
-                                alt="about Us image"
-                                loading="lazy"
-                            />
-                        </div>
-                        <div className="w-full flex-col justify-center lg:items-start items-center md:gap-10 inline-flex">
-                            <div className="w-full flex-col justify-center items-start gap-8 flex">
-                                <div className="w-full flex-col justify-start items-center gap-3 flex">
-                                    <p className="text-sm font-semibold uppercase tracking-widest text-primary">
-                                        About us
-                                    </p>
-
-                                    <h2 className="mt-3 text-3xl font-bold text-white md:text-4xl text-center">
-                                        Know little bit about QRCoders
-                                    </h2>
-                                    <p className="text-gray-400 text-base font-normal leading-relaxed lg:text-start text-center">
-                                        We are a Nepal-based IT company
-                                        dedicated to delivering innovative,
-                                        reliable, and scalable digital solutions
-                                        for businesses of all sizes. Our team of
-                                        skilled developers, designers, and
-                                        technology professionals is passionate
-                                        about transforming ideas into
-                                        high-quality software, websites, mobile
-                                        applications, and digital platforms that
-                                        drive growth and success.
-                                    </p>
-                                    <p className="text-gray-400 text-base font-normal leading-relaxed lg:text-start text-center">
-                                        Our mission is to help organizations
-                                        embrace digital transformation through
-                                        innovative technology solutions, while
-                                        our vision is to become one of Nepal's
-                                        most trusted and respected IT companies,
-                                        recognized for excellence, integrity,
-                                        and innovation.
-                                    </p>
-                                    <p className="text-gray-400 text-base font-normal leading-relaxed lg:text-start text-center">
-                                        Together, we build technology that
-                                        inspires growth, fuels innovation, and
-                                        shapes the future.{" "}
-                                    </p>
-                                </div>
-                            </div>
-                            <Link
-                                to="/quote"
-                                className="mt-7 inline-flex rounded-lg bg-primary px-6 py-3 font-semibold text-white transition hover:scale-105 hover:opacity-90"
-                            >
-                                Request a Quote
-                            </Link>
-                        </div>
+        <Section id="about" tone="tint">
+            <Split
+                eyebrow="About us"
+                title="A software company for businesses of every size"
+            >
+                <div className="space-y-4 text-base leading-relaxed text-zinc-600">
+                    <p>
+                        Our developers, designers and technology specialists
+                        turn ideas into working software, websites, mobile
+                        applications and digital platforms, and keep them
+                        running once they are live.
+                    </p>
+                    <p>We are based in Narayangarh, Chitwan.</p>
+                </div>
+                <dl className="mt-8 grid gap-6 border-t border-zinc-200 pt-6 sm:grid-cols-2">
+                    <div>
+                        <dt className="font-medium text-accent flex items-center gap-1">
+                            <TargetIcon size={32} /> <span>Our mission</span>
+                        </dt>
+                        <dd className="mt-2 text-sm leading-relaxed text-zinc-600">
+                            Help businesses adopt digital technology with
+                            software that fits how they actually work.
+                        </dd>
                     </div>
-                </m.div>
-            </LazyMotion>
-        </section>
+                    <div>
+                        <dt className="font-medium text-accent flex items-center gap-1">
+                            <VisorIcon size={32} /> <span>Our vision</span>
+                        </dt>
+                        <dd className="mt-2 text-sm leading-relaxed text-zinc-600">
+                            To become one of Nepal&rsquo;s most trusted IT
+                            companies, known for quality, integrity and reliable
+                            delivery.
+                        </dd>
+                    </div>
+                </dl>
+            </Split>
+        </Section>
     );
 };
 

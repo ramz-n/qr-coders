@@ -11,8 +11,8 @@ import Quote from "./pages/Quote";
 import Home from "./pages/Home";
 import { HelmetProvider } from "react-helmet-async";
 import PriceCalculator from "./pages/PriceCalculator";
-import FAQs from "./pages/FAQs";
 import Careers from "./pages/Careers";
+import NotFound from "./pages/NotFound";
 
 const ScrollManager = () => {
   const { pathname, hash } = useLocation();
@@ -59,17 +59,17 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/price-calculator" element={<PriceCalculator />} />
-              <Route path="/faqs" element={<FAQs />} />
               <Route path="/careers" element={<Careers />} />
               <Route path="/privacy" element={<PrivacyPolicy />} />
               <Route path="/terms" element={<TermsAndConditions />} />
               <Route path="/help" element={<HelpCenter />} />
               <Route path="/quote" element={<Quote />} />
+              <Route path="*" element={<NotFound />} />
             </Routes>
-
-            <Footer />
           </div>
         </SmoothScrolling>
+
+        <Footer />
       </BrowserRouter>
     </HelmetProvider>
   );

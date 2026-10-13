@@ -115,12 +115,12 @@ const PriceCalculator = () => {
     }, [selectedServices, packages, isUrgent]);
 
     return (
-        <main className="mx-auto max-w-3xl px-5 py-36 bg-[url('/bg-pricing.svg')] bg-cover bg-center w-full">
+        <main className="mx-auto max-w-3xl px-5 py-36 w-full">
             <div className="mb-10 text-center">
-                <p className="text-sm font-semibold uppercase tracking-widest text-primary">
+                <p className="eyebrow text-sm font-semibold tracking-widest text-primary">
                     Estimate your cost
                 </p>
-                <h2 className="mt-3 text-2xl font-bold text-white md:text-4xl">
+                <h2 className="h-section mt-3">
                     Get a quick estimation
                 </h2>
             </div>
@@ -129,13 +129,13 @@ const PriceCalculator = () => {
                 <div>
                     <label
                         htmlFor="services"
-                        className="block mb-2.5 text-xl font-medium"
+                        className="font-medium text-zinc-900"
                     >
                         Select a service.
                     </label>
                     <select
                         id="services"
-                        className="block w-full px-3 py-2.5 bg-black border border-secondary text-sm rounded-base focus:ring-brand focus:border-brand shadow-xs placeholder:text-body"
+                        className="block w-full px-3 py-2.5 bg-accent-tint border border-secondary text-sm rounded-base focus:ring-brand focus:border-brand shadow-xs placeholder:text-body"
                         onChange={handleService}
                     >
                         <option>Select a service</option>
@@ -149,13 +149,13 @@ const PriceCalculator = () => {
                 <div>
                     <label
                         htmlFor="packages"
-                        className="block mb-2.5 text-xl font-medium"
+                        className="font-medium text-zinc-900"
                     >
                         Select a package.
                     </label>
                     <select
                         id="packag"
-                        className="block w-full px-3 py-2.5 bg-black border border-secondary text-sm rounded-base focus:ring-brand focus:border-brand shadow-xs placeholder:text-body"
+                        className="block w-full px-3 py-2.5 bg-accent-tint border border-secondary text-sm rounded-base focus:ring-brand focus:border-brand shadow-xs placeholder:text-body"
                         onChange={handlePackage}
                     >
                         {Packages.map((pkg) => (
@@ -180,9 +180,9 @@ const PriceCalculator = () => {
                     />
                 </div>
                 {selectedServices?.length > 0 && (
-                    <p className="font-bold">
+                    <p className="font-bold text-zinc-600">
                         Estimated Cost:{" "}
-                        <span className="italic text-secondary">
+                        <span className="italic text-accent">
                             {formatNPR(costEstimation.min)} -{" "}
                             {formatNPR(costEstimation.max)}
                         </span>
@@ -191,7 +191,7 @@ const PriceCalculator = () => {
             </div>
             <Link
                 to="/quote"
-                className="mt-8 block rounded-full border border-primary bg-primary/60 px-12 py-3 text-center text-sm font-medium text-white hover:bg-primary/70 hover:ring-1 hover:ring-primary/70"
+                className="btn-primary mt-8 block rounded-full border border-primary bg-primary/60 px-12 py-3 text-center text-sm font-medium text-white hover:bg-primary/70 hover:ring-1 hover:ring-primary/70"
             >
                 Get a Quote
             </Link>
