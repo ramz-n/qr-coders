@@ -10,7 +10,7 @@ const Hero = () => {
                         software, from vision to{" "}
                         <span className="text-accent">value</span>.
                     </h1>
-                    <p className="mb-4 max-w-2xl text-gray-500 dark:text-gray-400 md:mb-12 md:text-lg lg:mb-5 lg:text-xl">
+                    <p className="mb-4 max-w-2xl text-gray-500 md:mb-12 md:text-lg lg:mb-5 lg:text-xl">
                         QRCoders is a software development company that builds
                         business software & web solutions that deliver real
                         value. From conception to launch, we help businesses of all sizes.
@@ -44,7 +44,7 @@ const Hero = () => {
                     </p>
                 </div>
                 <div className="hidden md:col-span-5 md:mt-0 md:flex">
-                    <img className="dark:hidden" src="/hero.svg" alt="hero" loading="lazy"/>
+                    <img className="" src="/hero.svg" alt="hero" loading="lazy"/>
                 </div>
             </div>
         </section>

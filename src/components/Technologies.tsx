@@ -311,8 +311,8 @@ const Technologies = () => {
     }, []);
 
     return (
-        <div className="col-start-2 w-full min-w-0 flex items-center gap-6 overflow-hidden mb-20">
-            <p className="text-sm font-medium text-zinc-700 whitespace-nowrap shrink-0">
+        <div className="grid grid-cols-1 md:col-start-2 w-full min-w-0 md:flex items-center gap-6 overflow-hidden mb-20">
+            <p className="text-md font-bold text-zinc-700 whitespace-nowrap shrink-0">
                 Technologies we work with
             </p>
 

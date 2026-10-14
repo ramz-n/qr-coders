@@ -54,7 +54,7 @@ export const ICON = {
 
 const Footer = () => {
     return (
-        <footer className="bg-white  bg-[url('/circuit-bg.svg')] bg-cover bg-center">
+        <footer className="bg-white">
             <div
                 className={`mx-auto w-full max-w-6xl px-5 sm:px-8 grid gap-10 py-14 md:grid-cols-[minmax(0,2fr)_1fr_1fr]`}
             >
@@ -102,7 +102,7 @@ const Footer = () => {
                 </div>
 
                 <nav aria-label="Company">
-                    <h2 className="text-sm font-medium text-zinc-900">
+                    <h2 className="text-sm font-bold text-zinc-900">
                         Company
                     </h2>
                     <ul className="mt-4 space-y-2.5">
@@ -120,7 +120,7 @@ const Footer = () => {
                 </nav>
 
                 <nav aria-label="Support and legal">
-                    <h2 className="text-sm font-medium text-zinc-900">
+                    <h2 className="text-sm font-bold text-zinc-900">
                         Support
                     </h2>
                     <ul className="mt-4 space-y-2.5">
