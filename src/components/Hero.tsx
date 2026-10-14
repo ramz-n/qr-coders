@@ -44,7 +44,7 @@ const Hero = () => {
                     </p>
                 </div>
                 <div className="hidden md:col-span-5 md:mt-0 md:flex">
-                    <img className="dark:hidden" src="/hero.svg" alt="hero" />
+                    <img className="dark:hidden" src="/hero.svg" alt="hero" loading="lazy"/>
                 </div>
             </div>
         </section>

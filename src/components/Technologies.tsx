@@ -294,6 +294,7 @@ const Technologies = () => {
         if (!track) return;
 
         const totalWidth = track.scrollWidth / 2;
+        if (totalWidth <= 0) return;
 
         const tween = gsap.to(track, {
             x: `-=${totalWidth}`,
@@ -317,20 +318,20 @@ const Technologies = () => {
 
             <div className="flex-1 overflow-hidden min-w-0n">
                 <div
-                ref={trackRef}
-                className="flex whitespace-nowrap gap-8 items-center w-max"
-            >
-                {[...technologies, ...technologies].map((renderIcon, index) => (
-                    <span
-                        key={index}
-                        className="text-xl font-bold uppercase tracking-wider text-slate-300 px-4"
-                    >
-                        <span key={index}>
-                            {renderIcon()}
-                        </span>
-                    </span>
-                ))}
-            </div>
+                    ref={trackRef}
+                    className="flex whitespace-nowrap gap-8 items-center w-max"
+                >
+                    {[...technologies, ...technologies].map(
+                        (renderIcon, index) => (
+                            <span
+                                key={index}
+                                className="text-xl font-bold uppercase tracking-wider text-slate-300 px-4"
+                            >
+                                <span key={index}>{renderIcon()}</span>
+                            </span>
+                        ),
+                    )}
+                </div>
             </div>
         </div>
     );
