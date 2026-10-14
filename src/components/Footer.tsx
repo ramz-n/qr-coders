@@ -79,7 +79,7 @@ const Footer = () => {
                         </li>
                         <li>
                             <a
-                                className="relative z-50 flex items-center gap-2.5 hover:text-zinc-900"
+                                className="relative z-40 flex items-center gap-2.5 hover:text-accent"
                                 href="tel:+9779744700704"
                             >
                                 <Phone {...ICON} className="text-zinc-500" />
@@ -88,7 +88,7 @@ const Footer = () => {
                         </li>
                         <li>
                             <a
-                                className="relative z-50 flex items-center gap-2.5 hover:text-zinc-900"
+                                className="relative z-40 flex items-center gap-2.5 hover:text-accent"
                                 href="mailto:qrcoders.info@gmail.com"
                             >
                                 <EnvelopeSimple
@@ -102,7 +102,7 @@ const Footer = () => {
                 </div>
 
                 <nav aria-label="Company">
-                    <h2 className="text-sm font-bold text-zinc-900">
+                    <h2 className="text-sm font-extrabold text-zinc-950">
                         Company
                     </h2>
                     <ul className="mt-4 space-y-2.5">
@@ -110,7 +110,7 @@ const Footer = () => {
                             <li key={l.label}>
                                 <Link
                                     to={l.to}
-                                    className="relative z-50 text-sm text-zinc-600 transition-colors duration-150 hover:text-black"
+                                    className="relative z-40 text-sm text-zinc-600 transition-colors duration-150 hover:text-accent"
                                 >
                                     {l.label}
                                 </Link>
@@ -120,7 +120,7 @@ const Footer = () => {
                 </nav>
 
                 <nav aria-label="Support and legal">
-                    <h2 className="text-sm font-bold text-zinc-900">
+                    <h2 className="text-sm font-extrabold text-zinc-950">
                         Support
                     </h2>
                     <ul className="mt-4 space-y-2.5">
@@ -129,7 +129,7 @@ const Footer = () => {
                                 <Link
                                     target="_blank"
                                     to={l.to}
-                                    className="relative z-50 text-sm text-zinc-600 transition-colors duration-150 hover:text-black"
+                                    className="relative z-40 text-sm text-zinc-600 transition-colors duration-150 hover:text-accent"
                                 >
                                     {l.label}
                                 </Link>
@@ -158,7 +158,7 @@ const Footer = () => {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     aria-label={label}
-                                    className="relative z-50 inline-flex size-10 items-center justify-center rounded-lg text-zinc-600 transition-colors duration-150 hover:bg-accent-tint hover:text-zinc-900"
+                                    className="relative z-40 inline-flex size-10 items-center justify-center rounded-lg text-zinc-600 transition-colors duration-150 hover:bg-accent-tint hover:text-accent"
                                 >
                                     <Icon
                                         size={22}

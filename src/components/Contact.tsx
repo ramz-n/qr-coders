@@ -1,4 +1,30 @@
+import { useState } from "react";
+
 const Footer = () => {
+    const [formData, setFormData] = useState({
+        name: "",
+        email: "",
+        message: "",
+    });
+
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+
+        const recipientEmail = "qrcoders.info@gmail.com";
+        const subject = encodeURIComponent(`New Message from ${formData.name}`);
+
+        const bodyText =
+            `Hello,\n\nYou have received a new message.\n\n` +
+            `Name: ${formData.name}\n` +
+            `Message: ${formData.message}`;
+
+        const encodedBody = encodeURIComponent(bodyText);
+
+        const mailtoUrl = `mailto:${recipientEmail}?subject=${subject}&body=${encodedBody}`;
+
+        window.location.href = mailtoUrl;
+    };
+
     return (
         <div id="contact" className="mx-auto my-20">
             <div className="py-20 grid gap-12 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:gap-16">
@@ -85,7 +111,7 @@ const Footer = () => {
                 </div>
                 <div className="rounded-2xl border border-zinc-200 bg-zinc-50 p-6 sm:p-8">
                     <form
-                        action="#"
+                        onSubmit={handleSubmit}
                         className="space-y-4 rounded-lg p-6"
                     >
                         <div>
@@ -97,10 +123,12 @@ const Footer = () => {
                             </label>
                             <input
                                 required
-                                className="mt-1 w-full rounded-lg border-zinc-300 p-2 border-2 focus:border-primary/60 focus:outline-none"
+                                className="mt-1 w-full rounded-xl border border-zinc-700 bg-zinc-100 px-4 py-3 text-sm text-accent outline-none transition placeholder:text-accent hover:border-primary/40 focus:border-primary focus:bg-accent-tint focus:ring-1 focus:ring-primary/15"
                                 id="name"
                                 type="text"
                                 placeholder="Your name"
+                                value={formData.name} 
+                                onChange={(e) => setFormData({ ...formData, name: e.target.value })} 
                             />
                         </div>
                         <div>
@@ -112,10 +140,12 @@ const Footer = () => {
                             </label>
                             <input
                                 required
-                                className="mt-1 w-full rounded-lg border-zinc-300 p-2 border-2 focus:border-primary/60 focus:outline-none"
+                                className="mt-1 w-full rounded-xl border border-zinc-700 bg-zinc-100 px-4 py-3 text-sm text-accent outline-none transition placeholder:text-accent hover:border-primary/40 focus:border-primary focus:bg-accent-tint focus:ring-1 focus:ring-primary/15"
                                 id="email"
                                 type="email"
                                 placeholder="Your email"
+                                value={formData.email}
+                                onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                             />
                         </div>
                         <div>
@@ -127,15 +157,16 @@ const Footer = () => {
                             </label>
                             <textarea
                                 required
-                                className="mt-1 w-full rounded-lg border-zinc-300 p-2 border-2 focus:border-primary/60 focus:outline-none"
+                                className="mt-1 w-full rounded-xl border border-zinc-700 bg-zinc-100 px-4 py-3 text-sm text-accent outline-none transition placeholder:text-accent hover:border-primary/40 focus:border-primary focus:bg-accent-tint focus:ring-1 focus:ring-primary/15"
                                 id="message"
                                 rows={4}
                                 placeholder="Your message"
-                                defaultValue={""}
+                                value={formData.message}
+                                onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                             />
                         </div>
                         <button
-                            className="btn-primary block w-full rounded-lg border border-primary/60 bg-primary/60 px-12 py-3 text-sm font-medium text-white transition-colors hover:bg-transparent hover:text-indigo-600"
+                            className="btn-primary cursor-pointer block w-full rounded-lg border border-primary/60 bg-primary/60 px-12 py-3 text-sm font-medium text-white transition-colors"
                             type="submit"
                         >
                             Send Message

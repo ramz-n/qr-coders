@@ -59,11 +59,11 @@ const technologies = [
                     gradientTransform="translate(-129.242 -73.715) scale(6.18523)"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#3F873F"></stop>
-                    <stop offset=".33" stop-color="#3F8B3D"></stop>
-                    <stop offset=".637" stop-color="#3E9638"></stop>
-                    <stop offset=".934" stop-color="#3DA92E"></stop>
-                    <stop offset="1" stop-color="#3DAE2B"></stop>
+                    <stop stopColor="#3F873F"></stop>
+                    <stop offset=".33" stopColor="#3F8B3D"></stop>
+                    <stop offset=".637" stopColor="#3E9638"></stop>
+                    <stop offset=".934" stopColor="#3DA92E"></stop>
+                    <stop offset="1" stopColor="#3DAE2B"></stop>
                 </linearGradient>
                 <linearGradient
                     id="b"
@@ -74,10 +74,10 @@ const technologies = [
                     gradientTransform="translate(-129.242 -73.715) scale(6.18523)"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop offset=".138" stop-color="#3F873F"></stop>
-                    <stop offset=".402" stop-color="#52A044"></stop>
-                    <stop offset=".713" stop-color="#64B749"></stop>
-                    <stop offset=".908" stop-color="#6ABF4B"></stop>
+                    <stop offset=".138" stopColor="#3F873F"></stop>
+                    <stop offset=".402" stopColor="#52A044"></stop>
+                    <stop offset=".713" stopColor="#64B749"></stop>
+                    <stop offset=".908" stopColor="#6ABF4B"></stop>
                 </linearGradient>
                 <linearGradient
                     id="c"
@@ -88,10 +88,10 @@ const technologies = [
                     gradientTransform="translate(-129.242 -73.715) scale(6.18523)"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop offset=".092" stop-color="#6ABF4B"></stop>
-                    <stop offset=".287" stop-color="#64B749"></stop>
-                    <stop offset=".598" stop-color="#52A044"></stop>
-                    <stop offset=".862" stop-color="#3F873F"></stop>
+                    <stop offset=".092" stopColor="#6ABF4B"></stop>
+                    <stop offset=".287" stopColor="#64B749"></stop>
+                    <stop offset=".598" stopColor="#52A044"></stop>
+                    <stop offset=".862" stopColor="#3F873F"></stop>
                 </linearGradient>
             </defs>
         </svg>
@@ -112,8 +112,8 @@ const technologies = [
                 y2="1151.089"
                 gradientTransform="matrix(.563 0 0 -.568 -29.215 707.817)"
             >
-                <stop offset="0" stop-color="#5A9FD4"></stop>
-                <stop offset="1" stop-color="#306998"></stop>
+                <stop offset="0" stopColor="#5A9FD4"></stop>
+                <stop offset="1" stopColor="#306998"></stop>
             </linearGradient>
             <linearGradient
                 id="python-original-b"
@@ -124,8 +124,8 @@ const technologies = [
                 y2="1149.537"
                 gradientTransform="matrix(.563 0 0 -.568 -29.215 707.817)"
             >
-                <stop offset="0" stop-color="#FFD43B"></stop>
-                <stop offset="1" stop-color="#FFE873"></stop>
+                <stop offset="0" stopColor="#FFD43B"></stop>
+                <stop offset="1" stopColor="#FFE873"></stop>
             </linearGradient>
             <path
                 fill="url(#python-original-a)"
@@ -145,12 +145,8 @@ const technologies = [
                 gradientTransform="matrix(0 -.24 -1.055 0 532.979 557.576)"
                 gradientUnits="userSpaceOnUse"
             >
-                <stop
-                    offset="0"
-                    stop-color="#B8B8B8"
-                    stop-opacity=".498"
-                ></stop>
-                <stop offset="1" stop-color="#7F7F7F" stop-opacity="0"></stop>
+                <stop offset="0" stopColor="#B8B8B8" stopOpacity=".498"></stop>
+                <stop offset="1" stopColor="#7F7F7F" stopOpacity="0"></stop>
             </radialGradient>
             <path
                 opacity=".444"
@@ -209,8 +205,8 @@ const technologies = [
                     y2="134.423"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#114A8B"></stop>
-                    <stop offset="1" stop-color="#0669BC"></stop>
+                    <stop stopColor="#114A8B"></stop>
+                    <stop offset="1" stopColor="#0669BC"></stop>
                 </linearGradient>
                 <linearGradient
                     id="azure-original-b"
@@ -220,11 +216,11 @@ const technologies = [
                     y2="71.076"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-opacity=".3"></stop>
-                    <stop offset=".071" stop-opacity=".2"></stop>
-                    <stop offset=".321" stop-opacity=".1"></stop>
-                    <stop offset=".623" stop-opacity=".05"></stop>
-                    <stop offset="1" stop-opacity="0"></stop>
+                    <stop stopOpacity=".3"></stop>
+                    <stop offset=".071" stopOpacity=".2"></stop>
+                    <stop offset=".321" stopOpacity=".1"></stop>
+                    <stop offset=".623" stopOpacity=".05"></stop>
+                    <stop offset="1" stopOpacity="0"></stop>
                 </linearGradient>
                 <linearGradient
                     id="azure-original-c"
@@ -234,8 +230,8 @@ const technologies = [
                     y2="129.525"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#3CCBF4"></stop>
-                    <stop offset="1" stop-color="#2892DF"></stop>
+                    <stop stopColor="#3CCBF4"></stop>
+                    <stop offset="1" stopColor="#2892DF"></stop>
                 </linearGradient>
             </defs>
             <path

@@ -115,17 +115,15 @@ const PriceCalculator = () => {
     }, [selectedServices, packages, isUrgent]);
 
     return (
-        <main className="mx-auto max-w-3xl px-5 py-36 w-full">
+        <main className="mx-auto max-w-3xl px-5 my-36">
             <div className="mb-10 text-center">
                 <p className="eyebrow text-sm font-semibold tracking-widest text-primary">
                     Estimate your cost
                 </p>
-                <h2 className="h-section mt-3">
-                    Get a quick estimation
-                </h2>
+                <h2 className="h-section mt-3">Get a quick estimation</h2>
             </div>
 
-            <div className="grid grid-cols-1 gap-8">
+            <div className="grid grid-cols-1 gap-8 w-full rounded-3xl bg-white p-6 shadow-2xl shadow-black/30 backdrop-blur-sm md:p-10">
                 <div>
                     <label
                         htmlFor="services"
@@ -135,7 +133,7 @@ const PriceCalculator = () => {
                     </label>
                     <select
                         id="services"
-                        className="block w-full px-3 py-2.5 bg-accent-tint border border-secondary text-sm rounded-base focus:ring-brand focus:border-brand shadow-xs placeholder:text-body"
+                        className="w-full rounded-xl border border-zinc-700 bg-zinc-100 px-4 py-3 text-sm text-accent outline-none transition placeholder:text-accent hover:border-primary/40 focus:border-primary focus:bg-accent-tint focus:ring-1 focus:ring-primary/15"
                         onChange={handleService}
                     >
                         <option>Select a service</option>
@@ -155,7 +153,7 @@ const PriceCalculator = () => {
                     </label>
                     <select
                         id="packag"
-                        className="block w-full px-3 py-2.5 bg-accent-tint border border-secondary text-sm rounded-base focus:ring-brand focus:border-brand shadow-xs placeholder:text-body"
+                        className="w-full rounded-xl border border-zinc-700 bg-zinc-100 px-4 py-3 text-sm text-accent outline-none transition placeholder:text-accent hover:border-primary/40 focus:border-primary focus:bg-accent-tint focus:ring-1 focus:ring-primary/15"
                         onChange={handlePackage}
                     >
                         {Packages.map((pkg) => (
