@@ -32,7 +32,7 @@ const Process = () => {
     return (
         <section
             id="process"
-            className="py-20 relative bg-[url('/meteor-bg.svg')] bg-cover bg-center"
+            className="py-20 relative bg-[url('/lines-bg.svg')] bg-cover bg-center"
         >
             <p className="eyebrow">Process</p>
             <h2 className="h-section mt-3 max-w-[28ch]">

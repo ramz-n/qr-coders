@@ -54,8 +54,7 @@ export const ICON = {
 
 const Footer = () => {
     return (
-        <footer className="bg-white relative">
-            <img src="/wave.svg" alt="" className="w-full" />
+        <footer className="bg-white  bg-[url('/circuit-bg.svg')] bg-cover bg-center">
             <div
                 className={`mx-auto w-full max-w-6xl px-5 sm:px-8 grid gap-10 py-14 md:grid-cols-[minmax(0,2fr)_1fr_1fr]`}
             >

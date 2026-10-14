@@ -8,7 +8,7 @@ const About = () => {
                 eyebrow="About us"
                 title="A software company for businesses of every size"
             >
-                <div className="space-y-4 text-base leading-relaxed text-zinc-600">
+                <div className="space-y-4 text-base leading-relaxed text-zinc-600 mt-15">
                     <p>
                         Our developers, designers and technology specialists
                         turn ideas into working software, websites, mobile

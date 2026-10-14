@@ -14,7 +14,7 @@ const Navbar = () => {
     const [open, setOpen] = useState(false);
 
     return (
-        <header className="sticky top-0 z-40 border-b border-zinc-200 bg-white/95 shadow-2xl">
+        <header className="top-0 z-40 border-b border-zinc-200 bg-white/95 shadow-2xl">
             <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-2 lg:px-10">
                 <Link to="/" className="flex items-center gap-1">
                     <span>
@@ -85,7 +85,7 @@ const Navbar = () => {
                         <Link
                             to="/quote"
                             onClick={() => setOpen(false)}
-                            className="rounded-full hover:bg-primary/50 bg-primary px-5 py-2.5 text-sm font-bold transition hover:brightness-95 md:inline-block"
+                            className="btn-primary rounded-full hover:bg-primary/50 bg-primary px-5 py-2.5 text-sm font-bold transition hover:brightness-95 md:inline-block"
                         >
                             Request a Quote
                         </Link>

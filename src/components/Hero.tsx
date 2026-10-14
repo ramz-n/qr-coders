@@ -11,9 +11,9 @@ const Hero = () => {
                         <span className="text-accent">value</span>.
                     </h1>
                     <p className="mb-4 max-w-2xl text-gray-500 dark:text-gray-400 md:mb-12 md:text-lg lg:mb-5 lg:text-xl">
-                        QR Coders is a software development company building
-                        business software & web solutions, from conception to
-                        launch, and we keep them running after launch.
+                        QRCoders is a software development company that builds
+                        business software & web solutions that deliver real
+                        value. From conception to launch, we help businesses of all sizes.
                     </p>
 
                     <div className="mt-8 flex flex-wrap items-center gap-3">

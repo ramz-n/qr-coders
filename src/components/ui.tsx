@@ -19,9 +19,21 @@ export function Section({
     return (
         <section
             id={id}
-            className={`border-b border-zinc-200 py-16 md:py-24 ${tone === "white" ? "bg-white" : "bg-zinc-50"}`}
+            className={`relative py-16 md:py-24 ${tone === "white" ? "bg-white" : "bg-zinc-50"}`}
         >
+            <img
+                src="/wave-bg.svg"
+                alt="wave background"
+                className="absolute top-0 md:-top-10 w-full rotate-180"
+            />
+
             <div className={wrap}>{children}</div>
+
+            <img
+                src="/wave-bg1.svg"
+                alt="wave background"
+                className="absolute -bottom-11 md:-bottom-25 w-full rotate-180 -z-10"
+            />
         </section>
     );
 }
@@ -41,7 +53,7 @@ export function Split({
             <div className="lg:sticky lg:top-28 lg:self-start relative">
                 <p className="eyebrow">{eyebrow}</p>
                 <h2 className="h-section mt-3">{title}</h2>
-                <img src="/about1.svg" className="absolute h-100" />
+                <img src="/about1.svg" className="absolute h-100 hidden md:block" />
             </div>
             <div>{children}</div>
         </div>
