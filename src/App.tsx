@@ -1,5 +1,11 @@
 import { useEffect } from "react";
-import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  useLocation,
+  HashRouter,
+} from "react-router-dom";
 
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
@@ -49,7 +55,7 @@ const ScrollManager = () => {
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <ScrollManager />
       <Navbar />
 
@@ -69,7 +75,7 @@ function App() {
       </SmoothScrolling>
       <WhatsAppFloatingBot />
       <Footer />
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
