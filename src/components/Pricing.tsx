@@ -66,7 +66,7 @@ const Pricing = () => {
                             {item.services.map((itm, idx) => (
                                 <li
                                     key={idx}
-                                    className="flex items-center font-semibold text-sm md:text-xl gap-2 text-zinc-600"
+                                    className="flex items-center font-semibold text-sm md:text-lg gap-2 text-zinc-600"
                                 >
                                     <SealCheckIcon />
                                     <span className="text-zinc-600">
