@@ -1,24 +1,22 @@
 const PrivacyPolicy = () => {
   return (
     <main className="relative mx-auto max-w-4xl px-6 py-20 text-gray-300">
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 opacity-60">
-        <svg className="h-150" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>qrcode_line</title> <g id="页面-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd"> <g id="Device" transform="translate(-384.000000, -96.000000)"> <g id="qrcode_line" transform="translate(384.000000, 96.000000)"> <path d="M24,0 L24,24 L0,24 L0,0 L24,0 Z M12.5934901,23.257841 L12.5819402,23.2595131 L12.5108777,23.2950439 L12.4918791,23.2987469 L12.4918791,23.2987469 L12.4767152,23.2950439 L12.4056548,23.2595131 C12.3958229,23.2563662 12.3870493,23.2590235 12.3821421,23.2649074 L12.3780323,23.275831 L12.360941,23.7031097 L12.3658947,23.7234994 L12.3769048,23.7357139 L12.4804777,23.8096931 L12.4953491,23.8136134 L12.4953491,23.8136134 L12.5071152,23.8096931 L12.6106902,23.7357139 L12.6232938,23.7196733 L12.6232938,23.7196733 L12.6266527,23.7031097 L12.609561,23.275831 C12.6075724,23.2657013 12.6010112,23.2592993 12.5934901,23.257841 L12.5934901,23.257841 Z M12.8583906,23.1452862 L12.8445485,23.1473072 L12.6598443,23.2396597 L12.6498822,23.2499052 L12.6498822,23.2499052 L12.6471943,23.2611114 L12.6650943,23.6906389 L12.6699349,23.7034178 L12.6699349,23.7034178 L12.678386,23.7104931 L12.8793402,23.8032389 C12.8914285,23.8068999 12.9022333,23.8029875 12.9078286,23.7952264 L12.9118235,23.7811639 L12.8776777,23.1665331 C12.8752882,23.1545897 12.8674102,23.1470016 12.8583906,23.1452862 L12.8583906,23.1452862 Z M12.1430473,23.1473072 C12.1332178,23.1423925 12.1221763,23.1452606 12.1156365,23.1525954 L12.1099173,23.1665331 L12.0757714,23.7811639 C12.0751323,23.7926639 12.0828099,23.8018602 12.0926481,23.8045676 L12.108256,23.8032389 L12.3092106,23.7104931 L12.3186497,23.7024347 L12.3186497,23.7024347 L12.3225043,23.6906389 L12.340401,23.2611114 L12.337245,23.2485176 L12.337245,23.2485176 L12.3277531,23.2396597 L12.1430473,23.1473072 Z" id="MingCute" fill-rule="nonzero"> </path> <path d="M14,13 C14.51285,13 14.9355092,13.386027 14.9932725,13.8833761 L15,14 L15,20 C15,20.5523 14.5523,21 14,21 C13.48715,21 13.0644908,20.613973 13.0067275,20.1166239 L13,20 L13,14 C13,13.4477 13.4477,13 14,13 Z M17,17.5 C17.5523,17.5 18,17.9477 18,18.5 L18,20 C18,20.5523 17.5523,21 17,21 C16.4477,21 16,20.5523 16,20 L16,18.5 C16,17.9477 16.4477,17.5 17,17.5 Z M20,13 C20.51285,13 20.9355092,13.386027 20.9932725,13.8833761 L21,14 L21,20 C21,20.5523 20.5523,21 20,21 C19.48715,21 19.0644908,20.613973 19.0067275,20.1166239 L19,20 L19,14 C19,13.4477 19.4477,13 20,13 Z M9,13 C10.1046,13 11,13.8954 11,15 L11,19 C11,20.1046 10.1046,21 9,21 L5,21 C3.89543,21 3,20.1046 3,19 L3,15 C3,13.8954 3.89543,13 5,13 L9,13 Z M9,15 L5,15 L5,19 L9,19 L9,15 Z M17,13 C17.51285,13 17.9355092,13.386027 17.9932725,13.8833761 L18,14 L18,15.5 C18,16.0523 17.5523,16.5 17,16.5 C16.48715,16.5 16.0644908,16.113973 16.0067275,15.6166239 L16,15.5 L16,14 C16,13.4477 16.4477,13 17,13 Z M9,3 C10.1046,3 11,3.89543 11,5 L11,9 C11,10.1046 10.1046,11 9,11 L5,11 C3.89543,11 3,10.1046 3,9 L3,5 C3,3.89543 3.89543,3 5,3 L9,3 Z M19,3 C20.1046,3 21,3.89543 21,5 L21,9 C21,10.1046 20.1046,11 19,11 L15,11 C13.8954,11 13,10.1046 13,9 L13,5 C13,3.89543 13.8954,3 15,3 L19,3 Z M9,5 L5,5 L5,9 L9,9 L9,5 Z M19,5 L15,5 L15,9 L19,9 L19,5 Z" id="形状" fill="#09244B"> </path> </g> </g> </g> </g>
-        </svg>
-      </div>
-      <p className="text-sm font-semibold uppercase tracking-widest text-primary">
+      <p className="eyebrow text-sm font-semibold tracking-widest text-primary">
         QR Coders
       </p>
 
-      <h1 className="mt-3 text-4xl font-bold text-white">Privacy Policy</h1>
+      <h1 className="h-section mt-3">Privacy Policy</h1>
 
-      <p className="mt-4 text-sm text-gray-400">
+      <p className="mt-4 max-w-2xl leading-7 text-gray-600">
         Last updated: July 11, 2026
       </p>
 
       <div className="mt-10 space-y-10 leading-7">
         <section>
-          <h2 className="text-2xl font-semibold text-white">1. Introduction</h2>
-          <p className="mt-3">
+          <h2 className="text-2xl font-semibold text-zinc-800">
+            1. Introduction
+          </h2>
+          <p className="mt-3 text-zinc-600">
             QR Coders respects your privacy. This Privacy Policy explains how we
             collect, use, and protect information when you visit our website or
             contact us about our digital services.
@@ -26,10 +24,10 @@ const PrivacyPolicy = () => {
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold text-white">
+          <h2 className="text-2xl font-semibold text-zinc-800">
             2. Information We Collect
           </h2>
-          <p className="mt-3">
+          <p className="mt-3 text-zinc-600">
             We may collect your name, email address, phone number, company name,
             project details, and any other information you provide through our
             contact or quote request forms.
@@ -37,10 +35,10 @@ const PrivacyPolicy = () => {
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold text-white">
+          <h2 className="text-2xl font-semibold text-zinc-800">
             3. How We Use Your Information
           </h2>
-          <ul className="mt-3 list-disc space-y-2 pl-6">
+          <ul className="mt-3 list-disc space-y-2 pl-6 text-zinc-600">
             <li>Respond to your questions and quote requests.</li>
             <li>Provide and improve our services.</li>
             <li>Communicate about your project or ongoing work.</li>
@@ -49,10 +47,10 @@ const PrivacyPolicy = () => {
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold text-white">
+          <h2 className="text-2xl font-semibold text-zinc-800">
             4. Sharing Your Information
           </h2>
-          <p className="mt-3">
+          <p className="mt-3 text-zinc-600">
             We do not sell your personal information. We may share information
             only with trusted service providers when necessary to operate our
             business, comply with legal requirements, or protect our rights.
@@ -60,8 +58,8 @@ const PrivacyPolicy = () => {
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold text-white">5. Cookies</h2>
-          <p className="mt-3">
+          <h2 className="text-2xl font-semibold text-zinc-800">5. Cookies</h2>
+          <p className="mt-3 text-zinc-600">
             Our website may use cookies or similar technologies to improve your
             browsing experience and understand website usage. You can manage
             cookies through your browser settings.
@@ -69,10 +67,10 @@ const PrivacyPolicy = () => {
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold text-white">
+          <h2 className="text-2xl font-semibold text-zinc-800">
             6. Data Security
           </h2>
-          <p className="mt-3">
+          <p className="mt-3 text-zinc-600">
             We take reasonable technical and organizational measures to protect
             your information. However, no online system can be guaranteed to be
             completely secure.
@@ -80,10 +78,10 @@ const PrivacyPolicy = () => {
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold text-white">
+          <h2 className="text-2xl font-semibold text-zinc-800">
             7. Your Rights
           </h2>
-          <p className="mt-3">
+          <p className="mt-3 text-zinc-600">
             You may request access to, correction of, or deletion of your
             personal information by contacting us. We will respond in accordance
             with applicable laws.
@@ -91,10 +89,8 @@ const PrivacyPolicy = () => {
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold text-white">
-            8. Contact Us
-          </h2>
-          <p className="mt-3">
+          <h2 className="text-2xl font-semibold text-zinc-800">8. Contact Us</h2>
+          <p className="mt-3 text-zinc-600">
             For privacy-related questions, contact QR Coders at{" "}
             <a
               href="mailto:hello@qrcoders.com"

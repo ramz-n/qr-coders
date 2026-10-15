@@ -1,4 +1,8 @@
-import { WhatsappLogoIcon, X } from "@phosphor-icons/react";
+import {
+    PaperPlaneRightIcon,
+    WhatsappLogoIcon,
+    X,
+} from "@phosphor-icons/react";
 import { useState } from "react";
 
 const WhatsAppFloatingBot = () => {
@@ -13,7 +17,7 @@ const WhatsAppFloatingBot = () => {
 
         const baseText = `*Inquiry from QRCoders Website*\n\n${userMessage}`;
         const encodedText = encodeURIComponent(baseText);
-        const whatsappUrl = `https://wa.me{+9779744700704}?text=${encodedText}`;
+        const whatsappUrl = `https://wa.me/9779744700704?text=${encodedText}`;
 
         window.open(whatsappUrl, "_blank", "noopener,noreferrer");
         setUserMessage("");
@@ -22,14 +26,7 @@ const WhatsAppFloatingBot = () => {
     return (
         <div className="fixed bottom-6 right-6 z-50 font-sans text-left">
             {isOpen && (
-                <div
-                    className="mb-4 w-80 md:w-96 h-[400px] bg-[#E5DDD5] rounded-xl shadow-2xl flex flex-col overflow-hidden border border-gray-200 animate-popup"
-                    style={{
-                        animation: "popup 0.25s ease-out forwards",
-                        backgroundImage: "url('https://githubusercontent.com')",
-                        backgroundSize: "contain",
-                    }}
-                >
+                <div className="mb-4 w-80 md:w-96 h-[400px] bg-[#E5DDD5] rounded-xl shadow-2xl flex flex-col overflow-hidden border border-gray-200 animate-popup">
                     <div className="bg-[#075E54] text-white p-4 flex items-center justify-between shadow-md">
                         <div className="flex items-center gap-3">
                             <div className="w-10 h-10 bg-emerald-500 rounded-full flex items-center justify-center font-bold text-lg text-white shadow-inner">
@@ -47,7 +44,7 @@ const WhatsAppFloatingBot = () => {
                         </div>
                         <button
                             onClick={toggleChat}
-                            className="text-white opacity-70 hover:opacity-100 text-xl font-bold transition-opacity focus:outline-none"
+                            className="cursor-pointer text-white opacity-70 hover:opacity-100 text-xl font-bold transition-opacity focus:outline-none"
                         >
                             ✕
                         </button>
@@ -82,12 +79,7 @@ const WhatsAppFloatingBot = () => {
                             disabled={!userMessage.trim()}
                             className="bg-[#128C7E] hover:bg-[#075E54] text-white p-2 rounded-full w-9 h-9 flex items-center justify-center transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                         >
-                            <svg
-                                className="w-4 h-4 fill-current rotate-90"
-                                viewBox="0 0 24 24"
-                            >
-                                <path d="M2,21L23,12L2,3V10L17,12L2,14V21Z" />
-                            </svg>
+                            <PaperPlaneRightIcon className="w-5 h-5" />
                         </button>
                     </form>
                 </div>
@@ -95,7 +87,7 @@ const WhatsAppFloatingBot = () => {
 
             <button
                 onClick={toggleChat}
-                className={`w-14 h-14 rounded-full shadow-xl flex items-center justify-center text-white transition-all transform hover:scale-105 active:scale-95 focus:outline-none ${
+                className={`cursor-pointer w-14 h-14 rounded-full shadow-lg shadow-accent-strong flex items-center justify-center text-white transition-all transform hover:scale-105 active:scale-95 focus:outline-none ${
                     isOpen ? "bg-gray-700" : "bg-emerald-700 hover:bg-[#20BA5A]"
                 }`}
             >

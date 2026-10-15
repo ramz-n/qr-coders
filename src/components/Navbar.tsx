@@ -57,11 +57,11 @@ const Navbar = () => {
 
             {open && (
                 <div className="mobile-menu fixed inset-0 z-60 flex flex-col bg-black text-white">
-                    <div className="flex items-center justify-between px-6 py-4">
+                    <div className="flex items-center justify-between px-6 py-2">
                         <img
                             src="/qrc-logo-white.png"
                             alt="QRC Logo"
-                            className="h-12 w-auto"
+                            className="h-8 md:h-8 w-auto"
                         />
                         <button
                             aria-label="Close menu"

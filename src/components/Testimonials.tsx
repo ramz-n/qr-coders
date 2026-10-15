@@ -55,11 +55,11 @@ const Testimonials = () => {
               key={item.name}
               className="min-w-0 flex-[0_0_100%] pl-4 md:flex-[0_0_50%] lg:flex-[0_0_33.333%]"
             >
-              <div className="pl-5 flex h-full flex-col justify-between p-6 shadow-lg bg-white transition duration-300">
+              <div className="pl-5 flex rounded-2xl h-full flex-col justify-between p-6 bg-white transition duration-300 hover:border-accent hover:border-[1px]">
                 <div>
-                  <h3 className="mt-5 text-lg font-semibold">{item.title}</h3>
+                  <h3 className="mt-5 text-lg font-extrabold">{item.title}</h3>
 
-                  <blockquote className="text-base leading-relaxed text-zinc-800">
+                  <blockquote className="text-base leading-relaxed text-zinc-600 mt-5">
                     &ldquo;{item.description}&rdquo;
                   </blockquote>
                 </div>

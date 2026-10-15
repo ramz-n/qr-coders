@@ -26,7 +26,7 @@ const Footer = () => {
     };
 
     return (
-        <div id="contact" className="mx-auto my-20">
+        <div id="contact" className="mx-auto">
             <div className="py-20 grid gap-12 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:gap-16">
                 <div>
                     <p className="eyebrow">Contact</p>
@@ -109,7 +109,7 @@ const Footer = () => {
                         </div>
                     </dl>
                 </div>
-                <div className="rounded-2xl border border-zinc-200 bg-zinc-50 p-6 sm:p-8">
+                <div className="rounded-2xl border border-zinc-200 bg-zinc-50 p-1 md:p-6 sm:p-8">
                     <form
                         onSubmit={handleSubmit}
                         className="space-y-4 rounded-lg p-6"

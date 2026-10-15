@@ -8,14 +8,23 @@ const About = () => {
                 eyebrow="About us"
                 title="A software company for businesses of every size"
             >
-                <div className="space-y-4 text-base leading-relaxed text-zinc-600 mt-15">
+                <div className="space-y-4 text-base leading-relaxed text-zinc-600 md:mt-15">
                     <p>
-                        Our developers, designers and technology specialists
-                        turn ideas into working software, websites, mobile
-                        applications and digital platforms, and keep them
-                        running once they are live.
+                        At QRCoders, we engineer high-impact software solutions
+                        tailored for businesses of all sizes, helping them scale
+                        seamlessly in a fast-evolving digital landscape. Based
+                        in Narayangarh, Chitwan, we bridge the gap between
+                        complex engineering and elegant, user-centric design to
+                        drive real business growth.
                     </p>
-                    <p>We are based in Narayangarh, Chitwan.</p>
+                    <p>
+                        We believe that great software shouldn't just
+                        function—it should innovate. Whether you are a growing
+                        local startup or an established enterprise, our team
+                        delivers custom web applications, scalable platforms,
+                        and robust digital architecture designed to optimize
+                        operations and elevate your brand.
+                    </p>
                 </div>
                 <dl className="mt-8 grid gap-6 border-t border-zinc-200 pt-6 sm:grid-cols-2">
                     <div>
@@ -23,8 +32,10 @@ const About = () => {
                             <TargetIcon size={32} /> <span>Our mission</span>
                         </dt>
                         <dd className="mt-2 text-sm leading-relaxed text-zinc-600">
-                            Help businesses adopt digital technology with
-                            software that fits how they actually work.
+                            Empower businesses with scalable, high-performance
+                            software that yield results. We are dedicated to
+                            delivering world-class engineering solutions that
+                            give our cients a competitive edge.
                         </dd>
                     </div>
                     <div>
@@ -32,9 +43,9 @@ const About = () => {
                             <VisorIcon size={32} /> <span>Our vision</span>
                         </dt>
                         <dd className="mt-2 text-sm leading-relaxed text-zinc-600">
-                            To become one of Nepal&rsquo;s most trusted IT
-                            companies, known for quality, integrity and reliable
-                            delivery.
+                            Our primary vision is to become the premier software
+                            development partner for businesses of all sizes
+                            looking to modernize their infrastructure.
                         </dd>
                     </div>
                 </dl>

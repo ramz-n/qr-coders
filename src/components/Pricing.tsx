@@ -1,4 +1,4 @@
-import { Check } from "lucide-react";
+import { SealCheckIcon } from "@phosphor-icons/react";
 import { Link } from "react-router-dom";
 
 const pricing = [
@@ -34,11 +34,11 @@ const pricing = [
 const Pricing = () => {
     return (
         <section id="pricing" className="py-20">
-            <p className="eyebrow text-sm font-semibold tracking-widest text-primary">
+            <p className="eyebrow text-sm font-semibold tracking-widest text-primary text-center">
                 Our Pricing
             </p>
 
-            <h2 className="h-section mt-3">
+            <h2 className="h-section mt-3 text-center">
                 Affordable pricing that suits you
             </h2>
 
@@ -66,9 +66,9 @@ const Pricing = () => {
                             {item.services.map((itm, idx) => (
                                 <li
                                     key={idx}
-                                    className="flex gap-2 text-zinc-600"
+                                    className="flex items-center font-semibold text-sm md:text-xl gap-2 text-zinc-600"
                                 >
-                                    <Check />
+                                    <SealCheckIcon />
                                     <span className="text-zinc-600">
                                         {" "}
                                         {itm}

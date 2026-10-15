@@ -1,6 +1,6 @@
 const Map = () => {
     return (
-        <div className="mx-auto text-center mt-30">
+        <div className="mx-auto text-center">
             <div className="py-10">
                 <p className="eyebrow text-sm font-semibold tracking-widest text-primary">
                     Our branches
@@ -10,7 +10,7 @@ const Map = () => {
                     Our diverse team operates from different parts of world
                 </h2>
             </div>
-            <div className="relative w-full overflow-hidden rounded-lg border border-primary/40 h-100">
+            <div className="relative w-full overflow-hidden rounded-lg border border-primary/40 h-40 md:h-100">
                 <img src="./branchmap.PNG" alt="branch map" loading="lazy" className="w-full h-full object-fill" />
             </div>
         </div>
