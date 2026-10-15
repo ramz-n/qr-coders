@@ -96,7 +96,7 @@ const WhatsAppFloatingBot = () => {
                         <X />
                     </span>
                 ) : (
-                    <WhatsappLogoIcon size={40} />
+                    <WhatsappLogoIcon size={40} className=" animate-pulse" />
                 )}
             </button>
         </div>

@@ -1,5 +1,6 @@
 import {
     AppWindow,
+    BotIcon,
     CloudCogIcon,
     Headset,
     MonitorCogIcon,
@@ -8,6 +9,7 @@ import {
     PanelsTopLeft,
     Smartphone,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const services = [
     {
@@ -53,6 +55,12 @@ const services = [
             "We provide expert guidance to help organizations choose the right technologies, optimize workflows, and implement effective digital transformation strategies.",
     },
     {
+        icon: BotIcon,
+        title: "AI Integration",
+        description:
+            "We assist businesses in integrating AI technologies into their operations, enabling automation, data-driven decision-making, and enhanced customer experiences.",
+    },
+    {
         icon: Headset,
         title: "Maintenance & Support",
         description:
@@ -62,7 +70,10 @@ const services = [
 
 const Services = () => {
     return (
-        <section id="services" className="py-20 md:mt-30 fluid-container text-center">
+        <section
+            id="services"
+            className="py-20 md:mt-30 fluid-container text-center"
+        >
             <p className="eyebrow text-sm font-semibold tracking-widest text-primary">
                 Services we offer
             </p>
@@ -74,19 +85,30 @@ const Services = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-5 pt-10">
                 {services.map((service, idx) => (
-                    <div
-                        key={idx}
-                        className="h-full p-8 flex items-center flex-col rounded-2xl shadow-xs bg-white hover:-translate-y-1 hover:scale-[1.01] hover:shadow-xl cursor-pointer"
-                    >
-                        <div className="mb-4 flex h-18 w-18 items-center justify-center text-accent-tint mt-0.5 bg-accent rounded-full">
-                            <service.icon className="h-12 w-12 " />
+                    <div className="group relative h-full flex items-center flex-col rounded-2xl shadow-xs bg-white hover:-translate-y-1 hover:scale-[1.01] hover:shadow-xl transition-all duration-300 cursor-pointer overflow-hidden">
+                        <div
+                            key={idx}
+                            className="h-full p-8 flex items-center flex-col rounded-2xl shadow-xs bg-white hover:-translate-y-1 hover:scale-[1.01] hover:shadow-xl cursor-pointer"
+                        >
+                            <div className="mb-4 flex h-18 w-18 items-center justify-center text-accent-tint mt-0.5 bg-accent rounded-full">
+                                <service.icon className="h-12 w-12" />
+                            </div>
+                            <h3 className="mb-3 text-xl font-medium">
+                                {service.title}
+                            </h3>
+                            <p className="text-sm text-center text-zinc-600">
+                                {service.description}
+                            </p>
                         </div>
-                        <h3 className="mb-3 text-xl font-medium">
-                            {service.title}
-                        </h3>
-                        <p className="text-sm text-center text-zinc-600">
-                            {service.description}
-                        </p>
+
+                        <div className="absolute bottom-4 left-0 right-0 flex justify-center opacity-0 translate-y-4 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
+                            <Link
+                                to="/quote"
+                                className="btn-primary rounded-full hover:bg-primary/50 bg-primary px-5 py-2.5 text-sm font-bold transition hover:brightness-95 md:inline-block"
+                            >
+                                Request a Quote
+                            </Link>
+                        </div>
                     </div>
                 ))}
             </div>

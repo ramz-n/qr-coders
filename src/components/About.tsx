@@ -18,12 +18,8 @@ const About = () => {
                         drive real business growth.
                     </p>
                     <p>
-                        We believe that great software shouldn't just
-                        function—it should innovate. Whether you are a growing
-                        local startup or an established enterprise, our team
-                        delivers custom web applications, scalable platforms,
-                        and robust digital architecture designed to optimize
-                        operations and elevate your brand.
+                        We believe that great software shouldn't just function,
+                        it should innovate.
                     </p>
                 </div>
                 <dl className="mt-8 grid gap-6 border-t border-zinc-200 pt-6 sm:grid-cols-2">
