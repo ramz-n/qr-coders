@@ -85,18 +85,20 @@ const Services = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-5 pt-10">
                 {services.map((service, idx) => (
-                    <div className="group relative h-full flex items-center flex-col rounded-2xl shadow-xs bg-white hover:-translate-y-1 hover:scale-[1.01] hover:shadow-xl transition-all duration-300 cursor-pointer overflow-hidden">
-                        <div
-                            key={idx}
-                            className="h-full p-8 flex items-center flex-col rounded-2xl shadow-xs bg-white hover:-translate-y-1 hover:scale-[1.01] hover:shadow-xl cursor-pointer"
-                        >
-                            <div className="mb-4 flex h-18 w-18 items-center justify-center text-accent-tint mt-0.5 bg-accent rounded-full">
+                    <div
+                        key={idx}
+                        className="group relative h-full flex items-center flex-col rounded-2xl shadow-xs bg-white hover:-translate-y-1 hover:scale-[1.01] hover:shadow-xl transition-all duration-300 overflow-hidden"
+                    >
+                        <div className="relative h-full p-8 flex items-center flex-col rounded-2xl shadow-xs bg-white hover:-translate-y-1 hover:scale-[1.01] hover:shadow-xl">
+                            <service.icon className="absolute inset-0 h-full w-full text-accent-tint/50" />
+
+                            <div className="z-10 mb-4 flex h-18 w-18 items-center justify-center text-accent-tint mt-0.5 bg-accent rounded-full">
                                 <service.icon className="h-12 w-12" />
                             </div>
-                            <h3 className="mb-3 text-xl font-medium">
+                            <h3 className="z-10 mb-3 text-xl font-medium">
                                 {service.title}
                             </h3>
-                            <p className="text-sm text-center text-zinc-600">
+                            <p className="z-10 text-sm text-center text-zinc-600">
                                 {service.description}
                             </p>
                         </div>

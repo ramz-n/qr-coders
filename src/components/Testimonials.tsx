@@ -1,5 +1,6 @@
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
+import { Quote } from "lucide-react";
 
 const testimonialData = [
   {
@@ -56,19 +57,33 @@ const Testimonials = () => {
               className="min-w-0 flex-[0_0_100%] pl-4 md:flex-[0_0_50%] lg:flex-[0_0_33.333%]"
             >
               <div className="pl-5 flex rounded-2xl h-full flex-col justify-between p-6 bg-white transition duration-300 hover:border-accent hover:border-[1px]">
-                <div>
-                  <h3 className="mt-5 text-lg font-extrabold">{item.title}</h3>
+                <div className="relative">
+                  <img
+                    src="/quote.svg"
+                    className="absolute top-0 left-0 pointer-events-none"
+                    alt="quote"
+                  />
 
-                  <blockquote className="text-base leading-relaxed text-zinc-600 mt-5">
-                    &ldquo;{item.description}&rdquo;
-                  </blockquote>
+                  <div className="relative z-10">
+                    <h3 className="mt-5 text-lg font-extrabold">
+                      {item.title}
+                    </h3>
+
+                    <blockquote className="text-base leading-relaxed text-zinc-600 mt-5">
+                      &ldquo;{item.description}&rdquo;
+                    </blockquote>
+                  </div>
                 </div>
 
-                <div className="mt-8 border-t border-zinc-300 pt-4">
-                  <h4 className="font-medium text-zinc-900">{item.name}</h4>
-                  <span className="text-zinc-500">
-                    &middot; {item.occupation}
-                  </span>
+                <div className="mt-8 border-t border-zinc-300 pt-4 flex gap-3">
+                  <div className="bg-accent-strong rounded-full h-12 w-12 text-white text-xl flex items-center justify-center">
+                    {item.name.split(" ")[0].charAt(0)}
+                    {item.name.split(" ")[1].charAt(0)}
+                  </div>
+                  <div className="items-start flex flex-col">
+                    <h4 className="font-medium text-zinc-900">{item.name}</h4>
+                    <span className="text-zinc-500">{item.occupation}</span>
+                  </div>
                 </div>
               </div>
             </article>

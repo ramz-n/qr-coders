@@ -44,7 +44,7 @@ const Process = () => {
                         key={p.title}
                         className="border-t-2 border-zinc-900 pt-4"
                     >
-                        <p className="text-xl font-medium tabular-nums text-accent">
+                        <p className="text-xl font-extrabold tabular-nums text-accent">
                             0{i + 1}
                         </p>
                         <h3 className="mt-2 font-semibold text-zinc-900 flex gap-1 items-center">

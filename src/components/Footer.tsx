@@ -58,6 +58,9 @@ const Footer = () => {
             <div
                 className={`mx-auto w-full max-w-6xl px-5 sm:px-8 grid gap-10 py-14 md:grid-cols-[minmax(0,2fr)_1fr_1fr]`}
             >
+                <span className="absolute pt-50 pl-15 md:pl-70 md:pt-10 text-[120px] md:text-[150px] tracking-tight text-accent-tint/50">
+                    QRCoders
+                </span>
                 <div>
                     <img
                         src="/qrc-logo.webp"

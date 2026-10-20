@@ -46,7 +46,7 @@ const Pricing = () => {
                 {pricing.map((item, idx) => (
                     <div
                         key={idx}
-                        className="rounded-2xl p-6 shadow-xs bg-white hover:-translate-y-1 hover:scale-[1.01] hover:shadow-xl cursor-pointer"
+                        className="rounded-2xl p-6 shadow-xs bg-white hover:-translate-y-1 hover:shadow-xl cursor-pointer"
                     >
                         <div className="w-full h-50">
                             <img
@@ -68,7 +68,7 @@ const Pricing = () => {
                                     key={idx}
                                     className="flex items-center font-semibold text-sm md:text-lg gap-2 text-zinc-600"
                                 >
-                                    <SealCheckIcon />
+                                    <SealCheckIcon className="h-5 w-5" />
                                     <span className="text-zinc-600">
                                         {" "}
                                         {itm}
@@ -78,7 +78,7 @@ const Pricing = () => {
                         </ul>
                         <Link
                             to="/price-calculator"
-                            className="btn-primary mt-8 block rounded-full border border-primary bg-primary/60 px-12 py-3 text-center text-sm font-medium text-white hover:bg-primary/70 hover:ring-1 hover:ring-primary/70"
+                            className="btn-primary mt-8 block rounded-full border border-primary bg-primary/60 px-12 py-3 text-center text-sm font-medium text-white hover:bg-primary/70"
                         >
                             Estimate the cost
                         </Link>
