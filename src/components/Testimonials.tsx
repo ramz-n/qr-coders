@@ -1,6 +1,5 @@
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
-import { Quote } from "lucide-react";
 
 const testimonialData = [
   {

@@ -7,16 +7,18 @@ import Map from "../components/Map";
 import Contact from "../components/Contact";
 import Process from "../components/Process";
 import Technologies from "../components/Technologies";
+import Works from "../components/Works";
 
 const Home = () => {
     return (
         <>
             <Hero />
             <Technologies />
-            <About />
             <Services />
             <Process />
+            <Works />
             <Pricing />
+            <About />
             <Testimonials />
             <Map />
             <Contact />
