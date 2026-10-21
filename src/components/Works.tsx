@@ -278,43 +278,48 @@ const Works = () => {
             </p>
             <h2 className="h-section mt-3">Projects we have delivered</h2>
             <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-12 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-                {PROJECTS.map((p, i) => (
-                    <article
-                        key={i}
-                        className="rounded-2xl p-6 shadow-xs bg-white hover:-translate-y-1 hover:shadow-xl cursor-pointer"
-                    >
-                        <div className="relative w-full aspect-[16/10] rounded-xl mb-6 overflow-hidden flex items-center justify-center transition">
-                            <div className="absolute inset-0 bg-gradient-to-br from-accent-200/10 to-purple-500/10 opacity-60" />
-                            <span>{p.image}</span>
-                        </div>
-                        <div className="flex items-center gap-x-3 text-xs justify-center">
-                            <span className="rounded-full bg-accent-tint px-3 py-1 font-medium text-zinc-800 ring-1 ring-inset ring-accent-strong">
-                                {p.name}
-                            </span>
-                            <span className="text-zinc-600">{p.year}</span>
-                        </div>
-                        <div className="group relative">
-                            <h3 className="mt-4 text-xl font-bold leading-6">
-                                <span className="absolute inset-0" />
-                                {p.title}
-                            </h3>
-                            <p className="mt-3 text-sm leading-6 text-zinc-500 line-clamp-3">
-                                {p.summary}
-                            </p>
-                        </div>
+                {PROJECTS.map((p, i) => {
+                    const Icon = () => p.image;
 
-                        <div className="mt-6 flex flex-wrap gap-2 border-t border-zinc-200 pt-4 w-full">
-                            {p.techs.map((t, i) => (
-                                <span
-                                    key={i}
-                                    className="text-[11px] font-semibold text-zinc-600 tracking-wider uppercase bg-accent-strong/10 px-3 rounded-full"
-                                >
-                                    {t}
+                    return (
+                        <article
+                            key={i}
+                            className="rounded-2xl p-6 shadow-xs bg-white hover:-translate-y-1 hover:shadow-xl cursor-pointer"
+                        >
+                            <div className="relative w-full h-30 md:w-full aspect-[16/10] rounded-xl mb-6 overflow-hidden flex items-center justify-center transition">
+                                <div className="absolute inset-0 bg-gradient-to-br from-accent-200/10 to-purple-500/10 opacity-60" />
+                                <span className="inline-block w-20 h-20 md:w-full md:h-full [&_svg]:w-full [&_svg]:h-full">
+                                    <Icon />
                                 </span>
-                            ))}
-                        </div>
-                    </article>
-                ))}
+                            </div>
+                            <div className="flex items-center gap-x-3 text-xs justify-center">
+                                <span className="rounded-full bg-accent-tint px-3 py-1 font-medium text-zinc-800 ring-1 ring-inset ring-accent-strong">
+                                    {p.name}
+                                </span>
+                            </div>
+                            <div className="group relative">
+                                <h3 className="mt-4 text-xl font-bold leading-6">
+                                    <span className="absolute inset-0" />
+                                    {p.title}
+                                </h3>
+                                <p className="mt-3 text-sm leading-6 text-zinc-500 line-clamp-3">
+                                    {p.summary}
+                                </p>
+                            </div>
+
+                            <div className="mt-6 flex flex-wrap gap-2 border-t border-zinc-200 pt-4 w-full">
+                                {p.techs.map((t, i) => (
+                                    <span
+                                        key={i}
+                                        className="text-[11px] font-semibold text-zinc-600 tracking-wider uppercase bg-accent-strong/10 px-3 rounded-full"
+                                    >
+                                        {t}
+                                    </span>
+                                ))}
+                            </div>
+                        </article>
+                    );
+                })}
             </div>
         </section>
     );

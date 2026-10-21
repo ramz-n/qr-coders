@@ -46,7 +46,9 @@ const Pricing = () => {
                 {pricing.map((item, idx) => (
                     <div
                         key={idx}
-                        className="rounded-2xl p-6 shadow-xs bg-white hover:-translate-y-1 hover:shadow-xl cursor-pointer"
+                        className={`rounded-2xl p-6 shadow-xs bg-white hover:-translate-y-1 hover:shadow-xl cursor-pointer
+                            ${idx === 1 ? "border-accent/50 border-2" : ""}
+                            `}
                     >
                         <div className="w-full h-50">
                             <img

@@ -1,10 +1,5 @@
 import { useEffect } from "react";
-import {
-  Routes,
-  Route,
-  useLocation,
-  HashRouter,
-} from "react-router-dom";
+import { Routes, Route, useLocation, HashRouter } from "react-router-dom";
 
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
@@ -18,6 +13,7 @@ import PriceCalculator from "./pages/PriceCalculator";
 import Careers from "./pages/Careers";
 import NotFound from "./pages/NotFound";
 import WhatsAppFloatingBot from "./components/FloatingWhatsApp";
+import Promotion from "./components/Promotion";
 
 const ScrollManager = () => {
   const { pathname, hash } = useLocation();
@@ -56,6 +52,7 @@ function App() {
   return (
     <HashRouter>
       <ScrollManager />
+      <Promotion />
       <Navbar />
 
       <SmoothScrolling>

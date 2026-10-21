@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 
 const links = [
     { href: "/", label: "Home" },
-    { href: "/#about", label: "About" },
     { href: "/#services", label: "Services" },
     { href: "/#pricing", label: "Pricing" },
+    { href: "/#about", label: "About" },
     { href: "/#contact", label: "Contact" },
 ];
 
@@ -14,7 +14,7 @@ const Navbar = () => {
     const [open, setOpen] = useState(false);
 
     return (
-        <header className="top-0 z-40 border-b border-zinc-200 bg-white/95 shadow-2xl">
+        <header className="sticky top-0 z-50 border-b border-zinc-200 bg-white/95 shadow-2xl">
             <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-2 lg:px-10  relative z-50">
                 <Link to="/" className="flex items-center gap-1">
                     <span>

@@ -3,12 +3,18 @@ import { Link } from "react-router-dom";
 
 const Hero = () => {
     return (
-        <section className="py-8 antialiased md:py-16 h-screen">
+        <section className="my-8 antialiased md:py-16 h-screen">
             <div className="mx-auto mt-20 grid max-w-screen px-4 pb-8 md:grid-cols-12 lg:gap-12 lg:pb-16 xl:gap-0">
                 <div className="relative content-center justify-self-start md:col-span-7 md:text-start">
                     <div className="absolute right-0 top-10 md:hidden">
-                        <GearIcon size={110} className="animate-spin text-accent/10 m-0" />
-                        <GearIcon size={80} className="animate-spin text-accent/10 -m-10" />
+                        <GearIcon
+                            size={110}
+                            className="animate-spin text-accent/10 m-0"
+                        />
+                        <GearIcon
+                            size={80}
+                            className="animate-spin text-accent/10 -m-10"
+                        />
                     </div>
                     <h1 className="mb-4 text-4xl font-semibold semibold leading-none tracking-tight text-zinc-900 md:text-5xl">
                         Building <span className="text-accent">high-ROI</span>{" "}

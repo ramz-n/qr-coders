@@ -38,7 +38,7 @@ const Testimonials = () => {
   ]);
 
   return (
-    <section id="testimony" className="mx-auto my-20 text-center">
+    <section id="testimony" className="mx-auto my-20 py-10 text-center">
       <p className="eyebrow text-sm font-semibold tracking-widest text-primary">
         Testimonials
       </p>
