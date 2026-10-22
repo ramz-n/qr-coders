@@ -54,7 +54,7 @@ const Pricing = () => {
                             <img
                                 className="h-full w-full"
                                 src={item.image}
-                                alt=""
+                                alt={item.title}
                                 loading="lazy"
                             />
                         </div>

@@ -61,6 +61,7 @@ const Testimonials = () => {
                     src="/quote.svg"
                     className="absolute top-0 left-0 pointer-events-none"
                     alt="quote"
+                    loading="lazy"
                   />
 
                   <div className="relative z-10">

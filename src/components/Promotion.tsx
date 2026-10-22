@@ -1,6 +1,6 @@
 const Promotion = () => {
     return (
-        <div className="">
+        <div className="z-60">
             <div className="bg-accent">
                 <div className="mx-auto py-3 px-3 md:px-8">
                     <div className="flex flex-col items-center justify-between lg:flex-row lg:justify-center">
