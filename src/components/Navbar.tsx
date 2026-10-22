@@ -3,8 +3,8 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const links = [
-    { href: "/", label: "Home" },
     { href: "/#services", label: "Services" },
+    { href: "/#process", label: "Process" },
     { href: "/#pricing", label: "Pricing" },
     { href: "/#about", label: "About" },
     { href: "/#contact", label: "Contact" },
