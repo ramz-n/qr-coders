@@ -58,11 +58,11 @@ const Pricing = () => {
                                 loading="lazy"
                             />
                         </div>
-                        <div className="text-center">
-                            <h2 className="mt-5 font-semibold text-zinc-900">
+                        <div className="w-full flex items-center justify-center mt-3">
+                            <span className="px-8 py-1 text-sm font-semibold text-zinc-900 ring-1 ring-inset ring-accent-strong rounded-full bg-accent-tint">
                                 {item.title}
                                 <span className="sr-only">{item.title}</span>
-                            </h2>
+                            </span>
                         </div>
                         <ul className="mt-6 space-y-2">
                             {item.services.map((itm, idx) => (
@@ -74,7 +74,7 @@ const Pricing = () => {
                                         className="h-5 w-5"
                                         alt={itm}
                                     />
-                                    <span className="text-zinc-600">
+                                    <span className="text-zinc-600 text-sm">
                                         {" "}
                                         {itm}
                                     </span>
