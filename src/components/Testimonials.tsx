@@ -3,7 +3,7 @@ import Autoplay from "embla-carousel-autoplay";
 
 const testimonialData = [
   {
-    name: "Raj Sharma",
+    name: "Munaf Shah",
     occupation: "Business Owner",
     title: "Outstanding Service and Professionalism",
     description:
@@ -24,7 +24,7 @@ const testimonialData = [
       "They transformed our ideas into a beautiful, fast, and user-friendly website.",
   },
   {
-    name: "Bikash Gurung",
+    name: "Bikash Sharma",
     occupation: "CEO",
     title: "Highly Recommended",
     description:

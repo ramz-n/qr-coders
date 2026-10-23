@@ -50,6 +50,7 @@ const Process = () => {
                         <h3 className="mt-2 font-semibold text-zinc-900 flex gap-1 items-center">
                             <p.icon
                                 size={50}
+                                alt={p.title}
                                 className="bg-accent text-white rounded-full p-1.5"
                             />{" "}
                             <span>{p.title}</span>

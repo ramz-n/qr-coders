@@ -70,7 +70,10 @@ const Pricing = () => {
                                     key={idx}
                                     className="flex items-center font-semibold text-sm md:text-lg gap-2 text-zinc-600"
                                 >
-                                    <SealCheckIcon className="h-5 w-5" />
+                                    <SealCheckIcon
+                                        className="h-5 w-5"
+                                        alt={itm}
+                                    />
                                     <span className="text-zinc-600">
                                         {" "}
                                         {itm}

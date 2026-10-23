@@ -25,7 +25,8 @@ const About = () => {
                 <dl className="mt-8 grid gap-6 border-t border-zinc-200 pt-6 sm:grid-cols-2">
                     <div>
                         <dt className="font-medium text-accent flex items-center gap-1">
-                            <TargetIcon size={32} /> <span>Our mission</span>
+                            <TargetIcon size={32} alt="our mission" />{" "}
+                            <span>Our mission</span>
                         </dt>
                         <dd className="mt-2 text-sm leading-relaxed text-zinc-600">
                             Empower businesses with scalable, high-performance
@@ -36,7 +37,8 @@ const About = () => {
                     </div>
                     <div>
                         <dt className="font-medium text-accent flex items-center gap-1">
-                            <VisorIcon size={32} /> <span>Our vision</span>
+                            <VisorIcon size={32} alt="our vision" />{" "}
+                            <span>Our vision</span>
                         </dt>
                         <dd className="mt-2 text-sm leading-relaxed text-zinc-600">
                             Our primary vision is to become the premier software

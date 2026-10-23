@@ -5,6 +5,7 @@ const technologies = [
     () => (
         <svg
             viewBox="0 0 128 128"
+            aria-hidden="true"
             className="h-12 hover:text-gray-900 dark:hover:text-white"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -18,6 +19,7 @@ const technologies = [
     () => (
         <svg
             viewBox="0 0 128 128"
+            aria-hidden="true"
             className="h-12 hover:text-gray-900 dark:hover:text-white"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -33,6 +35,7 @@ const technologies = [
     () => (
         <svg
             viewBox="0 0 128 128"
+            aria-hidden="true"
             className="h-12 hover:text-gray-900 dark:hover:text-white"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -99,6 +102,7 @@ const technologies = [
     () => (
         <svg
             viewBox="0 0 128 128"
+            aria-hidden="true"
             className="h-12 hover:text-gray-900 dark:hover:text-white"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -158,6 +162,7 @@ const technologies = [
     () => (
         <svg
             viewBox="0 0 128 128"
+            aria-hidden="true"
             className="h-12 hover:text-gray-900 dark:hover:text-white"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -179,6 +184,7 @@ const technologies = [
     () => (
         <svg
             viewBox="0 0 128 128"
+            aria-hidden="true"
             className="h-12 hover:text-gray-900 dark:hover:text-white"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -192,6 +198,7 @@ const technologies = [
     () => (
         <svg
             viewBox="0 0 128 128"
+            aria-hidden="true"
             className="h-12 hover:text-gray-900 dark:hover:text-white"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -258,6 +265,7 @@ const technologies = [
     () => (
         <svg
             viewBox="0 0 128 128"
+            aria-hidden="true"
             className="h-12 hover:text-gray-900 dark:hover:text-white"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
