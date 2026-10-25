@@ -19,7 +19,7 @@ const Navbar = () => {
                 <Link to="/" className="flex items-center gap-1">
                     <span>
                         <img
-                            src="/qrc-logo.webp"
+                            src="/qrc-logo.svg"
                             alt="QRC Logo"
                             className="h-8 md:h-8 w-auto"
                             loading="lazy"
@@ -59,7 +59,7 @@ const Navbar = () => {
                 <div className="mobile-menu fixed inset-0 z-60 flex flex-col bg-black text-white">
                     <div className="flex items-center justify-between px-6 py-2">
                         <img
-                            src="/qrc-logo-white.png"
+                            src="/qrc-logo-white.svg"
                             alt="QRC Logo"
                             className="h-8 md:h-8 w-auto"
                         />

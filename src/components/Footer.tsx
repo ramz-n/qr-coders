@@ -60,7 +60,7 @@ const Footer = () => {
             >
                 <div>
                     <img
-                        src="/qrc-logo.webp"
+                        src="/qrc-logo.svg"
                         alt="QR Coders"
                         width={130}
                         height={50}
