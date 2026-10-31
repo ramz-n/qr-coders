@@ -26,7 +26,7 @@ const WhatsAppFloatingBot = () => {
     return (
         <div className="fixed bottom-6 right-6 z-50 font-sans text-left">
             {isOpen && (
-                <div className="mb-4 w-80 md:w-96 h-[400px] bg-[#E5DDD5] rounded-xl shadow-2xl flex flex-col overflow-hidden border border-gray-200 animate-popup">
+                <div className="mb-16 w-80 md:w-96 h-[400px] bg-[#E5DDD5] rounded-xl shadow-2xl flex flex-col overflow-hidden border border-gray-200 animate-popup">
                     <div className="bg-[#075E54] text-white p-4 flex items-center justify-between shadow-md">
                         <div className="flex items-center gap-3">
                             <div className="w-10 h-10 bg-emerald-500 rounded-full flex items-center justify-center font-bold text-lg text-white shadow-inner">
@@ -88,7 +88,9 @@ const WhatsAppFloatingBot = () => {
             <button
                 onClick={toggleChat}
                 className={`cursor-pointer w-14 h-14 rounded-full shadow-lg shadow-accent-strong flex items-center justify-center text-white transition-all transform hover:scale-105 active:scale-95 focus:outline-none ${
-                    isOpen ? "bg-gray-700" : "bg-emerald-700 hover:bg-[#20BA5A]"
+                    isOpen
+                        ? "bg-gray-700 absolute right-0 bottom-0"
+                        : "bg-emerald-700 hover:bg-[#20BA5A]"
                 }`}
             >
                 {isOpen ? (
