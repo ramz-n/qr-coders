@@ -2,14 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import ReactMarkdown from "react-markdown";
 import { getTechConsultantREsponse } from "../services/aiService";
 
-import {
-    X,
-    Send,
-    Bot,
-    User,
-    Loader2,
-    BotMessageSquare,
-} from "lucide-react";
+import { X, Send, Bot, User, Loader2, BotMessageSquare } from "lucide-react";
 import { WhatsappLogoIcon } from "@phosphor-icons/react";
 
 interface Message {
@@ -70,11 +63,10 @@ const TechConsultant = () => {
                     role: "model",
                     text:
                         modelText ||
-                        "I apologize, I encountered a minor connection issue. Please feel free to connect directly with our human engineers!",
+                        "I apologize, I encountered a minor connection issue. Please feel free to connect directly with our human engineers on WhatsApp!",
                 },
             ]);
         } catch (error) {
-            console.error("UI Handling Catch:", error);
             setMessages((prev) => [
                 ...prev,
                 {
@@ -168,7 +160,7 @@ const TechConsultant = () => {
                                 <div className="bg-white border border-gray-100 rounded-2xl rounded-tl-none p-3 shadow-sm flex items-center space-x-2">
                                     <Loader2 className="w-4 h-4 text-accent animate-spin" />
                                     <span className="text-xs text-accent-bg-accent-tint0">
-                                        Architecting solution...
+                                        Analyzing...Please wait
                                     </span>
                                 </div>
                             </div>
