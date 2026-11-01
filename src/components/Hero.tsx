@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Hero = () => {
     return (
-        <section className="mt-30 -mb-30 md:my-8 antialiased md:py-16 h-screen">
+        <section className="mt-30 -mb-55 md:my-8 antialiased md:py-16 h-screen">
             <div className="mx-auto mt-10 grid max-w-screen px-4 pb-8 md:grid-cols-12 lg:gap-12 lg:pb-16 xl:gap-0">
                 <div className="relative content-center justify-self-start md:col-span-7 md:text-start">
                     <div className="absolute right-0 top-10 md:hidden">
