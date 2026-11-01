@@ -12,8 +12,8 @@ import Home from "./pages/Home";
 import PriceCalculator from "./pages/PriceCalculator";
 import Careers from "./pages/Careers";
 import NotFound from "./pages/NotFound";
-import WhatsAppFloatingBot from "./components/FloatingWhatsApp";
 import Promotion from "./components/Promotion";
+import TechConsultant from "./components/TechConsultant";
 
 const ScrollManager = () => {
   const { pathname, hash } = useLocation();
@@ -69,7 +69,7 @@ function App() {
           </Routes>
         </div>
       </SmoothScrolling>
-      <WhatsAppFloatingBot />
+      <TechConsultant />
       <Footer />
     </HashRouter>
   );
