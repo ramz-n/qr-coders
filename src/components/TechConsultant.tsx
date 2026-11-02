@@ -81,11 +81,11 @@ const TechConsultant = () => {
     };
 
     return (
-        <div className="fixed bottom-6 right-6 z-50 font-sans">
+        <div className="fixed bottom-4 right-4 z-50 font-sans">
             {!isOpen && (
                 <button
                     onClick={() => setIsOpen(true)}
-                    className="cursor-pointer flex items-center justify-center w-14 h-14 rounded-full bg-accent text-white shadow-2xl hover:bg-accent-strong hover:scale-105 transition-all duration-300 group"
+                    className="cursor-pointer flex items-center justify-center w-14 h-14 rounded-full bg-accent text-white shadow-[4px_4px_15px_5px_gray] hover:bg-accent-strong hover:scale-105 transition-all duration-300 group"
                     aria-label="Open AI Tech Consultant"
                 >
                     <BotMessageSquare className="w-8 h-8 group-hover:rotate-6 transition-transform animate-pulse" />
@@ -96,8 +96,8 @@ const TechConsultant = () => {
             )}
 
             {isOpen && (
-                <div className="w-[360px] sm:w-[400px] h-[550px] bg-white rounded-2xl shadow-2xl border border-gray-100 flex flex-col overflow-hidden animate-in slide-in-from-bottom-5 duration-200">
-                    <div className="p-4 bg-gradient-to-r from-accent to-accent-strong text-white flex items-center justify-between shadow-md">
+                <div className="w-80 h-130 bg-white rounded-2xl shadow-[4px_4px_20px_5px_gray] border border-gray-100 flex flex-col overflow-hidden animate-in slide-in-from-bottom-5 duration-200">
+                    <div className="p-4 bg-linear-to-r from-accent to-accent-strong text-white flex items-center justify-between shadow-md">
                         <div className="flex items-center space-x-3">
                             <div className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center border border-white/30">
                                 <Bot className="w-6 h-6 text-white" />
