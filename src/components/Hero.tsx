@@ -30,10 +30,11 @@ const Hero = () => {
 
                     <div className="mt-8 flex flex-wrap items-center gap-3">
                         <Link
-                            to="/quote"
+                            target="_blank"
+                            to="https://wa.me/9779744700704?text=Hello%20QR%20Coders%2C%20I%27m%20interested%20in%20your%20services"
                             className="rounded-full btn-primary px-5 py-2.5 text-sm font-bold transition hover:brightness-95 md:inline-block"
                         >
-                            Request a Quote
+                            Schedule a Free Consultation
                         </Link>
                         <Link
                             to="/price-calculator"
