@@ -89,9 +89,6 @@ const TechConsultant = () => {
                     aria-label="Open AI Tech Consultant"
                 >
                     <BotMessageSquare className="w-8 h-8 group-hover:rotate-6 transition-transform animate-pulse" />
-                    <span className="absolute right-16 bg-gray-900 text-white text-xs px-3 py-1.5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap shadow-md">
-                        Talk to QRCoders' AI Consultant 🤖
-                    </span>
                 </button>
             )}
 
