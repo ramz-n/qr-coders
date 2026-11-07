@@ -25,7 +25,7 @@ const HelpCenter = () => {
   ];
 
   return (
-    <main className="mx-auto max-w-4xl px-6 py-20 text-gray-300">
+    <main className="mx-auto max-w-4xl px-6 py-40 text-gray-300">
       <p className="eyebrow text-sm font-semibold tracking-widest text-primary">
         QR Coders Support
       </p>
@@ -41,21 +41,19 @@ const HelpCenter = () => {
         {faqs.map((faq) => (
           <details
             key={faq.question}
-            className="rounded-xl border border-gray-800 bg-slate-900 p-5 open:border-primary/50"
+            className="rounded-xl border border-accent-800 bg-accent p-5 open:border-primary/50"
           >
-            <summary className="cursor-pointer font-semibold text-white">
+            <summary className="cursor-pointer font-bold text-white">
               {faq.question}
             </summary>
 
-            <p className="mt-4 leading-7 text-gray-400">{faq.answer}</p>
+            <p className="mt-4 leading-7 text-accent-tint">{faq.answer}</p>
           </details>
         ))}
       </section>
 
-      <section className="mt-12 rounded-2xl border border-primary/30 bg-slate-900 p-8 text-center">
-        <h2 className="text-2xl font-semibold text-white">
-          Still need help?
-        </h2>
+      <section className="mt-12 rounded-2xl border border-primary/30 bg-accent p-8 text-center">
+        <h2 className="text-2xl font-semibold text-white">Still need help?</h2>
 
         <p className="mt-3 text-gray-400">
           Contact us and we will respond as soon as possible.
@@ -63,7 +61,7 @@ const HelpCenter = () => {
 
         <Link
           to="/#contact"
-          className="btn-primary mt-6 inline-flex rounded-lg bg-primary px-6 py-3 font-semibold text-white transition hover:scale-105 hover:opacity-90"
+          className="btn-secondary mt-6 inline-flex rounded-lg bg-primary px-6 py-3 font-semibold transition hover:scale-105 hover:opacity-90"
         >
           Contact Us
         </Link>

@@ -40,7 +40,7 @@ ${formData.get("message")}`);
     "w-full rounded-xl border border-zinc-700 bg-zinc-100 px-4 py-3 text-sm text-accent outline-none transition placeholder:text-accent hover:border-primary/40 focus:border-primary focus:bg-accent-tint focus:ring-1 focus:ring-primary/15";
 
   return (
-    <main className="mx-auto min-h-screen max-w-3xl px-5 py-32">
+    <main className="mx-auto min-h-screen max-w-3xl px-5 py-40">
       <div className="mb-10 text-center">
         <p className="eyebrow text-sm font-semibold tracking-widest text-primary">
           Request a Quote

@@ -1,6 +1,6 @@
 const PrivacyPolicy = () => {
   return (
-    <main className="relative mx-auto max-w-4xl px-6 py-20 text-gray-300">
+    <main className="relative mx-auto max-w-4xl px-6 py-40 text-gray-300">
       <p className="eyebrow text-sm font-semibold tracking-widest text-primary">
         QR Coders
       </p>
