@@ -47,7 +47,7 @@ const Pricing = () => {
                     <div
                         key={idx}
                         className={`rounded-2xl p-6 shadow-xs bg-white hover:-translate-y-1 hover:shadow-xl cursor-pointer
-                            ${idx === 1 ? "border-accent/50 border-2" : ""}
+                            ${idx === 1 ? "border-accent/50 border-2 bg-accent! text-white!" : ""}
                             `}
                     >
                         <div className="w-full h-50">
@@ -68,22 +68,23 @@ const Pricing = () => {
                             {item.services.map((itm, idx) => (
                                 <li
                                     key={idx}
-                                    className="flex items-center font-semibold text-sm md:text-lg gap-2 text-zinc-600"
+                                    className={`flex items-center font-semibold text-sm md:text-lg gap-2
+                                        ${item.title === "Web Development" ? "text-white" : "text-zinc-600"}
+                                    `}
                                 >
                                     <SealCheckIcon
                                         className="h-5 w-5"
                                         alt={itm}
                                     />
-                                    <span className="text-zinc-600 text-sm">
-                                        {" "}
-                                        {itm}
-                                    </span>
+                                    <span className="text-sm"> {itm}</span>
                                 </li>
                             ))}
                         </ul>
                         <Link
                             to="/price-calculator"
-                            className="btn-primary mt-8 block rounded-full border border-primary bg-primary/60 px-12 py-3 text-center text-sm font-medium text-white hover:bg-primary/70"
+                            className={`btn-primary mt-8 block rounded-full border border-primary px-12 py-3 text-center text-sm font-medium text-white hover:bg-primary/70
+                                    ${idx === 1 ? "btn-secondary text-accent!" : "bg-primary/60"}
+                                `}
                         >
                             Estimate the cost
                         </Link>
